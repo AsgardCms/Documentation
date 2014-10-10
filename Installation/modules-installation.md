@@ -11,6 +11,7 @@ This module is used for registering other modules Service Providers. It is also 
   'Cartalyst\Sentinel\Laravel\SentinelServiceProvider',
   'Laracasts\Commander\CommanderServiceProvider',
   'Laracasts\Flash\FlashServiceProvider',
+  'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
   ```
 * Add the Aliases
 
@@ -19,6 +20,7 @@ This module is used for registering other modules Service Providers. It is also 
   'Reminder' => 'Cartalyst\Sentinel\Laravel\Facades\Reminder',
   'Sentinel' => 'Cartalyst\Sentinel\Laravel\Facades\Sentinel',
   'Flash' => 'Laracasts\Flash\Flash',
+  'LaravelLocalization' => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization',
    ```
 
 ## Dashboard Module
