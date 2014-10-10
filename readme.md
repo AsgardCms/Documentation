@@ -10,3 +10,4 @@
 2. [Core Module](/Core-Module/index.md)
 	1. [Navigation](/Core-Module/Navigation.md)
 	1. [Permissions](/Core-Module/Permissions.md)
+	1. [Repositories](/Core-Module/Repositories.md)

@@ -6,7 +6,7 @@ We'll go over all its functionalities in this series of documents.
 
 1. [Navigation](/Core-Module/Navigation.md)
 2. [Permissions](/Core-Module/Permissions.md)
-3. [Entities and its repositories]()
+3. [Repositories](/Core-Module/Repositories.md)
 
 
 ***
