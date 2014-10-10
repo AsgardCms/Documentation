@@ -104,3 +104,8 @@ You can also add an alias to the list of class aliases in the same app.php
 ```
 
 To finish, publish the configuration file using the command `php artisan config:publish mcamara/laravel-localization` in your laravel root path. This will create the following file `app/config/packages/mcamara/laravel-localization/config.php`, containing the most common setting options.
+
+
+***
+
+[Back to ToC](../readme/md)
