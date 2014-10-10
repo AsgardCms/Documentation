@@ -96,3 +96,8 @@ class SidebarViewComposer
 ```
 
 And that is all you have to do to add your menu item.
+
+
+***
+
+[Back to ToC](../readme.md)
