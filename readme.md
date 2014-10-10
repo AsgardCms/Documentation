@@ -7,4 +7,5 @@
 1. [Installation](/Installation)
 	1. [Laravel Installation](/Installation/laravel-installation.md)
 	1. [Modules Installation](/Installation/modules-installation.md)
-2. [Core Module](/Core)
+2. [Core Module](/Core-Module/index.md)
+	1. [Navigation](/Core-Module/Navigation.md)
