@@ -4,8 +4,8 @@ The Core Module is the base of every other module. It contains base classes that
 
 We'll go over all its functionalities in this series of documents.
 
-1. [Navigation](/Navigation.md)
-2. [Permissions](/Permissions.md)
+1. [Navigation](/Core-Module/Navigation.md)
+2. [Permissions](/Core-Module/Permissions.md)
 3. [Entities and its repositories]()
 
 
