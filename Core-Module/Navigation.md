@@ -44,7 +44,7 @@ The important part here is the `$view->items` variable. It is a Laravel Collecti
 
 That item has to following keys
 
-```
+``` php
 'weight' => 0 // The position in the menu
 'request' => "*/$view->prefix", // When the active class should be applied
 'route' => 'dashboard.index', // The route that matches the item
