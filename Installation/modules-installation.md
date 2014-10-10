@@ -60,6 +60,8 @@ This module lets you activate or deactivate modules. But also gives your a helpe
 * `php artisan module:install nWidart-Modules/Workshop`
 
 
+Now that you have to Workshop module installed you can use the GUI to install other modules.
+
 ***
 
 [Back to ToC](../readme.md)
