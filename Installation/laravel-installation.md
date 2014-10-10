@@ -108,4 +108,4 @@ To finish, publish the configuration file using the command `php artisan config:
 
 ***
 
-[Back to ToC](../readme/md)
+[Back to ToC](../readme.md)
