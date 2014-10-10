@@ -57,3 +57,8 @@ This module is used to handle your users, roles and permissions.
 This module lets you activate or deactivate modules. But also gives your a helper UI to generate new modules, install other modules and run some other commands.
 
 * `php artisan module:install nWidart-Modules/Workshop`
+
+
+***
+
+[Back to ToC](../readme.md)
