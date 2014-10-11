@@ -7,7 +7,7 @@ This module is used for registering other modules Service Providers. It is also 
 * Add its Service Provider `'Modules\Core\Providers\CoreServiceProvider',` to your `config/app.php` file.
 * Load the modules directory with PSR-4, for instance:
 
-   ```
+   ``` json
    "psr-4": {
       "App\\": "app/",
       "Modules\\": "Modules/"
@@ -34,7 +34,7 @@ This module is used for registering other modules Service Providers. It is also 
    
 If you installed the module manually, this is what your composer.json needs:
 
-```
+``` json
 "cartalyst/sentinel": "1.0.*",
 "laracasts/commander": "dev-master",
 "laracasts/flash": "~1.0",
