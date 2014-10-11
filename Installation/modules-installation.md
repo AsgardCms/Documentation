@@ -32,6 +32,10 @@ This module is used for registering other modules Service Providers. It is also 
   'Flash' => 'Laracasts\Flash\Flash',
   'LaravelLocalization' => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization',
    ```
+* Publish the assets
+	```
+	php artisan module:publish Core
+	```
    
 If you installed the module manually, this is what your composer.json needs:
 
