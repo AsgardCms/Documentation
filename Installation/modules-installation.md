@@ -13,6 +13,7 @@ This module is used for registering other modules Service Providers. It is also 
       "Modules\\": "Modules/"
     }
     ```
+	Don't forget to run `composer du` afterwards.
 
 * Add the required Service Providers
 
