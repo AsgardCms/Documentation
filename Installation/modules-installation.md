@@ -22,6 +22,18 @@ This module is used for registering other modules Service Providers. It is also 
   'Flash' => 'Laracasts\Flash\Flash',
   'LaravelLocalization' => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization',
    ```
+   
+If you installed the module manually, this is what your composer.json needs:
+
+```
+"cartalyst/sentinel": "1.0.*",
+"laracasts/commander": "dev-master",
+"laracasts/flash": "~1.0",
+"laracasts/presenter": "0.2.*",
+"guzzlehttp/guzzle": "4.2.2",
+"mcamara/laravel-localization": "dev-Laravel5Support",
+"dimsav/laravel-translatable": "dev-laravel-5"
+```
 
 ## Dashboard Module
 The basic dashboard for your administration.
