@@ -61,6 +61,16 @@ Abstract:
 git subtree push --prefix=Modules/User [remote-name] [branch]
 ```
 
+## Core module
+
+Example:
+
+```
+git subtree push --prefix=Modules/Core core adding-install-command
+```
+
+
+
 ## Pulling
 
 

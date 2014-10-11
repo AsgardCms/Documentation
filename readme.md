@@ -5,8 +5,11 @@
 
 1. [Introduction](/Introduction/introduction.md)
 1. [Installation](/Installation)
-	1. [Laravel Installation](/Installation/laravel-installation.md)
-	1. [Modules Installation](/Installation/modules-installation.md)
+	1. [Automatic Installation](/Installation/automatic-installation.md)
+	1. Manual Installation
+		1. [Laravel Installation](/Installation/laravel-installation.md)
+		1. [Modules Installation](/Installation/modules-installation.md)
+		1. [Installing as subtrees](/Installation/module-installation-as-subtree.md)
 2. [Core Module](/Core-Module/index.md)
 	1. [Navigation](/Core-Module/Navigation.md)
 	1. [Permissions](/Core-Module/Permissions.md)
