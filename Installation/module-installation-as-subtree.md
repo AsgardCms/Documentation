@@ -60,3 +60,13 @@ Abstract:
 ```
 git subtree push --prefix=Modules/User [remote-name] [branch]
 ```
+
+## Pulling
+
+
+## Core module
+
+```
+git subtree pull —prefix=Modules/Core —squash core master
+```
+
