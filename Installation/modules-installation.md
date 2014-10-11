@@ -72,6 +72,7 @@ Change the `users` model key to:
 ```
 
 * `php artisan module:install nWidart-Modules/User`
+* Run the seed `php artisan module:seed User`
 
 
 
