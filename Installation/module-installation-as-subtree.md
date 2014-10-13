@@ -77,6 +77,6 @@ git subtree push --prefix=Modules/Core core adding-install-command
 ## Core module
 
 ```
-git subtree pull —prefix=Modules/Core —squash core master
+git subtree pull --prefix=Modules/Core --squash core master
 ```
 
