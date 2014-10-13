@@ -80,3 +80,7 @@ git subtree push --prefix=Modules/Core core adding-install-command
 git subtree pull --prefix=Modules/Core --squash core master
 ```
 
+
+## References
+
+* [git subtree tutorial on medium](https://medium.com/@v/git-subtrees-a-tutorial-6ff568381844)
