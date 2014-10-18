@@ -80,6 +80,23 @@ git subtree push --prefix=Modules/Core core adding-install-command
 git subtree pull --prefix=Modules/Core --squash core master
 ```
 
+## User module
+
+```
+git subtree pull --prefix=Modules/User --squash user master
+```
+
+## Dashboard module
+
+```
+git subtree pull --prefix=Modules/Dashboard --squash dashboard master
+```
+
+## Workshop module
+
+```
+git subtree pull --prefix=Modules/Workshop --squash workshop master
+```
 
 ## References
 
