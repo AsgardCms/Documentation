@@ -15,3 +15,7 @@
 	1. [Permissions](/Core-Module/Permissions.md)
 	1. [Repositories](/Core-Module/Repositories.md)
 	1. [Configuration](/Core-Module/Configuration.md)
+3. [Setting Module](/Setting-Module/index.md)
+	1. [Adding settings](/Setting-Module/adding-settings.md)
+	2. [Reading settings]()
+	3. [Specifying special fields]()
