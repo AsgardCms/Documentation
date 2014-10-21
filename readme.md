@@ -20,3 +20,8 @@
 	2. [Available fields](/Setting-Module/available-fields.md)
 	2. Reading settings
 	3. [Specifying special fields](/Setting-Module/specific-settings.md)
+	
+
+***
+
+[Back to ToC](../readme.md)

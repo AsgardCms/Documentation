@@ -31,6 +31,8 @@ The **array key** beeing the setting name, holding an array of information.
 The information array needs a `description` key, this will be the label / placeholder. And a `view` key which point to the view holding the field. 
 
 
+***
 
+[Back to ToC](../readme.md)
   
 
