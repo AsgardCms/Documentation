@@ -8,7 +8,7 @@
 
 ```
 git remote add core git@github.com:nWidart-Modules/Core.git
-git subtree add --prefix=Modules/Core core develop
+git subtree add --prefix=Modules/Core core master
 ```
 
 ### Dashboard module
@@ -16,7 +16,7 @@ git subtree add --prefix=Modules/Core core develop
 
 ```
 git remote add dashboard git@github.com:nWidart-Modules/Dashboard.git
-git subtree add --prefix=Modules/Dashboard dashboard develop
+git subtree add --prefix=Modules/Dashboard dashboard master
 ```
 
 ### User module
@@ -24,7 +24,7 @@ git subtree add --prefix=Modules/Dashboard dashboard develop
 
 ```
 git remote add user git@github.com:nWidart-Modules/User.git
-git subtree add --prefix=Modules/User user develop
+git subtree add --prefix=Modules/User user master
 ```
 
 ### Workshop module
@@ -32,7 +32,7 @@ git subtree add --prefix=Modules/User user develop
 
 ```
 git remote add workshop git@github.com:nWidart-Modules/Workshop.git
-git subtree add --prefix=Modules/Workshop workshop develop
+git subtree add --prefix=Modules/Workshop workshop master
 ```
 
 
@@ -41,8 +41,17 @@ git subtree add --prefix=Modules/Workshop workshop develop
 
 ```
 git remote add blog git@github.com:nWidart-Modules/Blog.git
-git subtree add --prefix=Modules/Blog blog develop
+git subtree add --prefix=Modules/Blog blog master
 ```
+
+### Setting module
+
+
+```
+git remote add setting git@github.com:nWidart-Modules/Setting.git
+git subtree add --prefix=Modules/Setting setting master
+```
+
 
 ## Pushing
 
@@ -96,6 +105,12 @@ git subtree pull --prefix=Modules/Dashboard --squash dashboard master
 
 ```
 git subtree pull --prefix=Modules/Workshop --squash workshop master
+```
+
+## Setting module
+
+```
+git subtree pull --prefix=Modules/Setting --squash setting master
 ```
 
 ## References
