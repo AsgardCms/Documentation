@@ -5,8 +5,9 @@ The settings module is the **one** place to manage all the settings. It listens 
 This means every module can, independently, specify which settings they need, and the Setting module will display and handle the storage of those settings.
 
 1. [Adding settings](/Setting-Module/adding-settings.md)
-2. [Reading settings]()
-3. [Specifying special fields]()
+2. [Available fields](/Setting-Module/available-fields.md)
+2. Reading settings
+3. [Specifying special fields](/Setting-Module/specific-settings.md)
 
 
 ***
