@@ -31,7 +31,11 @@ The setting module has the basic input fields available for you:
        'view' => 'setting::admin.partials.module-radio-field'
    ],
    ```
+- input number
+
+  `setting::admin.partials.module-number-field`
   
+    
 ***
 
 [Back to ToC](../readme.md)
