@@ -25,13 +25,23 @@ Once this is done you can use the repository to get a setting specific to a modu
 ### Without specifying the module
 
 ``` php
-$this->setting->findSettingForModule('site-name');
+$siteName = $this->setting->findSettingForModule('site-name');
 ```
 
 ### With specifying the module
 
 
 ``` php
-$this->setting->findSettingForModule('posts-per-page', 'blog');
+$setting = $this->setting->findSettingForModule('posts-per-page', 'blog');
 ```
+
+
+## Dealing with translations
+
+All the settings are translatable. This means in order to get the setting value you need to perform the following on the Setting entity:
+
+```
+$siteName = $siteName->translate('en')->value
+```
+This will return the site name in English.
 
