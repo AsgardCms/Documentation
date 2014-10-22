@@ -40,7 +40,7 @@ $setting = $this->setting->findSettingForModule('posts-per-page', 'blog');
 
 All the settings are translatable. This means in order to get the setting value you need to perform the following on the Setting entity:
 
-```
+``` php
 $siteName = $siteName->translate('en')->value
 ```
 This will return the site name in English.
