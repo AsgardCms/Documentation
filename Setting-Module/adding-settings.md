@@ -4,6 +4,8 @@ Adding settings for you module is very easy. All you need to do is add a `settin
 
 ## Registering settings
 
+### Translatable settings
+
 The settings are registered in the following manner:
 
 
@@ -12,15 +14,18 @@ The settings are registered in the following manner:
 return [
     'posts-per-page' => [
         'description' => trans('blog::settings.posts-per-page'),
-        'view' => 'setting::admin.partials.module-text-field'
+        'view' => 'text',
+        'translatable' => true
     ],
     'this-is-a-checkbox' => [
         'description' => 'This is a checkbox',
-        'view' => 'setting::admin.partials.module-checkbox-field'
+        'view' => 'checkbox,
+        'translatable' => true
     ],
     'this-is-a-textarea' => [
         'description' => 'This is a textarea',
-        'view' => 'setting::admin.partials.module-textarea-field'
+        'view' => 'stextarea',
+        'translatable' => true
     ],
 ];
 
@@ -29,6 +34,18 @@ return [
 The **array key** beeing the setting name, holding an array of information. 
 
 The information array needs a `description` key, this will be the label / placeholder. And a `view` key which point to the view holding the field. 
+
+
+### Plain settings
+
+Not every setting has to be translatable, plain settings are settings that aren't translated.
+
+``` php
+ 'plain-non-translated-setting' => [
+    'description' => 'A plain setting',
+    'view' => 'text',
+],
+```
 
 
 ***

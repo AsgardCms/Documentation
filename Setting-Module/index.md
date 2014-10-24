@@ -7,7 +7,7 @@ This means every module can, independently, specify which settings they need, an
 1. [Adding settings](/Setting-Module/adding-settings.md)
 2. [Available fields](/Setting-Module/available-fields.md)
 2. [Reading settings](/Setting-Module/reading-settings.md)
-3. [Specifying special fields](/Setting-Module/specific-settings.md)
+3. [Custom fields](/Setting-Module/custom-fields.md)
 
 
 ***

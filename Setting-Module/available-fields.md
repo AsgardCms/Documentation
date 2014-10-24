@@ -4,20 +4,20 @@
 ## Available fields
 
 
-The setting module has the basic input fields available for you:
+The setting module has the basic input fields available for you. These fields are available both for translatable fields as plain fields.
 
 - input type text
 
-  `setting::admin.partials.module-text-field`
+  `text`
 - input checkbox
 
-  `setting::admin.partials.module-checkbox-field`
+  `checkbox`
 - textarea
 
-  `setting::admin.partials.module-textarea-field`
+  `textarea`
 - input radio
 
-  `setting::admin.partials.module-radio-field`
+  `radio`
   The Radio field needs an additionel `options` key with the wanted options. For instance:
   
   ``` php
@@ -28,12 +28,12 @@ The setting module has the basic input fields available for you:
            'option2' => 'Option 2',
            'option3' => 'Option 3',
        ],
-       'view' => 'setting::admin.partials.module-radio-field'
+       'view' => 'radio'
    ],
    ```
 - input number
 
-  `setting::admin.partials.module-number-field`
+  `number`
   
     
 ***
