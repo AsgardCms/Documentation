@@ -1,47 +1,42 @@
 # Setting module : Reading settings
 
 
-## Injecting the repository
+## Injecting the interface
 
 
-To use a setting you can inject the setting repository interface into your method/constructor.
+To use a setting you can inject the [setting interface](https://github.com/nWidart-Modules/Core/blob/master/Contracts/Setting.php) into your method/constructor.
 
 ``` php
+use Modules\Core\Contracts\Setting;
+
+...
+
 /**
- * @var SettingRepository
+ * @var Setting
  */
 private $setting;
 
-public function __construct(SettingRepository $setting)
+public function __construct(Setting $setting)
 {
-  $this->setting = $setting;
+    $this->setting = $setting;
 }
 ```
 
-## Using the repository
+## Using the interface
 
-Once this is done you can use the repository to get a setting specific to a module, or if you don't want/know the module only the setting name.
+Once this is done you can use the interface to get a setting, in a given locale.
+Since settings can be translatable or not, you can optionnaly specify the language.
 
-### Without specifying the module
-
-``` php
-$siteName = $this->setting->findSettingForModule('site-name');
-```
-
-### With specifying the module
-
+### Get setting in current locale
 
 ``` php
-$setting = $this->setting->findSettingForModule('posts-per-page', 'blog');
+$siteName = $this->setting->get('core::site-name', App::getLocale())
 ```
 
+### Get a non translatable setting
 
-## Dealing with translations
-
-All the settings are translatable. This means in order to get the setting value you need to perform the following on the Setting entity:
 
 ``` php
-$siteName = $siteName->translate('en')->value
+$postsPerPage = $this->setting->get('blog::posts-per-page');
 ```
-This will return the site name in English.
 
