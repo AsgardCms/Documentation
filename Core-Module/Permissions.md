@@ -68,3 +68,6 @@ $this->auth->hasAccess('users.index');
 
 Which will return a boolean.
 
+***
+
+[Back to ToC](../readme.md)

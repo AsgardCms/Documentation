@@ -18,3 +18,7 @@ $this->app->bind(
 ```
 
 Instead of passing a string as a second argument to your implementation class, you pass a closure with the implemented class with needs an instance of the model.
+
+***
+
+[Back to ToC](../readme.md)
