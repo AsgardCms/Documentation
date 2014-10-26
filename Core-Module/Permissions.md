@@ -44,3 +44,27 @@ return [
 ```
 
 That is all, the Core Module will loop over every configuration file and load them.
+
+## Authentication contract
+
+Once you've setup the appropriate roles with their permissions, you can start checking for them in controllers, views etc.
+
+Do perform this action you can inject the [authentication contract](https://github.com/nWidart-Modules/Core/blob/master/Contracts/Authentication.php) which has a `hasAccess()` method. It has the following signature:
+
+``` php
+/**
+ * Determines if the current user has access to given permission
+ * @param $permission
+ * @return bool
+ */
+public function hasAccess($permission);
+```
+
+An example, to check if a user has access to the users index page in the administration:
+
+``` php
+$this->auth->hasAccess('users.index');
+```
+
+Which will return a boolean.
+
