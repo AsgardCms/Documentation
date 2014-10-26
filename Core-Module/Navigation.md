@@ -38,7 +38,7 @@ class SidebarViewComposer extends BaseSidebarViewComposer
             'route' => 'dashboard.index',
             'icon-class' => 'fa fa-dashboard',
             'title' => 'Dashboard',
-            'permission' => $this->auth->hasAccess('dashboard.index)
+            'permission' => $this->auth->hasAccess('dashboard.index')
         ]);
     }
 }
@@ -54,7 +54,7 @@ That item has to following keys
 'route' => 'dashboard.index', // The route that matches the item
 'icon-class' => 'fa fa-dashboard', // The icon class name
 'title' => 'Dashboard', // The actual text for the item
-'permission' => $this->auth->hasAccess('dashboard.index) // The required permission to be able to see the menu item
+'permission' => $this->auth->hasAccess('dashboard.index') // The required permission to be able to see the menu item
 ```
 
 ## Menu with submenus
