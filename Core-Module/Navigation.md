@@ -25,9 +25,12 @@ The corresponding `SidebarViewComposer` looks like this:
 ``` php
 <?php namespace Modules\Dashboard\Composers;
 
-class SidebarViewComposer
+use Illuminate\Contracts\View\View;
+use Modules\Core\Composers\BaseSidebarViewComposer;
+
+class SidebarViewComposer extends BaseSidebarViewComposer
 {
-    public function compose($view)
+    public function compose(View $view)
     {
         $view->items->put('dashboard', [
             'weight' => 0,
@@ -35,6 +38,7 @@ class SidebarViewComposer
             'route' => 'dashboard.index',
             'icon-class' => 'fa fa-dashboard',
             'title' => 'Dashboard',
+            'permission' => $this->auth->hasAccess('dashboard.index)
         ]);
     }
 }
@@ -50,6 +54,7 @@ That item has to following keys
 'route' => 'dashboard.index', // The route that matches the item
 'icon-class' => 'fa fa-dashboard', // The icon class name
 'title' => 'Dashboard', // The actual text for the item
+'permission' => $this->auth->hasAccess('dashboard.index) // The required permission to be able to see the menu item
 ```
 
 ## Menu with submenus
@@ -65,10 +70,12 @@ For the User module it looks like the following:
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Request;
+use Illuminate\Contracts\View\View;
+use Modules\Core\Composers\BaseSidebarViewComposer;
 
-class SidebarViewComposer
+class SidebarViewComposer extends BaseSidebarViewComposer
 {
-    public function compose($view)
+    public function compose(View $view)
     {
         $view->items->put('user', Collection::make([
             [
@@ -77,18 +84,21 @@ class SidebarViewComposer
                 'route' => '#',
                 'icon-class' => 'fa fa-user',
                 'title' => 'Users & Roles',
+                'permission' => $this->auth->hasAccess('users.index') or $this->auth->hasAccess('roles.index')
             ],
             [
                 'request' => "*/{$view->prefix}/users*",
                 'route' => 'dashboard.user.index',
                 'icon-class' => 'fa fa-user',
                 'title' => 'Users',
+                'permission' => $this->auth->hasAccess('users.index')
             ],
             [
                 'request' => "*/{$view->prefix}/roles*",
                 'route' => 'dashboard.role.index',
                 'icon-class' => 'fa fa-flag-o',
                 'title' => 'Roles',
+                'permission' => $this->auth->hasAccess('roles.index')
             ]
         ]));
     }
