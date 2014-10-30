@@ -29,10 +29,10 @@ return [
 
 The filters use the [Intervention/Image](http://image.intervention.io/) library, almost all the filters it has can be used.
 
-- [Crop](#Crop)
-- [Fit]($Fit)
-- [Blur](#Blur)
-- [Brightness](#Brightness)
+- [Crop](#crop)
+- [Fit](#fit)
+- [Blur](#blur)
+- [Brightness](#brightness)
 
 
 ### Crop
