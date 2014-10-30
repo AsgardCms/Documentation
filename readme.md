@@ -22,6 +22,7 @@
 	3. [Custom fields](/Setting-Module/custom-fields.md)
 4. [Media Module](/Media-Module/index.md)
 	5. [Thumbnails](/Media-Module/thumbnails.md)
+	5. [Getting thumbnail](/Media-Module/getting-a-thumbnail.md)
 
 ***
 
