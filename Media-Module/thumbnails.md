@@ -33,6 +33,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Fit](#fit)
 - [Blur](#blur)
 - [Brightness](#brightness)
+- [Colorize](#colorize)
 
 
 ### Crop
@@ -112,3 +113,21 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 #### Parameters
 
 - **level:** [required] Level of brightness change applied to the current image. Use values between -100 and +100.
+
+### Colorize
+
+#### Example
+
+``` php
+'colorize' => [
+    'red' => 0,
+    'green' => 0,
+    'blue' => 99
+]
+```
+
+#### Parameters
+
+- **red:** [required] Add or take out a amount of red color on the image. Use values between -100 and +100.
+- **green:** [required] Add or take out a amount of green color on the image. Use values between -100 and +100.
+- **blue:** [required] Add or take out a amount of blue color on the image. Use values between -100 and +100.
