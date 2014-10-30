@@ -28,7 +28,7 @@ public function index()
 ### Facade
 
 ``` html
-<img src="{{ Imagy::getThumbnail('/assets/media/original-image-name.png') }}" alt="" />
+<img src="{{ Modules\Media\Image\Facade\Imagy::getThumbnail('/assets/media/original-image-name.png') }}" alt="" />
 ```
 
 ***
