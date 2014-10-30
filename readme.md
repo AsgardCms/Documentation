@@ -20,7 +20,8 @@
 	2. [Available fields](/Setting-Module/available-fields.md)
 	2. [Reading settings](/Setting-Module/reading-settings.md)
 	3. [Custom fields](/Setting-Module/custom-fields.md)
-	
+4. [Media Module](/Media-Module/index.md)
+	5. [Thumbnails](/Media-Module/thumbnails.md)
 
 ***
 
