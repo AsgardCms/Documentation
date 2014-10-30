@@ -36,7 +36,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Colorize](#colorize)
 - [Contrast](#contrast)
 - [Flip](#flip)
-- 
+- [Gamma](#gamma)
+- [Greyscale](#greyscale)
 
 ### Crop
 
@@ -191,7 +192,7 @@ Performs a gamma correction operation on the current image.
 - **correction:** [required] Specify the mode the image will be flipped. You can set h for horizontal (default) or v for vertical flip.
 
 
-### Gamma
+### Greyscale
 
 Turns image into a greyscale version.
 
