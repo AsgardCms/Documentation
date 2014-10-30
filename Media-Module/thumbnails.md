@@ -90,6 +90,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 ### Blur
 
+Apply a gaussian blur filter with a optional amount on the current image. Use values between `0` and `100`.
+
 #### Example
 
 ``` php
@@ -104,6 +106,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 ### Brightness
 
+Changes the brightness of the current image by the given level. Use values between `-100` for min. brightness `0` for no change and `+100` for max. brightness.
+
 #### Example
 
 ``` php
@@ -117,6 +121,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - **level:** [required] Level of brightness change applied to the current image. Use values between -100 and +100.
 
 ### Colorize
+
+Change the RGB color values of the current image on the given channels **red**, **green** and **blue**. The input values are normalized so you have to include parameters from 100 for maximum color value `0` for no change and `-100` to take out all the certain color on the image.
 
 #### Example
 
@@ -137,6 +143,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 ### Contrast
 
+Changes the contrast of the current image by the given level. Use values between `-100` for min. contrast 0 for no change and `+100` for max. contrast.
+
 #### Example
 
 ``` php
@@ -152,6 +160,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 ### Flip
 
+Mirror the current image horizontally or vertically by specifying the mode.
+
 #### Example
 
 ``` php
@@ -165,6 +175,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - **mode:** [required] Specify the mode the image will be flipped. You can set h for horizontal (default) or v for vertical flip.
 
 ### Gamma
+
+Performs a gamma correction operation on the current image.
 
 #### Example
 
@@ -180,6 +192,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 
 ### Gamma
+
+Turns image into a greyscale version.
 
 #### Example
 
