@@ -34,6 +34,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Blur](#blur)
 - [Brightness](#brightness)
 - [Colorize](#colorize)
+- [Contrast](#contrast)
 
 
 ### Crop
@@ -131,3 +132,19 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - **red:** [required] Add or take out a amount of red color on the image. Use values between -100 and +100.
 - **green:** [required] Add or take out a amount of green color on the image. Use values between -100 and +100.
 - **blue:** [required] Add or take out a amount of blue color on the image. Use values between -100 and +100.
+
+
+### Contrast
+
+#### Example
+
+``` php
+'contrast' => [
+    'level' => '50'
+],
+```
+
+#### Parameters
+
+- **level:** [required] Level of contrast change applied to the current image. Use values between -100 and +100.
+
