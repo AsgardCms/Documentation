@@ -50,10 +50,10 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 #### Parameters
 
-- **Width: ** [required] Width of the rectangular cutout.
-- **Height: ** [required] Height of the rectangular cutout.
-- **x: ** [optional] X-Coordinate of the top-left corner if the rectangular cutout. By default the rectangular part will be centered on the current image.
-- **y: ** [optional] Y-Coordinate of the top-left corner if the rectangular cutout. By default the rectangular part will be centered on the current image.
+- **Width:** [required] Width of the rectangular cutout.
+- **Height:** [required] Height of the rectangular cutout.
+- **x:** [optional] X-Coordinate of the top-left corner if the rectangular cutout. By default the rectangular part will be centered on the current image.
+- **y:** [optional] Y-Coordinate of the top-left corner if the rectangular cutout. By default the rectangular part will be centered on the current image.
 
 ### Fit
 
@@ -69,9 +69,9 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 #### Parameters
 
-- **Width: ** [required] The width the image will be resized to after cropping out the best fitting aspect ratio.
-- **Height: ** [optional] The height the image will be resized to after cropping out the best fitting aspect ratio. If no height is given, method will use same value as width.
-- **position: ** [optional] Set a position where cutout will be positioned. By default the best fitting aspect ration is centered.
+- **Width:** [required] The width the image will be resized to after cropping out the best fitting aspect ratio.
+- **Height:** [optional] The height the image will be resized to after cropping out the best fitting aspect ratio. If no height is given, method will use same value as width.
+- **position:** [optional] Set a position where cutout will be positioned. By default the best fitting aspect ration is centered.
 
     The possible values are:
     
@@ -97,7 +97,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 #### Parameters
 
-- **amount: ** [optional] The amount of the blur strength. Use values between 0 and 100. Default: 1
+- **amount:** [optional] The amount of the blur strength. Use values between 0 and 100. Default: 1
 
 ### Brightness
 
@@ -111,4 +111,4 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 #### Parameters
 
-- **level: ** [required] Level of brightness change applied to the current image. Use values between -100 and +100.
+- **level:** [required] Level of brightness change applied to the current image. Use values between -100 and +100.
