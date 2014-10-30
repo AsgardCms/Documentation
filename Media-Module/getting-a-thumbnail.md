@@ -28,7 +28,7 @@ public function index()
 ### Helper function
 
 ``` html
-<img src="{{ thumbnail('/assets/media/original-image-name.png') }}" alt="" />
+<img src="{{ thumbnail('/assets/media/original-image-name.png', 'smallThumb') }}" alt="" />
 ```
 
 ***
