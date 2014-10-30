@@ -164,3 +164,29 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 - **mode:** [required] Specify the mode the image will be flipped. You can set h for horizontal (default) or v for vertical flip.
 
+### Gamma
+
+#### Example
+
+``` php
+'gamma' => [
+    'correction' => '1.6'
+],
+```
+
+#### Parameters
+
+- **correction:** [required] Specify the mode the image will be flipped. You can set h for horizontal (default) or v for vertical flip.
+
+
+### Gamma
+
+#### Example
+
+``` php
+'greyscale' => [],
+```
+
+#### Parameters
+
+None
