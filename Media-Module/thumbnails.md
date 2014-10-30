@@ -43,6 +43,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [LimitColors](#limitcolors)
 - [Opacity](#opacity)
 - [Orientate](#orientate)
+- [Pixelate](#pixelate)
 
 ### Crop
 
@@ -297,4 +298,25 @@ This method reads the EXIF image profile setting 'Orientation' and performs a ro
 #### Parameters
 
 None
+
+
+### Pixelate
+
+Applies a pixelation effect to the current image with a given **size** of pixels.
+
+
+#### Example
+
+``` php
+'pixelate' => [
+	'size' => 10
+],
+```
+
+#### Parameters
+
+- **size:** [required] Size of the pixels.
+
+
+
 
