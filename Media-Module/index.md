@@ -4,3 +4,4 @@ The media module gives you the ability to handle are your media files. It also p
 
 1. [Thumbnails](/Media-Module/thumbnails.md)
 2. [Getting thumbnail](/Media-Module/getting-a-thumbnail.md)
+3. [Refreshing thumbnails](/Media-Module/refreshing-thumbnails.md)

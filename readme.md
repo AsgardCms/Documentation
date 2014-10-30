@@ -23,6 +23,7 @@
 4. [Media Module](/Media-Module/index.md)
 	5. [Thumbnails](/Media-Module/thumbnails.md)
 	5. [Getting thumbnail](/Media-Module/getting-a-thumbnail.md)
+	5. [Refreshing thumbnails](/Media-Module/refreshing-thumbnails.md)
 
 ***
 
