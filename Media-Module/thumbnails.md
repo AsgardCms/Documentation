@@ -35,7 +35,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Brightness](#brightness)
 - [Colorize](#colorize)
 - [Contrast](#contrast)
-
+- [Flip](#flip)
+- 
 
 ### Crop
 
@@ -147,4 +148,19 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 #### Parameters
 
 - **level:** [required] Level of contrast change applied to the current image. Use values between -100 and +100.
+
+
+### Flip
+
+#### Example
+
+``` php
+'flip' => [
+    'mode' => 'h'
+],
+```
+
+#### Parameters
+
+- **mode:** [required] Specify the mode the image will be flipped. You can set h for horizontal (default) or v for vertical flip.
 
