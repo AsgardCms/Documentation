@@ -42,6 +42,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Invert](#invert)
 - [LimitColors](#limitcolors)
 - [Opacity](#opacity)
+- [Orientate](#orientate)
 
 ### Crop
 
@@ -281,4 +282,19 @@ Set the **opacity** in percent of the current image ranging from 100% for opaque
 #### Parameters
 
 - **transparency:** [required] The new percent of transparency for the current image.
+
+### Orientate
+
+This method reads the EXIF image profile setting 'Orientation' and performs a rotation on the image to display the image correctly.
+
+
+#### Example
+
+``` php
+'orientate' => [],
+```
+
+#### Parameters
+
+None
 
