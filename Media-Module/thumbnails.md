@@ -78,7 +78,10 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 'fit' => [
     'width' => '100',
     'height' => '200',
-    'position' => 'top-left'
+    'position' => 'top-left',
+    'callback' => function($constraint) {
+    	$constraint->upsize();
+    }
 ],
 ```
 
@@ -99,6 +102,9 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 	- bottom-left
 	- bottom
 	- bottom-right
+- **callback:** [optional] Closure callback defining constraint to prevent unwanted **upsizing** of the image.
+
+
 
 ### Blur
 
