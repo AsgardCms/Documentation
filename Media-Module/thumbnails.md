@@ -48,6 +48,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Rotate](#rotate)
 - [Sharpen](#sharpen)
 - [Trim](#trim)
+- [Widen](#widen)
 
 ### Crop
 
@@ -424,3 +425,26 @@ Trim away image space in given color. Define an optional **base** to pick a colo
 
 - **tolerance:** [optional] Define a percentaged tolerance level between `0` and `100` to trim away similar color values. Default: `0`
 - **feather:** [optional] Sometimes it may be useful to leave a untouched "border" around an object while trimming. Especially when trimming non-solid backgrounds you can expand (positive value) or contract (negative value) the space around the trimed object by a certain amount of pixels. Default: `0`
+
+
+### Widen
+
+Resizes the current image to new **width**, constraining aspect ratio. Pass an optional Closure **callback** as third parameter, to apply additional constraints like preventing possible upsizing.
+
+#### Example
+
+``` php
+'heighten' => [
+    'width' => '250'
+    'callback' => function($constraint) {
+    	$constraint->upsize();
+    }
+],
+```
+
+#### Parameters
+
+- **width:** [required] The new width of the image
+- **callback:** [optional] Closure callback defining constraint to prevent unwanted upsizing of the image.
+
+
