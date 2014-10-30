@@ -41,6 +41,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Heighten](#heighten)
 - [Invert](#invert)
 - [LimitColors](#limitcolors)
+- [Opacity](#opacity)
 
 ### Crop
 
