@@ -454,3 +454,6 @@ Resizes the current image to new **width**, constraining aspect ratio. Pass an o
 - **callback:** [optional] Closure callback defining constraint to prevent unwanted upsizing of the image.
 
 
+***
+
+[Back to ToC](../readme.md)
