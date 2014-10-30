@@ -46,6 +46,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Pixelate](#pixelate)
 - [Resize](#resize)
 - [Rotate](#rotate)
+- [Sharpen](#sharpen)
 
 ### Crop
 
@@ -363,5 +364,22 @@ Rotate the current image counter-clockwise by a given **angle**. Optionally defi
 - **angle:** [required] The rotation angle in degrees to rotate the image counter-clockwise.
 - **bgcolor:** [required] A background color for the uncovered zone after the rotation. Default: `#000000`
 
+
+### Sharpen
+
+Sharpen current image with an optional **amount**. Use values between `0` and `100`.
+
+
+#### Example
+
+``` php
+'sharpen' => [
+	'amount' => 10
+],
+```
+
+#### Parameters
+
+- **amount:** [optional] TThe amount of the sharpening strength. Method accepts values between `0` and `100`. Default: `10`
 
 
