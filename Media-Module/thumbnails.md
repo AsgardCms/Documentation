@@ -45,6 +45,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Orientate](#orientate)
 - [Pixelate](#pixelate)
 - [Resize](#resize)
+- [Rotate](#rotate)
 
 ### Crop
 
@@ -341,5 +342,26 @@ Resizes current image based on given **width** and/or **height**. To contraint t
 - **width:** [required] The new width of the image
 - **height:** [required] The new height of the image
 - **callback:** [optional] Closure callback defining constraints on the resize. It's possible to contraint the **aspect-ratio** and/or a unwanted **upsizing** of the image. 
+
+
+### Rotate
+
+Rotate the current image counter-clockwise by a given **angle**. Optionally define a **background color** for the uncovered zone after the rotation.
+
+
+#### Example
+
+``` php
+'rotate' => [
+	'angle' => -45,
+	'bgcolor' => '#000000',
+],
+```
+
+#### Parameters
+
+- **angle:** [required] The rotation angle in degrees to rotate the image counter-clockwise.
+- **bgcolor:** [required] A background color for the uncovered zone after the rotation. Default: `#000000`
+
 
 
