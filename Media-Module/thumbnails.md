@@ -205,3 +205,25 @@ Turns image into a greyscale version.
 #### Parameters
 
 None
+
+
+### Heightem
+
+Resizes the current image to new **height**, constraining aspect ratio. Pass an optional Closure **callback** as third parameter, to apply additional constraints like preventing possible upsizing.
+
+#### Example
+
+``` php
+'heighten' => [
+    'height' => '250'
+    'callback' => function($constraint) {
+    	$constraint->upsize();
+    }
+],
+```
+
+#### Parameters
+
+- **height:** [required] The new height of the image
+- **callback:** [optional] Closure callback defining constraint to prevent unwanted upsizing of the image.
+
