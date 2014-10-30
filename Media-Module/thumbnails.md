@@ -262,3 +262,22 @@ Method converts the existing colors of the current image into a color table with
 - **count:** [required] Maximum number of colors that should be retained in the color palette. Or `null` to convert to truecolor.
 - **matte:** [optional] A color to blend transparent pixels against. Default: no matte color
 
+
+### Opcaity
+
+Set the **opacity** in percent of the current image ranging from 100% for opaque and 0% for full transparency.
+
+**Note: Performance intensive on larger images. Use with care.**
+
+#### Example
+
+``` php
+'opacity' => [
+    'transparency' => '40'
+],
+```
+
+#### Parameters
+
+- **transparency:** [required] The new percent of transparency for the current image.
+
