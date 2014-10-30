@@ -29,7 +29,15 @@ return [
 
 The filters use the [Intervention/Image](http://image.intervention.io/) library, almost all the filters it has can be used.
 
+- [Crop](#Crop)
+- [Fit]($Fit)
+- [Blur](#Blur)
+- [Brightness](#Brightness)
+
+
 ### Crop
+
+#### Example
 
 ``` php
  'crop' => [
@@ -40,6 +48,8 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 ],
 ```
 
+#### Parameters
+
 - **Width: ** [required] Width of the rectangular cutout.
 - **Height: ** [required] Height of the rectangular cutout.
 - **x: ** [optional] X-Coordinate of the top-left corner if the rectangular cutout. By default the rectangular part will be centered on the current image.
@@ -47,7 +57,58 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 ### Fit
 
+#### Example
+
+``` php
+'fit' => [
+    'width' => '100',
+    'height' => '200',
+    'position' => 'top-left'
+],
+```
+
+#### Parameters
+
+- **Width: ** [required] The width the image will be resized to after cropping out the best fitting aspect ratio.
+- **Height: ** [optional] The height the image will be resized to after cropping out the best fitting aspect ratio. If no height is given, method will use same value as width.
+- **position: ** [optional] Set a position where cutout will be positioned. By default the best fitting aspect ration is centered.
+
+    The possible values are:
+    
+    - top-left
+	- top
+	- top-right
+	- left
+	- center (default)
+	- right
+	- bottom-left
+	- bottom
+	- bottom-right
+
 ### Blur
 
-### Brighten
+#### Example
 
+``` php
+'blur' => [
+    'amount' => '15'
+],
+```
+
+#### Parameters
+
+- **amount: ** [optional] The amount of the blur strength. Use values between 0 and 100. Default: 1
+
+### Brightness
+
+#### Example
+
+``` php
+'brightness' => [
+    'level' => '50'
+],
+```
+
+#### Parameters
+
+- **level: ** [required] Level of brightness change applied to the current image. Use values between -100 and +100.
