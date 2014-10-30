@@ -1,6 +1,6 @@
 # Media Module: Getting a thumbnail
 
-If you want to get a specific thumbnail of an image you can have 2 choices. Either you're in a view, then you'll use the Facade, if not use class/method injection.
+If you want to get a specific thumbnail of an image you can have 2 choices. Either you're in a view, then you'll use the helper function, if not use class/method injection.
 
 
 
@@ -25,10 +25,10 @@ public function index()
 ```
 
 
-### Facade
+### Helper function
 
 ``` html
-<img src="{{ Modules\Media\Image\Facade\Imagy::getThumbnail('/assets/media/original-image-name.png') }}" alt="" />
+<img src="{{ thumbnail('/assets/media/original-image-name.png') }}" alt="" />
 ```
 
 ***
