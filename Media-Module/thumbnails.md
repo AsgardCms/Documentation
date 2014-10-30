@@ -40,7 +40,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Greyscale](#greyscale)
 - [Heighten](#heighten)
 - [Invert](#invert)
-- [LimitColors](#limitColors)
+- [LimitColors](#limitcolors)
 
 ### Crop
 
