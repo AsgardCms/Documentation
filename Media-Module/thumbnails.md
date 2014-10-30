@@ -44,6 +44,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Opacity](#opacity)
 - [Orientate](#orientate)
 - [Pixelate](#pixelate)
+- [Resize](#resize)
 
 ### Crop
 
@@ -318,5 +319,27 @@ Applies a pixelation effect to the current image with a given **size** of pixels
 - **size:** [required] Size of the pixels.
 
 
+### Resize
+
+Resizes current image based on given **width** and/or **height**. To contraint the resize command, pass an optional Closure **callback** as third parameter.
+
+
+#### Example
+
+``` php
+'resize' => [
+	'width' => 100,
+	'height' => 100,
+	'callback' => function($constraint) {
+		$constraint->aspectRatio()
+	}
+],
+```
+
+#### Parameters
+
+- **width:** [required] The new width of the image
+- **height:** [required] The new height of the image
+- **callback:** [optional] Closure callback defining constraints on the resize. It's possible to contraint the **aspect-ratio** and/or a unwanted **upsizing** of the image. 
 
 
