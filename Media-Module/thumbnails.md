@@ -38,6 +38,9 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Flip](#flip)
 - [Gamma](#gamma)
 - [Greyscale](#greyscale)
+- [Heighten](#heighten)
+- [Invert](#invert)
+- [LimitColors](#limitColors)
 
 ### Crop
 
@@ -207,7 +210,7 @@ Turns image into a greyscale version.
 None
 
 
-### Heightem
+### Heighten
 
 Resizes the current image to new **height**, constraining aspect ratio. Pass an optional Closure **callback** as third parameter, to apply additional constraints like preventing possible upsizing.
 
@@ -226,4 +229,36 @@ Resizes the current image to new **height**, constraining aspect ratio. Pass an 
 
 - **height:** [required] The new height of the image
 - **callback:** [optional] Closure callback defining constraint to prevent unwanted upsizing of the image.
+
+### Invert
+
+Reverses all colors of the current image.
+
+#### Example
+
+``` php
+'invert' => [],
+```
+
+#### Parameters
+
+None
+
+### LimitColors
+
+Method converts the existing colors of the current image into a color table with a given maximum **count** of colors. The function preserves as much alpha channel information as possible and blends transarent pixels against a optional **matte color**.
+
+#### Example
+
+``` php
+'limitColors' => [
+	'count' => 255,
+	'matte' => '#ff9900'
+],
+```
+
+#### Parameters
+
+- **count:** [required] Maximum number of colors that should be retained in the color palette. Or `null` to convert to truecolor.
+- **matte:** [optional] A color to blend transparent pixels against. Default: no matte color
 
