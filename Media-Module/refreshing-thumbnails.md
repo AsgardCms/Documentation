@@ -7,7 +7,7 @@ It is important you define your thumbnail with filters configuration before uplo
 The following command will refresh all thumbnails:
 
 ```
-php artisan media:thumb-refresh
+php artisan asgard:media:refresh
 ```
 
 ***
