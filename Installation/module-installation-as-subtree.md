@@ -52,6 +52,14 @@ git remote add setting git@github.com:nWidart-Modules/Setting.git
 git subtree add --prefix=Modules/Setting setting master
 ```
 
+### Menu module
+
+
+```
+git remote add menu git@github.com:AsgardCms/Menu.git
+git subtree add --prefix=Modules/Menu menu master
+```
+
 
 ## Pushing
 
@@ -111,6 +119,11 @@ git subtree pull --prefix=Modules/Workshop --squash workshop master
 
 ```
 git subtree pull --prefix=Modules/Setting --squash setting master
+```
+## Menu module
+
+```
+git subtree pull --prefix=Modules/Menu --squash menu master
 ```
 
 ## References
