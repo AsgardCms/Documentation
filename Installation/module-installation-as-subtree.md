@@ -60,6 +60,13 @@ git remote add menu git@github.com:AsgardCms/Menu.git
 git subtree add --prefix=Modules/Menu menu master
 ```
 
+### Media module
+
+
+```
+git remote add media git@github.com:AsgardCms/Media.git
+git subtree add --prefix=Modules/Media media master
+```
 
 ## Pushing
 
@@ -124,6 +131,12 @@ git subtree pull --prefix=Modules/Setting --squash setting master
 
 ```
 git subtree pull --prefix=Modules/Menu --squash menu master
+```
+
+## Media module
+
+```
+git subtree pull --prefix=Modules/Media --squash media master
 ```
 
 ## References
