@@ -24,6 +24,7 @@
 	5. [Thumbnails](/Media-Module/thumbnails.md)
 	5. [Getting thumbnail](/Media-Module/getting-a-thumbnail.md)
 	5. [Refreshing thumbnails](/Media-Module/refreshing-thumbnails.md)
+5. [Themes](/Themes/index.md)
 
 ***
 
