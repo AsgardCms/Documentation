@@ -29,3 +29,8 @@ To link to a theme asset you can use the following helpers:
 <script src="{{ theme_url() }}/js/main.min.js"></script>
 ```
 
+## Display a theme page
+
+To display a page from a theme, or using its layout, there is nothing new; use the `View::make` as normal.
+
+For instance if you have set the active theme to `Demo`, when you use `View::make('index')`, it'll check for the page inside your Demo theme folder `Themes/demo/index.blade.php`.
