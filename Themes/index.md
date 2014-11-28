@@ -29,6 +29,8 @@ To link to a theme asset you can use the following helpers:
 <script src="{{ theme_url() }}/js/main.min.js"></script>
 ```
 
+There is also a `theme_secure_url()` if you want to link using https.
+
 ## Display a theme page
 
 To display a page from a theme, or using its layout, there is nothing new; use the `View::make` as normal.
