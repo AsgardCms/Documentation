@@ -1,9 +1,10 @@
+title: Navigation
+-------
+
 - [Introduction](#introduction)
 - [Usage](#usage)
 - [Single Menu Item](#single-menu-item)
 - [Menu With Submenus](#menu-with-submenus)
-
-## Core module : Navigation
 
 ### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
 

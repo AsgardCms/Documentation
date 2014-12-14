@@ -1,7 +1,8 @@
+title: Adding settings
+-------
+
 - [Registering translatable settings](#registering-translatable-settings)
 - [Registering plain settings](#registering-plain-settings)
-
-## Setting module : Adding settings
 
 Adding settings for you module is very easy. All you need to do is add a `settings.php` configuration file in `YourModule/config/settings.php`, and return an array of settings you want.
 

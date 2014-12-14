@@ -1,9 +1,10 @@
+title: Reading settings
+-------
+
 - [Injecting the interface](#injecting-the-interface)
 - [Using the interface](#using-the-interface)
 - [Get setting in current locale](#get-setting-in-current-locale)
 - [Get a non translatable setting](get-a-non-translatable-setting)
-
-## Setting module : Reading settings
 
 ### <a name="injecting-the-interface" class="anchor" href="#injecting-the-interface"></a> Injecting the interface
 

@@ -1,6 +1,7 @@
-- [Available fields](#available-fields)
+title: Available fields
+-------
 
-## Setting module : Available fields
+- [Available fields](#available-fields)
 
 ### <a name="available-fields" class="anchor" href="#available-fields"></a> Available fields
 

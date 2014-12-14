@@ -1,8 +1,9 @@
+title: Permissions
+-------
+
 - [Introduction](#introduction)
 - [Usage](#usage)
 - [Authentication Contract](#authentication-contract)
-
-## Core module : Permissions
 
 ### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
 

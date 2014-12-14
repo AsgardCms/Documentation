@@ -1,8 +1,9 @@
+title: Installation
+-------
+
 - [While in beta](#while-in-beta)
 - [Minimum System Requirements](#minimum-system-requirements)
 - [Install AsgardCMS](#install-asgardcms)
-
-## Installation
 
 ### <a name="minimum-system-requirements" class="anchor" href="#minimum-system-requirements"></a> Minimum System Requirements
 

@@ -1,3 +1,6 @@
+title: Thumbnails
+-------
+
 - [Basic Usage](#basic-usage)
 - [Filters](#filters)
 

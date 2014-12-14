@@ -1,3 +1,6 @@
+title: Getting thumbnails
+-------
+
 - [Injection](#injection)
 - [Facade](#facade)
 

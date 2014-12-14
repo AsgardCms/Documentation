@@ -1,3 +1,6 @@
+title: Custom fields
+-------
+
 - [Custom Fields](#custom-fields)
 
 ## <a name="custom-fields" class="anchor" href="#custom-fields"></a> Setting module : Custom fields

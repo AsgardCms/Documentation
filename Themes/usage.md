@@ -1,9 +1,10 @@
+title: Themes
+-------
+
 - [Folder structure](#folder-structure)
 - [Commands](#commands)
 - [Linking to theme assets](#linking-to-theme-assets)
 - [Display a theme page](#display-a-theme-page)
-
-## Themes
 
 In this section we will go over on how to create and manage themes.
 
