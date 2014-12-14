@@ -1,12 +1,13 @@
-# Media Module: Getting a thumbnail
+- [Injection](#injection)
+- [Facade](#facade)
+
+## Media Module: Getting a thumbnail
 
 If you want to get a specific thumbnail of an image you can have 2 choices. Either you're in a view, then you'll use the Facade, if not use class/method injection.
 
+### <a name="injection" class="anchor" href="#injection"></a> Injection
 
-
-## Injection
-
-``` php
+``` .language-php
 /**
  * @var Imagy
  */
@@ -19,31 +20,16 @@ public function __construct(Imagy $imagy)
 
 public function index()
 {
-	$this->imagy->getThumbnail('/assets/media/original-image-name.png', 'smallThumb')
+	$thumbnail = $this->imagy->getThumbnail('/assets/media/original-image-name.png', 'smallThumb');
 }
-
 ```
 
 
-### Facade
+### <a name="facade" class="anchor" href="#facade"></a> Facade
 
-``` html
-<img src="{{ Modules\Media\Image\Facade\Imagy::getThumbnail('/assets/media/original-image-name.png', 'smallThumb') }}" alt="" />
-```
+In views, you can use the facade for ease of use. Simply send as first argument which image you want and which thumbnail:
 
-If you don't want to use the fully qualified name, set the Imagy facade in your aliases key that can be found in `config/app.php`.
-
-``` php
-'Imagy' => 'Modules\Media\Image\Facade\Imagy'
-```
-
-Then afterwards you'll be able to use the following:
-
-``` html
+``` .language-markup
 <img src="{{ Imagy::getThumbnail('/assets/media/original-image-name.png', 'smallThumb') }}" alt="" />
 ```
 
-
-***
-
-[Back to ToC](../readme.md)

@@ -1,26 +1,34 @@
-# Setting module : Available fields
+- [Available fields](#available-fields)
 
+## Setting module : Available fields
 
-## Available fields
-
+### <a name="available-fields" class="anchor" href="#available-fields"></a> Available fields
 
 The setting module has the basic input fields available for you. These fields are available both for translatable fields as plain fields.
 
 - input type text
 
-  `text`
+    ``` .language-markup
+    text
+    ```
 - input checkbox
 
-  `checkbox`
+  ``` .language-markup
+  checkbox
+  ```
 - textarea
 
-  `textarea`
+  ``` .language-markup
+  textarea
+  ```
 - input radio
 
-  `radio`
+  ``` .language-markup
+  radio
+  ```
   The Radio field needs an additionel `options` key with the wanted options. For instance:
   
-  ``` php
+  ``` .language-php
   'this-is-a-radio' => [
        'description' => 'This is a radio',
        'options' => [
@@ -33,9 +41,7 @@ The setting module has the basic input fields available for you. These fields ar
    ```
 - input number
 
-  `number`
+  ``` .language-markup
+  number
+  ```
   
-    
-***
-
-[Back to ToC](../readme.md)

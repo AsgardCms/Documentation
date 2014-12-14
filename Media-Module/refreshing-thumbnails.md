@@ -1,15 +1,13 @@
-# Media Module: Refreshing thumbnails
+- [Refresh thumbnail command](#refresh-thumbnail-command)
+
+## Media Module: Refreshing thumbnails
 
 It is important you define your thumbnail with filters configuration before uploading any pictures. If you added new thumbnails or changed some thumbnail filters, after some media has already been uploaded you can run a refresh command to regenerate all thumbnails.
 
-## Refresh thumbnail command
+### <a name="refresh-thumbnail-command" class="anchor" href="#refresh-thumbnail-command"></a> Refresh thumbnail command
 
 The following command will refresh all thumbnails:
 
-```
+``` .language-bash
 php artisan asgard:media:refresh
 ```
-
-***
-
-[Back to ToC](../readme.md)

@@ -1,17 +1,20 @@
-# Core module : Permissions
+- [Introduction](#introduction)
+- [Usage](#usage)
+- [Authentication Contract](#authentication-contract)
 
+## Core module : Permissions
 
-## Introduction
+### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
 
 In the same way the core listens for navigation items, it also listens for permissions. Your module can push the permissions it needs.
 
-## Usage
+### <a class="anchor" name="usage" href="#usage"></a> Usage
 
 All you have to do is have a `permissions.php` file in the modules Config file. This file will contain the permissions for your module.
 
 Each module can define its permissions per *category*. Take for instance the blog module:
 
-```php
+``` .language-php
 <?php
 
 return [
@@ -45,13 +48,13 @@ return [
 
 That is all, the Core Module will loop over every configuration file and load them.
 
-## Authentication contract
+### <a class="anchor" name="authentication-contract" href="#authentication-contract"></a> Authentication contract
 
 Once you've setup the appropriate roles with their permissions, you can start checking for them in controllers, views etc.
 
 Do perform this action you can inject the [authentication contract](https://github.com/nWidart-Modules/Core/blob/master/Contracts/Authentication.php) which has a `hasAccess()` method. It has the following signature:
 
-``` php
+``` .language-php
 /**
  * Determines if the current user has access to given permission
  * @param $permission
@@ -62,12 +65,8 @@ public function hasAccess($permission);
 
 An example, to check if a user has access to the users index page in the administration:
 
-``` php
+``` .language-php
 $this->auth->hasAccess('users.index');
 ```
 
 Which will return a boolean.
-
-***
-
-[Back to ToC](../readme.md)
