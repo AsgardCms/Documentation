@@ -20,7 +20,7 @@ To be able to run AsgardCMS you have to meet the following requirements:
 
 While AsgardCMS is in its beta period the below installation won't be available.
 
-You have to clone this repository manually, run `composer install` and lastly `php artisan asgard:install` to start the installation process.
+You have to clone the [AsgardCMS repository](https://github.com/AsgardCms/Platform) manually, run `composer install` and lastly `php artisan asgard:install` to start the installation process.
 
 #### Feedback, ideas, etc.
 If you have **feedback** to give, **ideas** you would like implemented, by all means share them on the [dedicated uservoice page](http://asgardcms.uservoice.com/). Do not hesitate to share! If you feel like talking, you can join the IRC channel at #asgardcms on freenode.
