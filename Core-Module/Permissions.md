@@ -1,4 +1,5 @@
 title: Permissions
+subtitle: Core Module
 -------
 
 - [Introduction](#introduction)

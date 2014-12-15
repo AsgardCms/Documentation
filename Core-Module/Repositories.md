@@ -1,4 +1,5 @@
 title: Repositories
+subtitle: Core Module
 -------
 
 The core module has a [base repository](https://github.com/nWidart-Modules/Core/blob/master/Repositories/BaseRepository.php) and an abstract [Eloquent implementation](https://github.com/nWidart-Modules/Core/blob/master/Repositories/Eloquent/EloquentBaseRepository.php).

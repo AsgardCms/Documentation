@@ -1,4 +1,5 @@
 title: Reading settings
+subtitle: Setting Module
 -------
 
 - [Injecting the interface](#injecting-the-interface)

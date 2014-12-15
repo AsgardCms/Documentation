@@ -1,4 +1,5 @@
 title: Navigation
+subtitle: Core Module
 -------
 
 - [Introduction](#introduction)

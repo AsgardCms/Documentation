@@ -1,4 +1,5 @@
 title: Themes
+subtitle: Themes
 -------
 
 - [Folder structure](#folder-structure)

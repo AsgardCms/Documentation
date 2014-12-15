@@ -1,4 +1,5 @@
 title: Getting thumbnails
+subtitle: Media Module
 -------
 
 - [Injection](#injection)

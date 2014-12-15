@@ -1,4 +1,5 @@
 title: Refreshing thumbnails
+subtitle: Media Module
 -------
 
 - [Refresh thumbnail command](#refresh-thumbnail-command)

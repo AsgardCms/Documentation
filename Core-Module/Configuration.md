@@ -1,4 +1,5 @@
 title: Configuration
+subtitle: Core Module
 -------
 
 This **Core Module** has one main configuration item, you'll find it at `Modules/Core/Config/core.php`.

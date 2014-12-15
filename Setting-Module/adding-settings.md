@@ -1,4 +1,5 @@
 title: Adding settings
+subtitle: Setting Module
 -------
 
 - [Registering translatable settings](#registering-translatable-settings)

@@ -1,4 +1,5 @@
 title: Installation
+subtitle: Getting Started
 -------
 
 - [While in beta](#while-in-beta)

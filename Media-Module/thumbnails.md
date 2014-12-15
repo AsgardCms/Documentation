@@ -1,4 +1,5 @@
 title: Thumbnails
+subtitle: Media Module
 -------
 
 - [Basic Usage](#basic-usage)
