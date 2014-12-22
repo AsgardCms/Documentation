@@ -14,7 +14,7 @@ After creating menus, you can easily display them on your theme using the follow
 ``` .language-php
 {!! Menu::get('main') !!}
 ```
-
+`main` is the name you gave your menu in the administration panel.
 That's it. By default this will use boostrap's styling and structure
 
 
