@@ -15,6 +15,7 @@ To be able to run AsgardCMS you have to meet the following requirements:
 - cURL PHP Extension
 - MCrypt PHP Extension
 - GD PHP Library
+- One of the following cache drivers: memcached, redis, apc
 
 ### <a name="while-in-beta" class="anchor" href="#while-in-beta"></a> While in beta:
 
