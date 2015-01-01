@@ -8,7 +8,7 @@ subtitle: User Module
 
 To get the currently logged in user you can inject the [Authentication interface](https://github.com/AsgardCms/Core/blob/develop/Contracts/Authentication.php) and checking like so:
 
-``` php
+``` .language-php
 $user = $this-auth->check();
 ```
 
@@ -16,7 +16,7 @@ If `$user` is false, means the current user isn't logged in. Otherwise you'll ge
 
 Check the method signature:
 
-``` php
+``` .language-php
  /**
 * Check if the user is logged in, if so return the current user
 * @return bool|object
