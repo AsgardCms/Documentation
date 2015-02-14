@@ -18,7 +18,8 @@ You can create a theme by creating a folder inside the `Themes` folder.
 
 This would be a typical type structure:
 
-```
+``` .language-markup
+.
 Themes/
 ├── Demo
 │   ├── assets
@@ -39,7 +40,7 @@ Themes/
 
 A `theme.json` file looks like this: 
 
-``` json
+``` .language-javascript
 {
   "name": "AdminLTE",
   "description": "This is an administration theme",
@@ -81,7 +82,7 @@ To display a page from a theme, or using its layout, there is nothing new; use t
 For instance if you have set the active theme to `Demo`, when you use `View::make('index')`, it'll check for the page inside your Demo theme folder `Themes/demo/index.blade.php`.
 
 
-### <a name="display-a-theme-page" class="anchor" href="#elixir"></a> Elixer publish helper
+### <a name="elixir" class="anchor" href="#elixir"></a> Elixir publish helper
 
 Since all assets need to be published to the `public/` folder you can use the following custom **mix** for [Laravel Elixir](http://laravel.com/docs/5.0/elixir).
 
