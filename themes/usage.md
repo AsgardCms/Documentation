@@ -6,14 +6,47 @@ subtitle: Themes
 - [Commands](#commands)
 - [Linking to theme assets](#linking-to-theme-assets)
 - [Display a theme page](#display-a-theme-page)
+- [Elixer publish helper](#elixir)
 
 In this section we will go over on how to create and manage themes.
 
 ### <a name="folder-structure" class="anchor" href="#folder-structure"></a> Folder structure
 
-The structure for a theme is completely up to you. Only requirement is to have an `assets` folder containing you assets (css, js, sass, less, etc.).
+A theme has to have a `theme.json` file which will contain the theme name, its description and type (frontend | backend). All your views will be located in the `views` directory. Those views will use assets that are located in the `assets` folder. This asset folder will be publised in the public directory. I'd recommend placing your `less`, `sass`, `coffeescript` files inside a `resources` folder which thanks to gulp will be published to the `assets` folder. 
 
-You can create a theme by creating a folder inside the `Themes` folder. The name of the folder has to be **all lowercase**.
+You can create a theme by creating a folder inside the `Themes` folder.
+
+This would be a typical type structure:
+
+```
+Themes/
+├── Demo
+│   ├── assets
+│   |	└── js
+│   |	├── css
+│   |	├── fonts
+│   |	├── img
+│   ├── resources
+│   |	└── less
+│   |	├── coffee
+│   ├── views
+│   ├── bower.json
+│   ├── composer.json
+│   ├── gulpfile
+│   ├── theme.json
+│   ├── package.json
+```
+
+A `theme.json` file looks like this: 
+
+``` json
+{
+  "name": "AdminLTE",
+  "description": "This is an administration theme",
+  "type": "backend"
+}
+```
+
 
 ### <a name="commands" class="anchor" href="#commands"></a> Commands
 
@@ -29,14 +62,56 @@ php artisan asgard:publish:theme
 To link to a theme asset you can use the following helpers:
 
 ``` .language-markup
-<link rel="stylesheet" type="text/css" href="{{ theme_url() }}/css/styles.css">
-<script src="{{ theme_url() }}/js/main.min.js"></script>
-```
+{!! Theme::style('css/vendor/bootstrap.min.css') !!}
 
-There is also a `theme_secure_url()` if you want to link using https.
+{!! Theme::script('js/vendor/jquery.min.js') !!}
+```
+These will directly output the `<style>` and `<script>` tags.
+
+If you want to directly get a URL of a resource you can use the following helper:
+
+``` .language-markup
+<link rel="shortcut icon" href="{{ Theme::url('favicon.ico') }}">
+```
 
 ### <a name="display-a-theme-page" class="anchor" href="#display-a-theme-page"></a> Display a theme page
 
 To display a page from a theme, or using its layout, there is nothing new; use the `View::make` as normal.
 
 For instance if you have set the active theme to `Demo`, when you use `View::make('index')`, it'll check for the page inside your Demo theme folder `Themes/demo/index.blade.php`.
+
+
+### <a name="display-a-theme-page" class="anchor" href="#elixir"></a> Elixer publish helper
+
+Since all assets need to be published to the `public/` folder you can use the following custom **mix** for [Laravel Elixir](http://laravel.com/docs/5.0/elixir).
+
+Place this at the top of your `Gulpfile`:
+
+
+``` .language-js
+var gulp = require("gulp");
+var shell = require('gulp-shell');
+var elixir = require('laravel-elixir');
+
+elixir.extend("stylistPublish", function() {
+    gulp.task("stylistPublish", function() {
+        gulp.src("").pipe(shell("php ../../artisan stylist:publish"));
+    });
+
+    this.registerWatcher("stylistPublish", "**/*.less");
+
+    return this.queueTask("stylistPublish");
+});
+```
+
+With this defined, in your `Gulpfile` you can now do the following:
+
+``` .language-js
+mix
+    .less([
+       "main.less"
+    ])
+   .stylistPublish();
+```
+
+Elixir will now compile `main.less`, and publish the compiled css to the `public/` folder.
