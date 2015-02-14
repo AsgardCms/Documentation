@@ -8,7 +8,7 @@ subtitle: Themes
 - [Display a theme page](#display-a-theme-page)
 - [Elixer publish helper](#elixir)
 
-In this section we will go over on how to create and manage themes.
+In this section we will go over on how to create and manage themes. You can view a [Demo frontend](https://github.com/nWidart/demo-theme) theme and [demo backend theme](https://github.com/AsgardCms/AdminLTE) for your inspiration.
 
 ### <a name="folder-structure" class="anchor" href="#folder-structure"></a> Folder structure
 
