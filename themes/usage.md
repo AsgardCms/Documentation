@@ -88,7 +88,7 @@ Since all assets need to be published to the `public/` folder you can use the fo
 Place this at the top of your `Gulpfile`:
 
 
-``` .language-js
+``` .language-javascript
 var gulp = require("gulp");
 var shell = require('gulp-shell');
 var elixir = require('laravel-elixir');
@@ -106,7 +106,7 @@ elixir.extend("stylistPublish", function() {
 
 With this defined, in your `Gulpfile` you can now do the following:
 
-``` .language-js
+``` .language-javascript
 mix
     .less([
        "main.less"
