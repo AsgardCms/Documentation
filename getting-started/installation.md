@@ -45,7 +45,7 @@ Thank you for your participation!
 #### Get AsgardCMS
 
 ``` .language-bash
-composer create-project asgardcms/platform your-project-name --prefer-dist --stability=dev
+composer create-project asgardcms/platform your-project-name
 ```
 
 #### Run composer install
