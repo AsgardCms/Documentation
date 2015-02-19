@@ -5,11 +5,11 @@ subtitle: Menu Module
 ## <a class="anchor" name="menus-explained" href="#menus-explained"></a> Menus explained
 
 Menus in AsgardCMS are used like in any other site, to have a series of links available somewhere on your fornt-end layout. You can have as menu menus as you want, a top-menu, a main menu, footer menu and so on. 
-
+I
 Each menu can have multiple **menuitems**. A menuitem can be linked to a page, a module or a completely external UR**L** (link to facebook/twitter/... for instance).
 
 
-One thing to note, is that you need to have one menu marked as **primary menu**. This primary menu will be used for you front-end routes.
+One thing to note, is that you need to have one menu marked as **primary menu**. This primary menu will be used for your front-end routes.
 
 Let say you have a primary menu called '*Main*', all the menu items inside it, will be accessible publically by the URI you add to it. 
 
