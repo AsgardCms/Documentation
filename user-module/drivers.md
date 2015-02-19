@@ -29,7 +29,7 @@ AsgardCMS comes **out of the box** with two User and Role providers:
 
 ## <a class="anchor" name="implementing-custom-providers" href="#implementing-custom-providers"></a> Implementing custom providers
 
-You are absolutely free to implement other user/role/authentication providers. You could for instance make an implementation for the popular packages Confide and Entrust, or mayble you're satisfied with the basic laravel implementation. 
+You are absolutely free to implement other user/role/authentication providers. You could for instance make an implementation for the popular packages Confide and Entrust, or maybe you're satisfied with the basic laravel implementation. 
 
 To make a new implementation its very easy, you simply need to implement the said interfaces and place the implementation in the `Repositories/` folder.
 
