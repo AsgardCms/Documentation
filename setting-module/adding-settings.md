@@ -22,12 +22,12 @@ return [
     ],
     'this-is-a-checkbox' => [
         'description' => 'This is a checkbox',
-        'view' => 'checkbox,
+        'view' => 'checkbox',
         'translatable' => true
     ],
     'this-is-a-textarea' => [
         'description' => 'This is a textarea',
-        'view' => 'stextarea',
+        'view' => 'textarea',
         'translatable' => true
     ],
 ];
