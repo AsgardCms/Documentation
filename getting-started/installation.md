@@ -48,10 +48,6 @@ Thank you for your participation!
 composer create-project asgardcms/platform your-project-name
 ```
 
-#### Run composer install
-
-Run the usual `composer install` to get the dependencies.
-
 #### Intall your prefered user system
 
 - Sentinel
@@ -61,6 +57,9 @@ Run the usual `composer install` to get the dependencies.
 	- add `"cartalyst/sentry": "dev-feature/laravel-5",`
 	- Add the Service Provider and aliases
 
+#### Run composer install
+
+Run the usual `composer install` to get the dependencies.
 
 
 #### Run the install command
