@@ -19,14 +19,14 @@ To be able to run AsgardCMS you have to meet the following requirements:
 
 ### <a name="while-in-beta" class="anchor" href="#while-in-beta"></a> While in beta:
 
-While AsgardCMS is in its beta period the below installation won't be available.
+**While AsgardCMS is in its beta period the below installation won't be available.**
 
 - Clone the [AsgardCMS repository](https://github.com/AsgardCms/Platform) manually
 - Install your prefered user package, either Sentinel ou Sentry,
-	- Sentinel
+	- Sentinel :
 		- add `"cartalyst/sentinel": "dev-feature/laravel-5"`
 		- Add the Service Provider and aliases
-	- Sentry : 
+	- Sentry (default already installed): 
 		- add `"cartalyst/sentry": "dev-feature/laravel-5",`
 		- Add the Service Provider and aliases
 - Run `composer install`,
