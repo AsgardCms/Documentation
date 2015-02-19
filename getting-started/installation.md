@@ -52,13 +52,16 @@ composer create-project asgardcms/platform your-project-name --prefer-dist --sta
 
 Run the usual `composer install` to get the dependencies.
 
-####  Run npm install
+#### Intall your prefered user system
 
-Get the front end dependencies ([laravel/elixir](https://github.com/laravel/elixir)) by running: 
-``` .language-bash
-npm install --global gulp
-npm install
-```
+- Sentinel
+	- add `"cartalyst/sentinel": "dev-feature/laravel-5"`
+	- Add the Service Provider and aliases
+- Sentry (installed by default): 
+	- add `"cartalyst/sentry": "dev-feature/laravel-5",`
+	- Add the Service Provider and aliases
+
+
 
 #### Run the install command
 
