@@ -14,7 +14,7 @@ In the same way the core listens for navigation items, it also listens for permi
 
 All you have to do is have a `permissions.php` file in the modules Config file. This file will contain the permissions for your module.
 
-Each module can define its permissions per *category*, prefixed by the module name. Take for instance the blog module:
+Each module can define its permissions per *category*, prefixed by the singular module name. Take for instance the blog module:
 
 ``` .language-php
 <?php
