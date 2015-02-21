@@ -19,8 +19,6 @@ To be able to run AsgardCMS you have to meet the following requirements:
 
 ### <a name="while-in-beta" class="anchor" href="#while-in-beta"></a> While in beta:
 
-**While AsgardCMS is in its beta period the below installation won't be available.**
-
 - Clone the [AsgardCMS repository](https://github.com/AsgardCms/Platform) manually
 - Install your prefered user package, either Sentinel or Sentry,
 	- Sentinel :
@@ -41,6 +39,8 @@ For **issues/bugs** your having, you can use the Github Issues to post those. Ea
 Thank you for your participation!
 
 ### <a name="install-asgardcms" class="anchor" href="#install-asgardcms"></a> Install AsgardCMS
+
+**While AsgardCMS is in its beta period the below installation won't be available.**
 
 #### Get AsgardCMS
 
