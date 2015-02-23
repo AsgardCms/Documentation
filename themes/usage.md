@@ -8,7 +8,7 @@ subtitle: Themes
 - [Display a theme page](#display-a-theme-page)
 - [Elixer publish helper](#elixir)
 
-In this section we will go over on how to create and manage themes. You can view a [Demo frontend](https://github.com/nWidart/demo-theme) theme and [demo backend theme](https://github.com/AsgardCms/AdminLTE) for your inspiration.
+In this section we will go over on how to create and manage themes. You can view a demo frontend, [Flatly](https://github.com/AsgardCms/Flatly-theme) theme and [demo backend theme](https://github.com/AsgardCms/AdminLTE) for your inspiration.
 
 ### <a name="folder-structure" class="anchor" href="#folder-structure"></a> Folder structure
 
@@ -47,6 +47,11 @@ A `theme.json` file looks like this:
   "type": "backend"
 }
 ```
+The `theme.json` file has to have a `type` key. This has to be either **backend** or **frontend**. 
+
+The primary difference between both, beyong the obvious reason, is that the **backend** theme *won't* show up in the settings module in the theme dropdown.
+
+To set a backend theme, you need to edit the `config/asgard.core.core.php` config file and set the `admin-theme` option. The has to correspond with the `name` key in `module.json`.
 
 
 ### <a name="commands" class="anchor" href="#commands"></a> Commands
