@@ -10,7 +10,7 @@ subtitle: Workshop Module
 
 The module scaffolder is a command line tool that will give you the ability to generate modules in a matter of seconds.
 
-To have a quick idea on what it doesn you can check ou [this quickcast](http://quick.as/loki7l0).
+To have a quick idea on what it does you can check out [this quickcast](http://quick.as/loki7l0).
 
 ### <a class="anchor" name="usage" href="#usage"></a> Usage
 
