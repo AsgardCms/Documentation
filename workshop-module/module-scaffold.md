@@ -1,5 +1,5 @@
 title: Module Scaffold
-subtitle: Workshop
+subtitle: Workshop Module
 -------
 
 - [Introduction](#introduction)

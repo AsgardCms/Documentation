@@ -1,5 +1,5 @@
 title: Asset Manager
-subtitle: Core
+subtitle: Core Module
 -------
 
 - [Introduction](#introduction)
