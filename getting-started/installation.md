@@ -19,7 +19,7 @@ To be able to run AsgardCMS you have to meet the following requirements:
 
 ### <a name="while-in-beta" class="anchor" href="#while-in-beta"></a> While in beta:
 
-- Clone the [AsgardCMS repository](https://github.com/AsgardCms/Platform) manually
+- Clone the [AsgardCMS repository](https://github.com/AsgardCms/Platform) manually *(That link will give you a 404 if you don't have access to the beta.)*
 - Install your prefered user package, either Sentinel or Sentry,
 	- Sentinel :
 		- add `"cartalyst/sentinel": "dev-feature/laravel-5"`
