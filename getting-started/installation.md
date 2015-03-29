@@ -15,20 +15,22 @@ To be able to run AsgardCMS you have to meet the following requirements:
 - cURL PHP Extension
 - MCrypt PHP Extension
 - GD PHP Library
-- One of the following cache drivers: memcached, redis, apc
+- One of the following cache drivers: `memcached`, `redis`, `apc`. (defaults to `array`)
 
 ### <a name="while-in-beta" class="anchor" href="#while-in-beta"></a> While in beta:
 
 - Clone the [AsgardCMS repository](https://github.com/AsgardCms/Platform) manually *(That link will give you a 404 if you don't have access to the beta.)*
 - Install your prefered user package, either Sentinel or Sentry,
-	- Sentinel :
-		- add `"cartalyst/sentinel": "dev-feature/laravel-5"`
-		- Add the Service Provider and aliases
 	- Sentry (default already installed): 
 		- add `"cartalyst/sentry": "dev-feature/laravel-5",`
 		- Add the Service Provider and aliases
+	- Sentinel :
+		- add `"cartalyst/sentinel": "dev-feature/laravel-5"`
+		- Add the Service Provider and aliases
 - Run `composer install`,
-- Run `php artisan asgard:install` to start the installation process.
+- Meanwhile, create a database,
+- And add a VirtualHost pointing to the `public` folder,
+- Finally `php artisan asgard:install` to start the installation process.
 
 
 #### Feedback, ideas, etc.
