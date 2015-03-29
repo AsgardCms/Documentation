@@ -36,7 +36,9 @@ To be able to run AsgardCMS you have to meet the following requirements:
 #### Feedback, ideas, etc.
 If you have **feedback** to give, **ideas** you would like implemented, by all means share them on the [dedicated uservoice page](http://asgardcms.uservoice.com/). Do not hesitate to share! If you feel like talking, you can join the IRC channel at #asgardcms on freenode.
 
-For **issues/bugs** your having, you can use the Github Issues to post those. Each module has its own repository on the [AsgardCMS](https://github.com/AsgardCms) organisation, find the one that gives you problems, and sumbit an issue.
+For **issues/bugs** your having, you can use the Github Issues to post those. All issues are grouped on the [AsgardCms/Platform](https://github.com/AsgardCms/Platform/issues) repository.
+
+If you just want to **talk**, join our IRC channel `#asgardcms` on **Freenode**.
 
 Thank you for your participation!
 
