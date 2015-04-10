@@ -30,7 +30,7 @@ public function __construct(Setting $setting)
 ### <a name="using-the-interface" class="anchor" href="#using-the-interface"></a> Using the interface
 
 Once this is done you can use the interface to get a setting, in a given locale.
-Since settings can be translatable or not, you can optionnaly specify the language.
+Since settings can be translatable or not, you can optionally specify the language.
 
 #### <a name="get-setting-in-current-locale" class="anchor" href="#get-setting-in-current-locale"></a> Get setting in current locale
 
