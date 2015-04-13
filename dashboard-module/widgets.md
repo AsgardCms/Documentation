@@ -23,10 +23,11 @@ First you'll have to create a widget class that extends an abstract class: `Base
 - options (*array*): This is an array of options that your widget can have.
 
 	Possible options are:
-		- x
-		- y
-		- width
-		- height
+	
+	- x
+	- y
+	- width
+	- height
 	
 - view (*string*): Define which view needs to be used for you widget
 - data (*array*): Choose what data to send to your view. The array keys will be available in the view, just like a regular `view::make`.
