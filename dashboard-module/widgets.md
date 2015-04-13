@@ -32,6 +32,8 @@ First you'll have to create a widget class that extends an abstract class: `Base
 - view (*string*): Define which view needs to be used for you widget
 - data (*array*): Choose what data to send to your view. The array keys will be available in the view, just like a regular `view::make`.
 
+[View an example widgeet class.](https://github.com/AsgardCms/Blog/blob/develop/Widgets/PostsWidget.php)
+
 #### Widget view
 
 Now you can make your widget view. You can find some inspiration on the widgets page of the [Admin LTE theme](https://almsaeedstudio.com/themes/AdminLTE/pages/widgets.html).
