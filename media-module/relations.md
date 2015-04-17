@@ -63,3 +63,40 @@ One important note here is **the variable name has to be the same as the zone na
 
 
 ### <a name="one-to-many-relation" class="anchor" href="#one-to-many-relation"></a> One to many relation
+
+This ressembles very much the one-to-one relation, except the partial to include and the method to call to get all linked files.
+
+#### MediaRelation trait
+
+First thing you need is add the `Modules\Media\Support\Traits\MediaRelation` trait onto your desired *entity* (eg: an eloquent model).
+
+#### Include the partial
+
+Next you can include the `media::admin.fields.file-link-multiple` partial. This needs 3 variables:
+
+- **entityClass**: the class of the linked object. In our example of articles it would be the Articly entity.
+- **entityId**: the id of the linked object. In our example this would be the article id.
+- **zone**: the name of the zone the image. In our example this would be the coverimage.
+
+
+``` .language-markup
+
+@include('media::admin.fields.file-link-multiple', [
+    'entityClass' => 'Modules\\\\Product\\\\Domain\\\\Entities\\\\Product',
+    'entityId' => $product->id,
+    'zone' => 'gallery'
+])
+
+```
+
+This partial is mostly used to display and link images.
+
+#### Getting the thumbnails from controller
+
+Now you can use the helper method on the `FileRepository` to fetch all files for the given object:
+
+``` .language-php
+$galleryFiles = $this->file->findMultipleFilesByZoneForEntity('gallery', $product);
+```
+
+Again, it is important **the variable name is the same as the zone name**.
