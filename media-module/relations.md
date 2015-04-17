@@ -17,13 +17,13 @@ Also important, the partials pre-made for those 2 types, can only be used on the
 ### <a name="one-to-one-relation" class="anchor" href="#one-to-one-relation"></a> One to one relation
 
 
-Like the introduction said, this type of relation is for when you only need one file/image for a particular entity. In addition to this, the image can have a **zone** given. To stay consistant, using the Article module, example from the introduction, that cover image will have a zone of `cover-image`.
+Like the introduction said, this type of relation is for when you only need one file/image for a particular entity. In addition to this, the image can have a **zone** given. To stay consistant, using the Article module, example from the introduction, that cover image will have a zone of `coverimage`.
 
 That way we can easily get the cover image for a particular article.
 
 #### MediaRelation trait
 
-First thing you need is add the `Modules\Media\Support\Traits\MediaRelation` trait onto your desired *entity* (eg: an eloquent model).
+First thing you need is add the `Modules\Media\Support\Traits\MediaRelation` trait onto your desired *entity* (an eloquent model).
 
 This will add a `files` morphToMany relation onto your entity.
 
@@ -93,7 +93,7 @@ This partial is mostly used to display and link images.
 
 #### Getting the thumbnails from controller
 
-Now you can use the helper method on the `FileRepository` to fetch all files for the given object:
+Now you can use the helper method on the `FileRepository` to fetch all files for the given object. It has also 2 parameters, the zone (*string*) and the entity (*object*) it needs to search on.
 
 ``` .language-php
 $galleryFiles = $this->file->findMultipleFilesByZoneForEntity('gallery', $product);
