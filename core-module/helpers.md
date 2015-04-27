@@ -11,6 +11,8 @@ The `on_route()` helper function is pretty straightforward, it allows you to qui
 Example usage: 
 
 ``` .language-php
-<li class="{{ on_route('user.account') ? 'active' : '' }}"><a href="{{ route('user.account') }}">Account</a></li>
+<li class="{{ on_route('user.account') ? 'active' : '' }}">
+    <a href="{{ route('user.account') }}">Account</a>
+</li>
 ```
 
