@@ -25,6 +25,8 @@ $router->get('login', [
 
 The logged in middleware makes sure the current route can **only** be accessed by logged in users. This will redirect the user to the login page if it fails.
 
+Example usage: 
+
 ``` .language-php
 $router->group(['middleware' => 'logged.in'], function (Router $router) {
     $router->get('account', [
