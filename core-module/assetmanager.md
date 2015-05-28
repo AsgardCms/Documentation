@@ -98,7 +98,7 @@ $view->with('cssFiles', $this->assetPipeline->allCss());
 $view->with('jsFiles', $this->assetPipeline->allJs());
 ```
 
-Not in the master layout of the AdminLTE template you can simply loop over those assets:
+Now in the master layout of the AdminLTE template you can simply loop over those assets:
 
 ``` .language-php
 @foreach($cssFiles as $css)
