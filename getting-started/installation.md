@@ -21,9 +21,7 @@ To be able to run AsgardCMS you have to meet the following requirements:
 
 - Clone the [AsgardCMS repository](https://github.com/AsgardCms/Platform) manually *(That link will give you a 404 if you don't have access to the beta.)*
 - Install your prefered user package, either Sentinel or Sentry,
-	- Sentry (default already installed): 
-		- add `"cartalyst/sentry": "dev-feature/laravel-5",`
-		- Add the Service Provider and aliases
+	- Sentry (default already installed),
 	- Sentinel :
 		- add `"cartalyst/sentinel": "dev-feature/laravel-5"`
 		- Add the Service Provider and aliases
@@ -38,7 +36,7 @@ If you have **feedback** to give, **ideas** you would like implemented, by all m
 
 For **issues/bugs** your having, you can use the Github Issues to post those. All issues are grouped on the [AsgardCms/Platform](https://github.com/AsgardCms/Platform/issues) repository.
 
-If you just want to **talk**, join our IRC channel `#asgardcms` on **Freenode**.
+If you just want to **talk**, join [our Slack channel](http://slack.asgardcms.com/).
 
 Thank you for your participation!
 
@@ -54,11 +52,9 @@ composer create-project asgardcms/platform your-project-name
 
 #### Intall your prefered user system
 
+- Sentry (installed by default)
 - Sentinel
 	- add `"cartalyst/sentinel": "dev-feature/laravel-5"`
-	- Add the Service Provider and aliases
-- Sentry (installed by default): 
-	- add `"cartalyst/sentry": "dev-feature/laravel-5",`
 	- Add the Service Provider and aliases
 
 #### Run composer install
