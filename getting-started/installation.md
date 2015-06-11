@@ -32,7 +32,7 @@ composer create-project asgardcms/platform your-project-name
 
 - Sentry (installed by default)
 - Sentinel (run `composer update` if you choose Sentinel)
-	- add `"cartalyst/sentinel": "dev-feature/laravel-5"`
+	- add `"cartalyst/sentinel": "~2.0"`
 	- Add the Service Provider and aliases
 
 #### Run the install command
