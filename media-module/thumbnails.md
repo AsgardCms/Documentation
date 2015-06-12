@@ -345,7 +345,7 @@ Resizes current image based on given **width** and/or **height**. To contraint t
 	'width' => 100,
 	'height' => 100,
 	'callback' => function($constraint) {
-		$constraint->aspectRatio()
+		$constraint->aspectRatio();
 	}
 ],
 ```
