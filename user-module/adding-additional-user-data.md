@@ -123,7 +123,7 @@ The final thing we need to do is setting up the relation, both on the Profile en
 This one is easy, though we need to take into account AsgardCms can have multiple user drivers, so our `user()` method on the Profile will look like this:
 
 
-```
+``` .language-php
 public function user()
 {
     $driver = config('asgard.user.users.driver');
