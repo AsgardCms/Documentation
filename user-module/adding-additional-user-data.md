@@ -50,7 +50,7 @@ Now run the migrations using `php artisan module:migrate Profile`.
 
 Next, we're going to add those fields on on register page. Since the register views are in the User module, which we cannot edit (**consider any module not in the .gitignore as a package in the vendor folder**). To customize the login and register views we're going to publish those views using the following command:
 
-```
+``` .language-php
 php artisan vendor:publish --provider="Modules\User\Providers\UserServiceProvider"
 ```
 
