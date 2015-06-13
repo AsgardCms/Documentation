@@ -43,3 +43,11 @@ When these questions are answered your module will be generated. You will still 
 
 Before seeing the newly created module on the admin dashboard you will have to give you access to the new module. Go the the **User > Roles** view and edit the Admin role to give you permission to the new module.
 
+The last step required is to add you module in the `Modules/.gitignore` file as following:
+
+
+``` .language-php
+!YourModuleName
+```
+
+This will tell git to ignore everything in the Modules folder except for your modules.
