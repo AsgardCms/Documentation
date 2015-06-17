@@ -19,6 +19,8 @@ To be able to run AsgardCMS you have to meet the following requirements:
 
 ### <a name="install-asgardcms" class="anchor" href="#install-asgardcms"></a> Install AsgardCMS
 
+If you prefer a video to see how the installation process goes, [watch the install video](https://www.youtube.com/watch?v=MeX_D-aql6g).
+
 
 #### Get AsgardCMS
 
