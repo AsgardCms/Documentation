@@ -4,6 +4,7 @@ subtitle: Workshop Module
 
 - [Introduction](#introduction)
 - [Usage](#usage)
+- [Composer usage](#composer)
 
 
 ### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
@@ -64,3 +65,5 @@ In your Modules/YourSuperModule/composer.json add
        }
    ], 
 ```
+
+Note : this is temporary, but it's requried until this dependency have a new released.
