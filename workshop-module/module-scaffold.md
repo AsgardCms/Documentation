@@ -4,6 +4,7 @@ subtitle: Workshop Module
 
 - [Introduction](#introduction)
 - [Usage](#usage)
+- [Composer usage](#composer)
 
 
 ### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
@@ -51,3 +52,18 @@ The last step required is to add you module in the `Modules/.gitignore` file as 
 ```
 
 This will tell git to ignore everything in the Modules folder except for your modules.
+
+### <a class="anchor" name="composer" href="#composer"></a> Composer usage
+If you want to use composer on your new module, you will need to change one simple thing, adding a custome repository :
+
+In your Modules/YourSuperModule/composer.json add
+``` .language-json
+ "repositories": [
+       {
+           "type": "vcs",
+           "url": "https://github.com/nWidart/modules"
+       }
+   ], 
+```
+
+Note : this is temporary, but it's requried until this dependency have a new released.
