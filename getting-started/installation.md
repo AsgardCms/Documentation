@@ -74,7 +74,7 @@ It's important to know that a module and a theme, is just a simple composer pack
 
 This also means that modules fetched via composer, **cannot** be edited, those changes will get overwritten in the next `composer update`.
 
-**But how does AsgardCms knows to put the modules in the `Modules` folder and themes in the `Themes` folder ?**
+**But how does AsgardCms know to put the modules in the `Modules` folder and themes in the `Themes` folder ?**
 
 It's pretty easy actually, just check the `type` key in your composer.json file.
 
