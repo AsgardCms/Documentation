@@ -72,6 +72,8 @@ Thank you for your participation!
 
 It's important to know that a module and a theme, is just a simple composer package. Meaning that if your module has a dependency on another package or AsgardCms-module, you can add those in the `require` key of the `composer.json` file of your module.
 
+This also means that modules fetched via composer, **cannot** be edited, those changes will get overwritten in the next `composer update`.
+
 **But how does AsgardCms knows to put the modules in the `Modules` folder and themes in the `Themes` folder ?**
 
 It's pretty easy actually, just check the `type` key in your composer.json file.
