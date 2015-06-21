@@ -12,7 +12,7 @@ subtitle: Getting Started
 ### Modules 
 
 - Have an installation of [AsgardCMS/Platform](https://github.com/AsgardCms/Platform) 
-- Remove `.git/` directory
+- Remove the `.git/` directory
 - Remove all modules from `composer.json` file (or only the one you want to contribute to)
 - `cd` into the `Modules/` folder and clone each Module individually (or only the one you want to contribute to)
 - Install AsgardCMS as usual `php artisan asgard:install`
@@ -70,5 +70,5 @@ This means:
 
 * [General GitHub documentation](http://help.github.com/)
 * [GitHub pull request documentation](http://help.github.com/send-pull-requests/)
-* `#asgardcms`IRC channel on freenode.org
+* Join the [AsgardCms Slack](http://slack.asgardcms.com/) channel to chat
 
