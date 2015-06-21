@@ -9,10 +9,12 @@ subtitle: Getting Started
 
 To be able to run AsgardCMS you have to meet the following requirements:
 
-- PHP 5.5 or higher
+- PHP 5.5.9 or higher
 - PDO PHP Extension
 - cURL PHP Extension
-- MCrypt PHP Extension
+- OpenSSL PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
 - GD PHP Library
 - MySql 5.5
 - One of the following cache drivers: `memcached`, `redis`, `apc`. (defaults to `array`)
