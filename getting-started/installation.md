@@ -36,10 +36,10 @@ composer create-project asgardcms/platform your-project-name
 
 #### Intall your prefered user system
 
-- Sentry (installed by default)
-- Sentinel (run `composer update` if you choose Sentinel)
-	- add `"cartalyst/sentinel": "~2.0"`
-	- Add the Service Provider and aliases
+- Sentinel (installed by default) 
+
+More user implementations may be offered later on.
+
 
 #### Run the install command
 
