@@ -1,4 +1,4 @@
-Cool title: Events
+title: Events
 subtitle: User Module
 -------
 
