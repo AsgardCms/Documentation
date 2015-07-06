@@ -26,7 +26,7 @@ You will be asked the following questions:
 
 - What is the module name ?
 	
-	This is in the following format `vendor/name` all lowercase.
+	This is in the following format `vendor/name` all lowercase. *Do not use dashes in the module name*
 - Do you wish to use Doctrine or Eloquent ?
 
 	This is to know what kind of Entities to generate.
