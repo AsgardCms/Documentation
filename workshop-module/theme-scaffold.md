@@ -4,6 +4,7 @@ subtitle: Workshop Module
 
 - [Introduction](#introduction)
 - [Usage](#usage)
+- [Manual creation](#manual-creation)
 
 
 ### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
@@ -28,4 +29,10 @@ You will be asked the following questions:
 - Do you wish to make a backend or front end theme ?
 
 And that's it. You'll find you newly created theme under the `Themes/` directory.
-	 
+
+
+### <a class="anchor" name="manual-creation" href="#manual-creation"></a> Manual creation
+
+You can create themes manually as well, all a theme needs is the `theme.json` file to be registerable on the [Stylist package](https://github.com/floatingpointsoftware/stylist).
+
+After you created the `theme.json` file, run a `php artisan cache:clear`.
