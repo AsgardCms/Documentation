@@ -21,13 +21,7 @@ First thing you have to do is creating a sidebar extender. Under the `Sidebar` n
 
 ### <a class="anchor" name="single-menu-item" href="#single-menu-item"></a> Single menu item
 
-This is how the page module handles it:
-
-``` .language-php
-View::composer('partials.sidebar-nav', 'Modules\Page\Composers\SidebarViewComposer');
-```
-The corresponding `SidebarViewComposer` looks like this:
-
+This is how the page module handles it, in `Modules/Pages/Sidebar/SidebarExtender.php`:
 
 ``` .language-php
 <?php namespace Modules\Page\Sidebar;
@@ -174,5 +168,6 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
     }
 }
 ```
+You can find this class in `Modules/User/Sidebar/SidebarExtender.php`
 
 And that is all you have to do to add your menu item.
