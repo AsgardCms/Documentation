@@ -7,6 +7,7 @@ subtitle: User Module
 - [Publishing user views](#publishing-user-views)
 - [Adding custom fields on the register view](#adding-custom-fields-on-register-view)
 - [Setting up relations](#setting-up-relations)
+- [Adding data on the users table](#adding-data-on-users-table)
 
 
 The User module is nice for handling authentication and registration, but it is very likely that you are going to want to add more data to your user then the default first and last name. Here we're going to see how to add more data to our user.
@@ -158,3 +159,11 @@ return [
 ```
 
 We can now access the user profile information using `$user->profile->street`.
+
+## <a class="anchor" name="adding-data-on-users-table" href="#adding-data-on-users-table"></a> Adding data on the users table
+
+You can add additional columns on the users table if that's really needed. For instance if you want to have an username.
+
+In the users configuration file, located at `config/asgard.user.users.php`, there's a `fillable` key which contains an array of fillable fields for the user object.
+
+Add the fields you want in this array. 
