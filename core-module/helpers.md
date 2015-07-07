@@ -3,6 +3,7 @@ subtitle: Core Module
 -------
 
 - [on_route](#on_route)
+- [locale](#locale)
 
 ### <a class="anchor" name="on_route" href="#on_route"></a> On route
 
@@ -15,4 +16,11 @@ Example usage:
     <a href="{{ route('user.account') }}">Account</a>
 </li>
 ```
+
+
+### <a class="anchor" name="locale" href="#locale"></a> Locale
+
+The `locale()` helper function is used to **get the current active locale** on the application. 
+
+An optional argument can be given to **set the application locale**.
 
