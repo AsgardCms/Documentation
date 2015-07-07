@@ -16,16 +16,9 @@ Thanks to these interface, the user and role sytems can be completely decoupled 
 
 ## <a class="anchor" name="user-and-role-providers" href="#user-and-role-providers"></a> User and Role providers
 
-AsgardCMS comes **out of the box** with two User and Role providers:
-
-- [Cartalyst Sentry](https://cartalyst.com/manual/sentry/2.1?utm_source=asgard-cms&utm_medium=readme&utm_campaign=asgard-cms) (free)
+AsgardCMS comes **out of the box** with the following User and Role providers:
   
-  Free for opensource or commercial projects.
-- [Cartalyst Sentinel](https://cartalyst.com/manual/sentinel/1.0?utm_source=asgard-cms&utm_medium=readme&utm_campaign=asgard-cms) (paid)
-
-  If you chose to use Sentinel you need access to the cartalyst repositories. If you want to subscribe to Sentinel please check out their [Pricing plans](https://cartalyst.com/pricing?utm_source=asgard-cms&utm_medium=readme&utm_campaign=asgard-cms).
-  
-  Since Cartalyst Sentinel isn't free, you can't use it for all projects, check out their [license page](https://cartalyst.com/license?utm_source=asgard-cms&utm_medium=readme&utm_campaign=asgard-cms) to know exactly what's permitted.
+- [Cartalyst Sentinel](https://cartalyst.com/manual/sentinel/1.0?utm_source=asgard-cms&utm_medium=readme&utm_campaign=asgard-cms)
 
 ## <a class="anchor" name="implementing-custom-providers" href="#implementing-custom-providers"></a> Implementing custom providers
 
@@ -35,7 +28,6 @@ To make a new implementation its very easy, you simply need to implement the sai
 
 For your inspiration you can check how Sentry and Sentinel are implemented:
 
-- [Sentry](https://github.com/AsgardCms/User/tree/develop/Repositories/Sentry)
 - [Sentinel](https://github.com/AsgardCms/User/tree/develop/Repositories/Sentinel)
 
 Once implemented, don't forget to change the `UserServiceProvider` class to bind the interfaces to your implementation. You can do this in the [registerBindings()](https://github.com/AsgardCms/User/blob/develop/Providers/UserServiceProvider.php#L75) method.
