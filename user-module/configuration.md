@@ -7,7 +7,7 @@ subtitle: User Module
 - [Changing redirect route after login](#changing-redirect-route-after-login)
 - [User driver](#user-driver)
 
-The **Media module** configuraiton file can be found at `config/asgard.user.users.php`.
+The **User module** configuraiton file can be found at `config/asgard.user.users.php`.
 
 ## <a class="anchor" name="adding-data-on-users-table" href="#adding-data-on-users-table"></a> Adding data on the users table
 
@@ -56,5 +56,7 @@ It defaults to **Sentinel**.
 'driver' => 'Sentinel',
 ```
 
-Be sure to check out the [User Drivers](https://asgardcms.com/en/docs/user-module/drivers) documentation page for additional info on how to create new user & role drivers.
+Make sure to install the wanted driver on composer first.
+
+Also, be sure to check out the [User Drivers](https://asgardcms.com/en/docs/user-module/drivers) documentation page for additional info on how to create new user & role drivers.
 
