@@ -7,7 +7,7 @@ subtitle: User Module
 - [Changing redirect route after login](#changing-redirect-route-after-login)
 - [User driver](#user-driver)
 
-The **User module** configuraiton file can be found at `config/asgard.user.users.php`.
+The **User module** configuration file can be found at `config/asgard.user.users.php`.
 
 ## <a class="anchor" name="adding-data-on-users-table" href="#adding-data-on-users-table"></a> Adding data on the users table
 
