@@ -31,7 +31,7 @@ From here you could already start implementing your own field to select a file f
 
 #### Include the partial
 
-Next you can include the `media::admin.fields.file-link` partial. This needs 3 variables:
+Next you can include the `media::admin.fields.file-link` partial, on the edit view only. This needs 3 variables:
 
 - **entityClass**: the class of the linked object. In our example of articles it would be the Articly entity.
 - **entityId**: the id of the linked object. In our example this would be the article id.
@@ -72,7 +72,7 @@ First thing you need is add the `Modules\Media\Support\Traits\MediaRelation` tra
 
 #### Include the partial
 
-Next you can include the `media::admin.fields.file-link-multiple` partial. This needs 3 variables:
+Next you can include the `media::admin.fields.file-link-multiple` partial, on the edit view only. This needs 3 variables:
 
 - **entityClass**: the class of the linked object. In our example of articles it would be the Articly entity.
 - **entityId**: the id of the linked object. In our example this would be the article id.
