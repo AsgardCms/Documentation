@@ -48,7 +48,7 @@ $postsPerPage = $this->setting->get('blog::posts-per-page');
 
 ## <a name="using-the-helper-function" class="anchor" href="#using-the-helper-function"></a> Using the helper function
 
-In your views you can directly use the `settings()` function.
+In your views you can directly use the `setting()` function.
 
 To get the site name setting in the core module:
 
