@@ -264,7 +264,7 @@ None
 
 #### <a name="limitcolors" class="anchor" href="#limitcolors"></a> LimitColors
 
-Method converts the existing colors of the current image into a color table with a given maximum **count** of colors. The function preserves as much alpha channel information as possible and blends transarent pixels against a optional **matte color**.
+Method converts the existing colors of the current image into a color table with a given maximum **count** of colors. The function preserves as much alpha channel information as possible and blends transparent pixels against a optional **matte color**.
 
 **Example**
 
@@ -277,7 +277,7 @@ Method converts the existing colors of the current image into a color table with
 
 **Parameters**
 
-- **count:** [required] Maximum number of colors that should be retained in the color palette. Or `null` to convert to truecolor.
+- **count:** [required] Maximum number of colors that should be retained in the color palette. Or `null` to convert to true color.
 - **matte:** [optional] A color to blend transparent pixels against. Default: no matte color
 
 
@@ -335,7 +335,7 @@ Applies a pixelation effect to the current image with a given **size** of pixels
 
 #### <a name="resize" class="anchor" href="#resize"></a> Resize
 
-Resizes current image based on given **width** and/or **height**. To contraint the resize command, pass an optional Closure **callback** as third parameter.
+Resizes current image based on given **width** and/or **height**. To constraint the resize command, pass an optional Closure **callback** as third parameter.
 
 
 **Example**
@@ -354,7 +354,7 @@ Resizes current image based on given **width** and/or **height**. To contraint t
 
 - **width:** [required] The new width of the image
 - **height:** [required] The new height of the image
-- **callback:** [optional] Closure callback defining constraints on the resize. It's possible to contraint the **aspect-ratio** and/or a unwanted **upsizing** of the image. 
+- **callback:** [optional] Closure callback defining constraints on the resize. It's possible to constraint the **aspect-ratio** and/or a unwanted **upsizing** of the image. 
 
 
 #### <a name="rotate" class="anchor" href="#rotate"></a> Rotate
@@ -397,7 +397,7 @@ Sharpen current image with an optional **amount**. Use values between `0` and `1
 
 #### <a name="trim" class="anchor" href="#trim"></a> Trim
 
-Trim away image space in given color. Define an optional **base** to pick a color at a certain position and borders that should be trimmed **away**. You can also set an optional **tolerance** level, to trim similar colors and add a **feathering** border around the trimed image.
+Trim away image space in given color. Define an optional **base** to pick a color at a certain position and borders that should be trimmed **away**. You can also set an optional **tolerance** level, to trim similar colors and add a **feathering** border around the trimmed image.
 
 **Note: Resource intensive with GD driver. Use with care.**
 
@@ -434,7 +434,7 @@ Trim away image space in given color. Define an optional **base** to pick a colo
    By default the trimming is performed on all borders.
 
 - **tolerance:** [optional] Define a percentaged tolerance level between `0` and `100` to trim away similar color values. Default: `0`
-- **feather:** [optional] Sometimes it may be useful to leave a untouched "border" around an object while trimming. Especially when trimming non-solid backgrounds you can expand (positive value) or contract (negative value) the space around the trimed object by a certain amount of pixels. Default: `0`
+- **feather:** [optional] Sometimes it may be useful to leave a untouched "border" around an object while trimming. Especially when trimming non-solid backgrounds you can expand (positive value) or contract (negative value) the space around the trimmed object by a certain amount of pixels. Default: `0`
 
 
 #### <a name="widen" class="anchor" href="#widen"></a> Widen

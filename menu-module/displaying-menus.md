@@ -22,7 +22,7 @@ That's it. By default this will use boostrap's styling and structure
 
 AsgardCMS leverages a lot of well tested community packages. Managing menus isn't the exception. We use [Pingpong-labs/Menus](https://github.com/pingpong-labs/menus) for handling the menus. You can check out its documentation to learn how to create custom presenters.
 
-The chance will be pretty big you won't be using bootstrap in your clients project. Pingpong-labs/Menus has made this verry easy to customise. By creating a custom presenter you can define the structure of your menu.
+The chance will be pretty big you won't be using bootstrap in your clients project. Pingpong-labs/Menus has made this very easy to customise. By creating a custom presenter you can define the structure of your menu.
 
 ## <a class="anchor" name="custom-presenter" href="#custom-presenter"></a>  Custom presenter
 

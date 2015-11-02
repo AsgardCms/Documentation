@@ -4,7 +4,7 @@ subtitle: Dashboard Module
 
 - [Defining widgets](#defining-widgets)
 
-The dashboard is a very important part of the back-end of the CMS. It's the first thing your client will see when he logs into the backend. In asgard, your modules can define a set of widgets that will be displayed on the dashboard. These widgets can be simple counts, tables, or pretty much wathever you want.
+The dashboard is a very important part of the back-end of the CMS. It's the first thing your client will see when he logs into the backend. In asgard, your modules can define a set of widgets that will be displayed on the dashboard. These widgets can be simple counts, tables, or pretty much whatever you want.
 
 Widgets location are saved on a per user basis. Each logged in user with the correct permissions can re-arrange the widgets however he or she prefers.
 

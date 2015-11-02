@@ -17,7 +17,7 @@ Also important, the partials pre-made for those 2 types, can only be used on the
 ### <a name="one-to-one-relation" class="anchor" href="#one-to-one-relation"></a> One to one relation
 
 
-Like the introduction said, this type of relation is for when you only need one file/image for a particular entity. In addition to this, the image can have a **zone** given. To stay consistant, using the Article module, example from the introduction, that cover image will have a zone of `coverimage`.
+Like the introduction said, this type of relation is for when you only need one file/image for a particular entity. In addition to this, the image can have a **zone** given. To stay consistent, using the Article module, example from the introduction, that cover image will have a zone of `coverimage`.
 
 That way we can easily get the cover image for a particular article.
 
@@ -51,7 +51,7 @@ This partial is mostly used to display and link images.
 
 #### Getting the thumbnail from controller
 
-The final step is to get the thumbail from the controller so it can be displayed on the object if there is already a file linked to that object. If you're using the partial from the second step, this would be to display the linked image.
+The final step is to get the thumbnail from the controller so it can be displayed on the object if there is already a file linked to that object. If you're using the partial from the second step, this would be to display the linked image.
 
 You can inject the `FileRepository` into your constructor or method and use the `findFileByZoneForEntity` method to get your image. This methods has two parameters, the zone name (*string*) and the entity (*object*) it needs to search on.
 
@@ -64,7 +64,7 @@ One important note here is **the variable name has to be the same as the zone na
 
 ### <a name="one-to-many-relation" class="anchor" href="#one-to-many-relation"></a> One to many relation
 
-This ressembles very much the one-to-one relation, except the partial to include and the method to call to get all linked files.
+This resembles very much the one-to-one relation, except the partial to include and the method to call to get all linked files.
 
 #### MediaRelation trait
 

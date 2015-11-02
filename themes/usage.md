@@ -12,7 +12,7 @@ In this section we will go over on how to create and manage themes. You can view
 
 ### <a name="folder-structure" class="anchor" href="#folder-structure"></a> Folder structure
 
-A theme has to have a `theme.json` file which will contain the theme name, its description and type (frontend | backend). All your views will be located in the `views` directory. Those views will use assets that are located in the `assets` folder. This asset folder will be publised in the public directory. I'd recommend placing your `less`, `sass`, `coffeescript` files inside a `resources` folder which thanks to gulp will be published to the `assets` folder. 
+A theme has to have a `theme.json` file which will contain the theme name, its description and type (frontend | backend). All your views will be located in the `views` directory. Those views will use assets that are located in the `assets` folder. This asset folder will be published in the public directory. I'd recommend placing your `less`, `sass`, `coffeescript` files inside a `resources` folder which thanks to gulp will be published to the `assets` folder. 
 
 You can create a theme by creating a folder inside the `Themes` folder.
 

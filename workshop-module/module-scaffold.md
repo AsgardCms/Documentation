@@ -31,7 +31,7 @@ You will be asked the following questions:
 
 	This is to know what kind of Entities to generate.
 
-- Enter your desired entites
+- Enter your desired entities
 
 	You can enter as many as you like, when you're done leave empty and the next question will come up.
 	
@@ -54,7 +54,7 @@ The last step required is to add you module in the `Modules/.gitignore` file as 
 This will tell git to ignore everything in the Modules folder except for your modules.
 
 ### <a class="anchor" name="composer" href="#composer"></a> Composer usage
-If you want to use composer on your new module, you will need to change one simple thing, adding a custome repository :
+If you want to use composer on your new module, you will need to change one simple thing, adding a custom repository :
 
 In your Modules/YourSuperModule/composer.json add
 ``` .language-json
@@ -66,4 +66,4 @@ In your Modules/YourSuperModule/composer.json add
    ], 
 ```
 
-Note : this is temporary, but it's requried until this dependency have a new released.
+Note : this is temporary, but it's required until this dependency have a new released.

@@ -79,7 +79,7 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
 ```
 
 
-The `apend()` method enables us to append a 'plus' sign right of the menu item which is a link to the given route.
+The `append()` method enables us to append a 'plus' sign right of the menu item which is a link to the given route.
 
 The `badge()` method gives us the option to append a badge, like the example here the closure can be used to inject a class.
 
@@ -91,12 +91,12 @@ The `name()` method sets the display text.
 
 A `weight()` method can optionally be used to set the position of the item. The higher the weight, the lower the item will be in the sidebar.
 
-And finally `authorize()` recieves a boolean and determines wether or not to display the item.
+And finally `authorize()` receives a boolean and determines whether or not to display the item.
 
 
 ### <a class="anchor" name="menu-with-submenus" href="#menu-with-submenus"></a> Menu with submenus
 
-If you wamt a submenu, we basically just add a items to the items collection.
+If you want a submenu, we basically just add a items to the items collection.
 
 You'll recognise the same methods as mentioned on the single item.
 
