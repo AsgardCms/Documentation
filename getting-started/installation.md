@@ -34,7 +34,7 @@ composer create-project asgardcms/platform your-project-name
 
 #### Create a database
 
-#### Intall your prefered user system
+#### Install your preferred user system
 
 - Sentinel (installed by default) 
 

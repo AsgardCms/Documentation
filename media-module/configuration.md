@@ -7,7 +7,7 @@ subtitle: Media Module
 - [Max file size](#max-file-size)
 - [Max total size](#max-total-size)
 
-The **Media module** configuraiton file can be found at `config/asgard.media.config.php`.
+The **Media module** configuration file can be found at `config/asgard.media.config.php`.
 
 ## <a class="anchor" name="media-assets-path" href="#media-assets-path"></a> Media assets path
 

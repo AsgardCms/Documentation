@@ -28,7 +28,7 @@ The setting module has the basic input fields available for you. These fields ar
   ``` .language-markup
   radio
   ```
-  The Radio field needs an additionel `options` key with the wanted options. For instance:
+  The Radio field needs an additional `options` key with the wanted options. For instance:
   
   ``` .language-php
   'this-is-a-radio' => [

@@ -12,7 +12,7 @@ The user module brings three important interfaces:
 - `UserRepository` ([view interface](https://github.com/AsgardCms/User/blob/develop/Repositories/UserRepository.php))
 - `RoleRepository` ([view interface](https://github.com/AsgardCms/User/blob/develop/Repositories/RoleRepository.php))
 
-Thanks to these interface, the user and role sytems can be completely decoupled from the implementation. This is what enables AsgardCMS to give you the option to either use Sentry or Sentinel out of the box.
+Thanks to these interface, the user and role systems can be completely decoupled from the implementation. This is what enables AsgardCMS to give you the option to either use Sentry or Sentinel out of the box.
 
 ## <a class="anchor" name="user-and-role-providers" href="#user-and-role-providers"></a> User and Role providers
 
@@ -32,5 +32,5 @@ For your inspiration you can check how Sentry and Sentinel are implemented:
 
 Once implemented, don't forget to change the `UserServiceProvider` class to bind the interfaces to your implementation. You can do this in the [registerBindings()](https://github.com/AsgardCms/User/blob/develop/Providers/UserServiceProvider.php#L75) method.
 
-For the spirit of open source, if you have successfully implemented another driver, consider sending a pull-request to the User Module repository so others can benefit from your hard workk too.
+For the spirit of open source, if you have successfully implemented another driver, consider sending a pull-request to the User Module repository so others can benefit from your hard work too.
 

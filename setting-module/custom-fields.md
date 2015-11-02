@@ -18,4 +18,4 @@ For instance your module might make a calendar field available:
 
 ```
 
-This wil override the basic available fields and use yours.
+This will override the basic available fields and use yours.

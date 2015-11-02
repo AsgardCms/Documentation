@@ -7,7 +7,7 @@ subtitle: Getting Started
 
 ### <a name="server-requirements" class="anchor" href="#server-requirements"></a> Server requirements
 
-The server requirements are very similar to laravels server requirements:
+The server requirements are very similar to Laravel's server requirements:
 
 - PHP 5.5.9 or higher
 - PDO PHP Extension

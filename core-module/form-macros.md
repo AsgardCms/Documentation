@@ -29,7 +29,7 @@ Form::macro('i18nInput', function ($name, $title, $errors, $lang, $object = null
 - `$title` is used for the place holder and label,
 - `$errors` is the errors message bag,
 - `$lang` is the language of the input,
-- `$object` is the oject used to fill the input,
+- `$object` is the object used to fill the input,
 - `$options` an array of options that'll be sent to the `Form::input` method.
 
 This will look like the following:
@@ -51,7 +51,7 @@ Form::macro('i18nTextarea', function ($name, $title, $errors, $lang, $object = n
 - `$title` is used for the place holder and label,
 - `$errors` is the errors message bag,
 - `$lang` is the language of the input,
-- `$object` is the oject used to fill the input,
+- `$object` is the object used to fill the input,
 - `$options` an array of options that'll be sent to the `Form::input` method.
 
 This will look like the following:
@@ -73,7 +73,7 @@ Form::macro('i18nCheckbox', function ($name, $title, $errors, $lang, $object = n
 - `$title` is used for the place holder and label,
 - `$errors` is the errors message bag,
 - `$lang` is the language of the input,
-- `$object` is the oject used to fill the input,
+- `$object` is the object used to fill the input,
 - `$options` an array of options that'll be sent to the `Form::input` method.
 
 This will look like the following:
@@ -98,7 +98,7 @@ Form::macro('normalInput', function ($name, $title, $errors, $object = null, arr
 - `$name` is the name of the input (also called on the `$object` if given to fill the input),
 - `$title` is used for the place holder and label,
 - `$errors` is the errors message bag,
-- `$object` is the oject used to fill the input,
+- `$object` is the object used to fill the input,
 - `$options` an array of options that'll be sent to the `Form::input` method.
 
 This will look like the following:
@@ -120,7 +120,7 @@ Form::macro('normalTextarea', function ($name, $title, $errors, $object = null, 
 - `$name` is the name of the input (also called on the `$object` if given to fill the input),
 - `$title` is used for the place holder and label,
 - `$errors` is the errors message bag,
-- `$object` is the oject used to fill the input,
+- `$object` is the object used to fill the input,
 - `$options` an array of options that'll be sent to the `Form::input` method.
 
 This will look like the following:
@@ -142,7 +142,7 @@ Form::macro('normalCheckbox', function ($name, $title, $errors, $object = null)
 - `$name` is the name of the input (also called on the `$object` if given to fill the input),
 - `$title` is used for the place holder and label,
 - `$errors` is the errors message bag,
-- `$object` is the oject used to fill the input,
+- `$object` is the object used to fill the input,
 - `$options` an array of options that'll be sent to the `Form::input` method.
 
 This will look like the following:
