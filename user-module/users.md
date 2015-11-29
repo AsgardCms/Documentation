@@ -7,6 +7,19 @@ subtitle: User Module
 
 ## <a class="anchor" name="getting-logged-in-user" href="#getting-logged-in-user"></a> Getting logged in User
 
+### Recommended: View Composer
+
+The recommended way of attaching the `$currentUser` variable to your desired views is by binding the `CurrentUserViewComposer` to your view(s).
+
+Let's say you want the current user on the `layouts.demo` view, you can add the following code to your module's service provider:
+
+``` .language-php
+view()->composer('layouts.demo', \Modules\Core\Composers\CurrentUserViewComposer::class);
+```
+
+
+### Class inheritence
+
 To get the currently logged in user you can inject the [Authentication interface](https://github.com/AsgardCms/Core/blob/develop/Contracts/Authentication.php) in your controller, or a view composer and using the following:
 
 ``` .language-php
