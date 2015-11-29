@@ -38,7 +38,7 @@ Let's say you want the current user on the `layouts.demo` view, you can add the 
 view()->composer('layouts.demo', \Modules\Core\Composers\CurrentUserViewComposer::class);
 ```
 
-
+### Class inheritence
 
 Start by making your public controllers extend the following class:
 
@@ -46,7 +46,4 @@ Start by making your public controllers extend the following class:
 Modules\Core\Http\Controllers\BasePublicController
 ```
 
-
 Now, in any public view, you have access to a `$currentUser` variable that corresponds to the currently authenticated user. `$currentUser` will evaluate to false if none logged in.
-
-### Class inheritence
