@@ -5,6 +5,7 @@ subtitle: Getting Started
 - [Getting setup](#getting-setup)
 - [Style guide](#style-guide)
 - [Making changes](#making-changes)
+- [Adding or updating translations](#adding-updating-translations)
 - [Additional resources](#additional-resources)
 
 ### <a name="getting-setup" class="anchor" href="#getting-setup"></a> Getting setup
@@ -64,7 +65,17 @@ This means:
 	- Add you changes by making the test pass,
 	- [Squash commits](https://ariejan.net/2011/07/05/git-squash-your-latests-commits-into-one/) if necessary to create 	a nice history,
 	- Send a pull request to the `develop` branch of the module/theme your modifying.
-	
+
+### <a name="adding-updating-translations" class="anchor" href="#adding-updating-translations"></a> Adding or updating translations
+
+Adding new translations or updating existing translations to core modules is very easy in AsgardCms. All translations are centralised in the [Translation](https://github.com/AsgardCms/Translation) module. 
+
+All you need to do is fork that module, and add and/or update existing translations. 
+
+The translations are located in the `Resources/lang` folder, each module has its own subfolder, with under that the different locales.
+
+If you want to add a new language, duplicate the `en` folder of each module and renaming it to your desired locale. The Enlish translations will usually the more complete ones, that's why it's best to use those as a starting point. 
+
 
 ### <a name="additional-resources" class="anchor" href="#additional-resources"></a> Additional resources
 
