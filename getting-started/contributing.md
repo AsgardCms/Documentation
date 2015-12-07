@@ -52,14 +52,14 @@ AsgardCMS follows a workflow similar to **[Git Flow branching model](https://www
 This means:
 
 - For a new feature: 
-	- On `develop` branch,
+	- On `master` branch,
 	- Create a branch `feature/your-new-feature-name`,
 	- Add you changes,
 	- Make sure the test suite for the module still passes,
 	- [Squash commits](https://ariejan.net/2011/07/05/git-squash-your-latests-commits-into-one/) if necessary to create a nice history,
 	- Send a pull request to the `develop` branch of the module/theme your modifying.
 - For a hotfix:
-	- On `develop` branch,
+	- On `master ` branch,
 	- Create a branch `hotfix/your-hotfix-name`,
 	- Add a failing test that reproduces the found bug,
 	- Add you changes by making the test pass,
