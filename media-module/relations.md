@@ -2,8 +2,8 @@ title: Linking media to object
 subtitle: Media Module
 -------
 
-- [One to one relation](#one-to-one)
-- [One to many relation](#one-to-many)
+- [One to one relation](#one-to-one-relation)
+- [One to many relation](#one-to-many-relation)
 
 You can use the media uploaded in any module you make. 
 
