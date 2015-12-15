@@ -57,6 +57,7 @@ This will tell git to ignore everything in the Modules folder except for your mo
 If you want to use composer on your new module, you will need to change one simple thing, adding a custom repository :
 
 In your Modules/YourSuperModule/composer.json add
+
 ``` .language-json
  "repositories": [
        {
