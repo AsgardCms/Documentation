@@ -89,7 +89,7 @@ For instance if you have set the active theme to `Demo`, when you use `View::mak
 
 ### <a name="elixir" class="anchor" href="#elixir"></a> Elixir publish helper
 
-Since all assets need to be published to the `public/` folder you can use the following custom **mix** for [Laravel Elixir](http://laravel.com/docs/5.0/elixir).
+Since all assets need to be published to the `public/` folder you can use the following custom **mix** for [Laravel Elixir](http://laravel.com/docs/5.1/elixir).
 
 Place this at the top of your `Gulpfile`:
 
@@ -98,15 +98,13 @@ Place this at the top of your `Gulpfile`:
 var gulp = require("gulp");
 var shell = require('gulp-shell');
 var elixir = require('laravel-elixir');
+var themeInfo = require('./theme.json');
 
+var task = elixir.Task;
 elixir.extend("stylistPublish", function() {
-    gulp.task("stylistPublish", function() {
-        gulp.src("").pipe(shell("php ../../artisan stylist:publish"));
-    });
-
-    this.registerWatcher("stylistPublish", "**/*.less");
-
-    return this.queueTask("stylistPublish");
+    new task("stylistPublish", function() {
+        return gulp.src("").pipe(shell("php ../../artisan stylist:publish " + themeInfo.name));
+    }).watch("**/*.less");
 });
 ```
 
