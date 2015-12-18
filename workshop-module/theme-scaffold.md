@@ -36,3 +36,5 @@ And that's it. You'll find you newly created theme under the `Themes/` directory
 You can create themes manually as well, all a theme needs is the `theme.json` file to be registerable on the [Stylist package](https://github.com/floatingpointsoftware/stylist).
 
 After you created the `theme.json` file, run a `php artisan cache:clear`.
+
+> In both cases you will need to active the theme from the backend Settings page, "Front end template".
