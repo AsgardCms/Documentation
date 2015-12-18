@@ -2,9 +2,9 @@ title: Upgrade Guide
 subtitle: Platform
 -------
 
-- [From 1.12.0 to 1.13.0](#upgrade-1.13.0)
+- [From 1.12.0 to **1.13.0**](#upgrade-1.13.0)
 
-## <a name="upgrade-1.13.0" class="anchor" href="#upgrade-1.13.0"></a> From 1.12.0 to 1.13.0
+## <a name="upgrade-1.13.0" class="anchor" href="#upgrade-1.13.0"></a> From 1.12.0 to **1.13.0**
 
 ### New Job class
 

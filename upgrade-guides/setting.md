@@ -2,9 +2,9 @@ title: Upgrade Guide
 subtitle: Setting module
 -------
 
-- [From 1.12.1 to 1.13.0](#upgrade-1.13.0)
+- [From 1.12.1 to **1.13.0**](#upgrade-1.13.0)
 
-## <a name="upgrade-1.13.0" class="anchor" href="#upgrade-1.13.0"></a> From 1.12.1 to 1.13.0
+## <a name="upgrade-1.13.0" class="anchor" href="#upgrade-1.13.0"></a> From 1.12.1 to **1.13.0**
 
 ### Translations have been removed
 
