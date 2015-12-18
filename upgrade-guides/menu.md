@@ -2,7 +2,7 @@ title: Upgrade Guide
 subtitle: Menu module
 -------
 
-- [From 1.13.0 to **1.14.0**](#upgrade-1.14.0)
+- [From 1.13.0 to 1.14.0](#upgrade-1.14.0)
 
 ## <a name="upgrade-1.14.0" class="anchor" href="#upgrade-1.14.0"></a> From 1.13.0 to **1.14.0**
 

@@ -2,8 +2,8 @@ title: Upgrade Guide
 subtitle: User module
 -------
 
-- [From 1.13.1 to **1.14.0**](#upgrade-1.14.0)
-- [From 1.11.0 to **1.12.0**](#upgrade-1.12.0)
+- [From 1.13.1 to 1.14.0](#upgrade-1.14.0)
+- [From 1.11.0 to 1.12.0](#upgrade-1.12.0)
 
 ## <a name="upgrade-1.14.0" class="anchor" href="#upgrade-1.14.0"></a> From 1.13.1 to **1.14.0**
 

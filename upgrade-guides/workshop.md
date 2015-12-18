@@ -2,7 +2,7 @@ title: Upgrade Guide
 subtitle: Workshop module
 -------
 
-- [From 1.11.0 to **1.12.0**](#upgrade-1.12.0)
+- [From 1.11.0 to 1.12.0](#upgrade-1.12.0)
 
 ## <a name="upgrade-1.12.0" class="anchor" href="#upgrade-1.12.0"></a> From 1.11.0 to **1.12.0**
 

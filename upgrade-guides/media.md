@@ -2,8 +2,8 @@ title: Upgrade Guide
 subtitle: Media module
 -------
 
-- [From 1.17.0 to **1.18.0**](#upgrade-1.18.0)
-- [From 1.16.0 to **1.17.0**](#upgrade-1.17.0)
+- [From 1.17.0 to 1.18.0](#upgrade-1.18.0)
+- [From 1.16.0 to 1.17.0](#upgrade-1.17.0)
 
 
 ## <a name="upgrade-1.18.0" class="anchor" href="#upgrade-1.18.0"></a> From 1.17.0 to **1.18.0**
