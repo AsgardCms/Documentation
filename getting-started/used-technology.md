@@ -38,4 +38,4 @@ The server requirements are very similar to Laravel's server requirements:
 - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
 
 
-To every package develop on the above list, I'd like to say a big **thank you** for your much appreciated work.
+To every package developer on the above list, I'd like to say a big **thank you** for your much appreciated work.
