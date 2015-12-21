@@ -2,12 +2,23 @@ title: Configuration
 subtitle: Media Module
 -------
 
+- [Filesytem](#filesystem)
 - [Media assets path](#media-assets-path)
 - [Allowed types](#allowed-types)
 - [Max file size](#max-file-size)
 - [Max total size](#max-total-size)
 
 The **Media module** configuration file can be found at `config/asgard.media.config.php`.
+
+## <a class="anchor" name="filesystem" href="#filesystem"></a> Filesystem
+
+Define the filesystem you would like to use to store the media. Currently only disk and s3 are supported. 
+
+Feel free to an [UrlResolver](https://github.com/AsgardCms/Media/blob/master/UrlResolvers/BaseUrlResolver.php) for your desired filesystem as a pull request.
+
+``` .language-php
+'filesystem' => 'local',
+```
 
 ## <a class="anchor" name="media-assets-path" href="#media-assets-path"></a> Media assets path
 
