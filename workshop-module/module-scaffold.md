@@ -1,4 +1,4 @@
-title: Module Scaffold
+title: Creating a module
 subtitle: Workshop Module
 -------
 
@@ -67,4 +67,4 @@ In your Modules/YourSuperModule/composer.json add
    ], 
 ```
 
-Note : this is temporary, but it's required until this dependency have a new released.
+Note : this is temporary, but it's required until this dependency has been released.

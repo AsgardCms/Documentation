@@ -1,4 +1,4 @@
-title: Theme Scaffold
+title: Creating a theme
 subtitle: Workshop Module
 -------
 
