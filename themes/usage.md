@@ -1,4 +1,4 @@
-title: Themes
+title: Creating a theme
 subtitle: Themes
 -------
 
