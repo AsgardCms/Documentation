@@ -1,4 +1,4 @@
-title: Creating a theme
+title: Using and developing themes
 subtitle: Themes
 -------
 
