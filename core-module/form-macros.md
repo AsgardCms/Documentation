@@ -126,8 +126,8 @@ Form::macro('normalTextarea', function ($name, $title, $errors, $object = null, 
 This will look like the following:
 
 ``` .language-php
-{!! Form::i18nTextarea('body', 'field title', $errors) !!} // Create view
-{!! Form::i18nTextarea('body', 'field title', $errors, $object) !!} // Edit view
+{!! Form:: normalTextarea('body', 'field title', $errors) !!} // Create view
+{!! Form:: normalTextarea('body', 'field title', $errors, $object) !!} // Edit view
 ```
 
 
@@ -148,8 +148,8 @@ Form::macro('normalCheckbox', function ($name, $title, $errors, $object = null)
 This will look like the following:
 
 ``` .language-php
-{!! Form::i18nCheckbox('is_online', 'field title', $errors) !!} // Create view
-{!! Form::i18nCheckbox('is_online', 'field title', $errors, $object) !!} // Edit view
+{!! Form:: normalCheckbox('is_online', 'field title', $errors) !!} // Create view
+{!! Form:: normalCheckbox('is_online', 'field title', $errors, $object) !!} // Edit view
 ```
 
 
