@@ -1,4 +1,4 @@
-title: Creating a theme
+title: Create a theme
 subtitle: Workshop Module
 -------
 
