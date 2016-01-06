@@ -57,14 +57,14 @@ This means:
 	- Add you changes,
 	- Make sure the test suite for the module still passes,
 	- [Squash commits](https://ariejan.net/2011/07/05/git-squash-your-latests-commits-into-one/) if necessary to create a nice history,
-	- Send a pull request to the `develop` branch of the module/theme your modifying.
+	- Send a pull request to the `master` branch of the module/theme your modifying.
 - For a hotfix:
-	- On `master ` branch,
+	- On `master` branch,
 	- Create a branch `hotfix/your-hotfix-name`,
 	- Add a failing test that reproduces the found bug,
 	- Add you changes by making the test pass,
 	- [Squash commits](https://ariejan.net/2011/07/05/git-squash-your-latests-commits-into-one/) if necessary to create 	a nice history,
-	- Send a pull request to the `develop` branch of the module/theme your modifying.
+	- Send a pull request to the `master` branch of the module/theme your modifying.
 
 ### <a name="adding-updating-translations" class="anchor" href="#adding-updating-translations"></a> Adding or updating translations
 
