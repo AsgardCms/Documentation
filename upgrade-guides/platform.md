@@ -8,4 +8,4 @@ subtitle: Platform
 
 **New Job class**
 
-The laravel abstract `Job` class has been added in `app/Jobs/Job.php`. Add the `Job` class ([view class](https://github.com/AsgardCms/Platform/blob/master/app/Jobs/Job.php) ) to your project in that same location (`app/Jobs/Job.php`).
+The laravel abstract `Job` class has been added in `app/Jobs/Job.php`. Add the `Job` class ([view class](https://github.com/AsgardCms/Platform/blob/master/app/Jobs/Job.php)) to your project in that same location (`app/Jobs/Job.php`).
