@@ -17,6 +17,7 @@ To be able to run AsgardCMS you have to meet the following requirements:
 - OpenSSL PHP Extension
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
+- Mcrypt PHP Extension
 - GD PHP Library
 - MySql 5.5
 - One of the following cache drivers: `memcached`, `redis`, `apc`. (defaults to `array`)
