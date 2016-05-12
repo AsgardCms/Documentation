@@ -105,8 +105,7 @@ This will look like the following:
 
 ``` .language-php
 {!! Form::i18nSelect(‘test’, ‘test’, $errors, $lang, [1,2,3]) !!} // Create view
-{!! Form::i18nSelect(‘test’, ‘test’, $errors, $lang, [1,2,3],
-$object) !!} // Edit view
+{!! Form::i18nSelect(‘test’, ‘test’, $errors, $lang, [1,2,3], $object) !!} // Edit view
 ```
 
 
