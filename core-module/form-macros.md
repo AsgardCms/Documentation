@@ -83,6 +83,30 @@ This will look like the following:
 {!! Form::i18nCheckbox('is_online', 'field title', $errors, $lang, $object) !!} // Edit view
 ```
 
+### <a class="anchor" name="translatable-select" href="#translatable-select"></a> Translatable Select
+
+This is the method signature:
+
+``` .language-php
+Form::macro('i18nSelect', function ($name, $title, ViewErrorBag $errors, $lang, array $choice, $object = null, array $options = [])
+```
+
+- `$name` is the name of the input (also called on the `$object` if given to fill the input),
+- `$title` is used for the place holder and label,
+- `$errors` is the errors message bag,
+- `$lang` is the language of the input,
+- `$choice` the possible choices,
+- `$object` is the object used to fill the input,
+- `$options` an array of options that'll be sent to the `Form::input` method.
+
+This will look like the following:
+
+``` .language-php
+{!! Form::i18nSelect(‘test’, ‘test’, $errors, $lang, [1,2,3]) !!} // Create view
+{!! Form::i18nSelect(‘test’, ‘test’, $errors, $lang, [1,2,3],
+$object) !!} // Edit view
+```
+
 
 ## <a class="anchor" name="non-translatable-fields" href="#non-translatable-fields"></a> Non-translatable fields
 
@@ -150,6 +174,29 @@ This will look like the following:
 ``` .language-php
 {!! Form:: normalCheckbox('is_online', 'field title', $errors) !!} // Create view
 {!! Form:: normalCheckbox('is_online', 'field title', $errors, $object) !!} // Edit view
+```
+
+### <a class="anchor" name="normal-select" href="#normal-select"></a> Normal Select
+
+This is the method signature:
+
+``` .language-php
+Form::macro('normalSelect', function ($name, $title, ViewErrorBag $errors, array $choice, $object = null, array $options = [])
+```
+
+- `$name` is the name of the input (also called on the `$object` if given to fill the input),
+- `$title` is used for the place holder and label,
+- `$errors` is the errors message bag,
+- `$choice` the possible choices,
+- `$object` is the object used to fill the input,
+- `$options` an array of options that'll be sent to the `Form::input` method.
+
+This will look like the following:
+
+
+``` .language-php
+{!! Form:: normalSelect(‘test’, ‘test’, $errors, [1,2,3]) !!} // Create view
+{!! Form:: normalSelect(‘test’, ‘test’, $errors, [1,2,3], $object) !!} // Edit view
 ```
 
 
