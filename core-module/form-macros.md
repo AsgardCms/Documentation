@@ -6,10 +6,12 @@ subtitle: Core Module
 	- [input](#translatable-input)
 	- [textarea](#translatable-textarea)
 	- [checkbox](#translatable-checkbox)
+	- [select](#translatable-select)
 - [Non-translatable fields](#non-translatable-fields)
 	- [input](#normal-input)
 	- [textarea](#normal-textarea)
 	- [checkbox](#normal-checkbox)
+	- [select](#normal-select)
 
 In order to avoid writing the same thing over and over, AsgardCms provides you with form macros that help to avoid writing the same code for form fields. This will generate the necessary code working for the **AdminLTE backend theme**.
 
