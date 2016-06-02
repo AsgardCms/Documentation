@@ -4,6 +4,7 @@ subtitle: Media Module
 
 - [One to one relation](#one-to-one-relation)
 - [One to many relation](#one-to-many-relation)
+- [Deleting the polymorphic relation upon deletion of related model](#delete-polymorphic-relation)
 
 You can use the media uploaded in any module you make. 
 
@@ -28,6 +29,26 @@ This will add a `files` morphToMany relation onto your entity.
 From here you could already start implementing your own field to select a file from the media module, or you can include the partial.
 
 ### Include the partial
+
+#### Create views
+
+On create views you can follow the following easy steps:
+
+- Insert the `media::admin.fields.new-file-link-multiple` partial like so:
+
+``` php
+@include('media::admin.fields.new-file-link-single', [
+    'zone' => 'gallery'
+])
+```
+
+- Trigger an event when you model was created
+    - Your event needs to implement `Modules\Media\Contracts\StoringMedia`
+    - Your event needs to have 1) the Entity and 2) the data from the form
+    - The interface requires 2 methods, to return each of those properties
+- In `asgard.media.events.php` (re-publish media module to have it, or create it manually) add your event in the array under the `creating` key.
+
+#### Edit views
 
 Next you can include the `media::admin.fields.file-link` partial, on the edit view only. This needs 3 variables:
 
@@ -70,6 +91,29 @@ First thing you need is add the `Modules\Media\Support\Traits\MediaRelation` tra
 
 ### Include the partial
 
+
+#### Create views
+
+On create views you can follow the following easy steps:
+
+- Insert the `media::admin.fields.new-file-link-multiple` partial like so:
+
+``` php
+@include('media::admin.fields.new-file-link-multiple', [
+    'zone' => 'gallery'
+])
+```
+
+- Trigger an event when you model was created
+    - Your event needs to implement `Modules\Media\Contracts\StoringMedia`
+    - Your event needs to have 1) the Entity and 2) the data from the form
+    - The interface requires 2 methods, to return each of those properties
+- In `asgard.media.events.php` (re-publish media module to have it, or create it manually) add your event in the array under the `creating` key.
+
+
+
+#### Edit views
+
 Next you can include the `media::admin.fields.file-link-multiple` partial, on the edit view only. This needs 3 variables:
 
 - **entityClass**: the class of the linked object. In our example of articles it would be the Articly entity.
@@ -98,3 +142,16 @@ $galleryFiles = $this->file->findMultipleFilesByZoneForEntity('gallery', $produc
 ```
 
 Again, it is important **the variable name is the same as the zone name**.
+
+## <a name="delete-polymorphic-relation" class="anchor" href="#delete-polymorphic-relation"></a> Deleting the polymorphic relation upon deletion of related model
+
+Considering the example of a producting having images linked to it. When removing a product, we also want the polymorphic relation to be deleted (ie: the records in the `media__imageables` table). 
+
+This can be accomplished by: 
+
+- Trigger an event when you model was deleted
+    - Your event needs to implement `Modules\Media\Contracts\DeletingMedia`
+    - That event needs to have the id of the entity and its class name.
+- Add the event class to the `asgard.media.events.deleting` configuration key.
+
+That's it.
