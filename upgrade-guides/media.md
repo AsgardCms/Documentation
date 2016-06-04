@@ -2,10 +2,17 @@ title: Upgrade Guide
 subtitle: Media module
 -------
 
+- [From 1.22.0 to 1.23.0](#upgrade-1.23.0)
 - [From 1.21.0 to 1.22.0](#upgrade-1.22.0)
 - [From 1.17.0 to 1.18.0](#upgrade-1.18.0)
 - [From 1.16.0 to 1.17.0](#upgrade-1.17.0)
 - [From 1.15.0 to 1.16.0](#upgrade-1.16.0)
+
+## <a name="upgrade-1.23.0" class="anchor" href="#upgrade-1.23.0"></a> From 1.22.0 to **1.23.0**
+
+**events.php configuration file not needed**
+
+This file is not needed anymore.
 
 
 ## <a name="upgrade-1.22.0" class="anchor" href="#upgrade-1.22.0"></a> From 1.21.0 to **1.22.0**

@@ -46,7 +46,6 @@ On create views you can follow the following easy steps:
     - Your event needs to implement `Modules\Media\Contracts\StoringMedia`
     - Your event needs to have 1) the Entity and 2) the data from the form
     - The interface requires 2 methods, to return each of those properties
-- In `asgard.media.events.php` (re-publish media module to have it, or create it manually) add your event in the array under the `creating` key.
 
 #### Edit views
 
@@ -108,7 +107,6 @@ On create views you can follow the following easy steps:
     - Your event needs to implement `Modules\Media\Contracts\StoringMedia`
     - Your event needs to have 1) the Entity and 2) the data from the form
     - The interface requires 2 methods, to return each of those properties
-- In `asgard.media.events.php` (re-publish media module to have it, or create it manually) add your event in the array under the `creating` key.
 
 
 
