@@ -6,6 +6,7 @@ subtitle: Core Module
 - [Themes path](#themes-path)
 - [Admin theme](#admin-theme)
 - [AdminLTE skin](#adminlte-skin)
+- [Middleware](#middleware)
 
 This **Core Module** has one main configuration item, you'll find it at `config/asgard.core.core.php`.
 
@@ -54,3 +55,6 @@ This defaults to the blue skin.
 'skin' => 'skin-blue',
 ```
 
+## <a class="anchor" name="middleware" href="#middleware"></a> Middleware
+
+Here you can add or remove middleware of different types of routes (admin, frontend and api). Add your own middleware here on their respective types.
