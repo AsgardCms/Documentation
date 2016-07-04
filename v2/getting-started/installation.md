@@ -11,7 +11,7 @@ subtitle: Getting Started
 
 To be able to run AsgardCMS you have to meet the following requirements:
 
-- PHP 5.5.9 or higher
+- PHP 5.6 or higher
 - PDO PHP Extension
 - cURL PHP Extension
 - OpenSSL PHP Extension
@@ -35,16 +35,18 @@ composer create-project asgardcms/platform your-project-name
 
 ### Create a database
 
+Create a database suiting your preferred method, Sequel Pro, MySQL Workbench, cli, however you prefer. Remember the database name you used as this well be asked in the installation command.
+
 ### Install your preferred user system
 
 - Sentinel (installed by default) 
 
-More user implementations may be offered later on.
+More user implementations may be offered later on. Learn how you can add your custom [ACL implementations](v2/user-module/drivers.md).
 
 
 ### Run the install command
 
-Now run `php artisan asgard:install` command to perform to start the installation process.
+Now run `php artisan asgard:install` command to perform the installation process.
 
 This install command will perform the following actions:
 
@@ -60,18 +62,16 @@ This install command will perform the following actions:
 You can now login on `/auth/login` with your email and password asked during the install command. After you've logged in you'll be able to access the administration panel on the `/backend` URI.
 
 ### Feedback, ideas, etc.
-If you have **feedback** to give, **ideas** you would like implemented, by all means share them on the [dedicated uservoice page](http://asgardcms.uservoice.com/). Do not hesitate to share! 
+If you have **feedback** to give, **ideas** you would like implemented, by all means share them on the [forum](http://forum.asgardcms.com) in the "Comments and Feedback" section.
 
 For **issues/bugs** your having, you can use the Github Issues to post those. All issues are grouped on the [AsgardCms/Platform](https://github.com/AsgardCms/Platform/issues) repository.
 
 If you just want to **talk**, join [our Slack channel](http://slack.asgardcms.com/).
 
-Thank you for your participation!
-
 
 ## <a name="updating-modules-and-themes" class="anchor" href="#updating-modules-and-themes"></a> Updating modules and themes
 
-It's important to know that a module and a theme, is just a simple composer package. Meaning that if your module has a dependency on another package or AsgardCms-module, you can add those in the `require` key of the `composer.json` file of your module.
+It's important to know that a module and a theme, is just a simple **composer package**. Meaning that if your module has a dependency on another package or AsgardCms-module, you can add those in the `require` key of the `composer.json` file of your module.
 
 This also means that modules fetched via composer, **cannot** be edited, those changes will get overwritten in the next `composer update`.
 

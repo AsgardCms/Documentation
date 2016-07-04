@@ -74,7 +74,7 @@ All you need to do is fork that module, and add and/or update existing translati
 
 The translations are located in the `Resources/lang` folder, each module has its own subfolder, with under that the different locales.
 
-If you want to add a new language, duplicate the `en` folder of each module and renaming it to your desired locale. The Enlish translations will usually the more complete ones, that's why it's best to use those as a starting point. 
+If you want to add a new language, duplicate the `en` folder of each module and renaming it to your desired locale. The English translations will usually the more complete ones, that's why it's best to use those as a starting point. 
 
 
 ### <a name="additional-resources" class="anchor" href="#additional-resources"></a> Additional resources

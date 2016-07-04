@@ -9,7 +9,7 @@ subtitle: Getting Started
 
 The server requirements are very similar to Laravel's server requirements:
 
-- PHP 5.5.9 or higher
+- PHP 5.6 or higher
 - PDO PHP Extension
 - cURL PHP Extension
 - OpenSSL PHP Extension
@@ -21,12 +21,11 @@ The server requirements are very similar to Laravel's server requirements:
 
 ### <a name="used-packages" class="anchor" href="#used-packages"></a> Used packages
 
-**AsgardCms** leverages the open source community by using the following packages. Please refer to their documentation for additional information on their usage in AsgardCms.
+**AsgardCms** leverages the open source community by using the following packages. Please refer to their documentation for additional information on their usage in AsgardCMS.
 
 - [floatingpointsoftware/stylist](https://github.com/floatingpointsoftware/stylist)
 - [pingpong-labs/modules](https://github.com/pingpong-labs/modules)
 - [laravelcollective/html](https://github.com/laravelcollective/html)
-- [laracasts/flash](https://github.com/laracasts/flash)
 - [laracasts/presenter](https://github.com/laracasts/presenter)
 - [dimsav/laravel-translatable](https://github.com/dimsav/laravel-translatable)
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)

@@ -3,6 +3,7 @@ subtitle: Core Module
 -------
 
 - [Admin prefix](#admin-prefix)
+- [Themes path](#themes-path)
 - [Admin theme](#admin-theme)
 - [AdminLTE skin](#adminlte-skin)
 
@@ -12,14 +13,21 @@ This **Core Module** has one main configuration item, you'll find it at `config/
 
 With this configuration you can set how you access the admin dashboard. By default it is set to `backend`. Meaning you can access your admin dashboard on the following url `localhost:8000/backend` (if you're using the `artisan serve` command).
 
-``` language-php
+``` .language-php
 'admin-prefix' => 'backend'
 ```
 
+## <a class="anchor" name="themes-path" href="#themes-path"></a> Themes Path
+
+This is the location of the Themes.
+
+``` .language-php
+'themes_path' => base_path() . '/Themes',
+```
 
 ## <a class="anchor" name="admin-theme" href="#admin-theme"></a> Admin theme
 
-With this setting you can change the theme used in the administration. Make sure your admin theme has the type set to `backend`.
+With this setting you can change the theme used in the administration. Make sure your admin theme has the **type** set to `backend`.
 
 It defaults to `AdminLTE`.
 
