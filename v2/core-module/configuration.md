@@ -6,6 +6,7 @@ subtitle: Core Module
 - [Themes path](#themes-path)
 - [Admin theme](#admin-theme)
 - [AdminLTE skin](#adminlte-skin)
+- [Custom Ckeditor config path]($custom-ckeditor-config)
 - [Middleware](#middleware)
 
 This **Core Module** has one main configuration item, you'll find it at `config/asgard.core.core.php`.
@@ -54,6 +55,18 @@ This defaults to the blue skin.
 ``` .language-php
 'skin' => 'skin-blue',
 ```
+
+
+## <a class="anchor" name="custom-ckeditor-config" href="#custom-ckeditor-config"></a> Custom Ckeditor Config path
+
+In case you wish to customise ckeditor and the default configuration provided doesn't suit you, you can define a custom ckeditor configuration file here. The paths needs to be relative to the `public/` directory.
+
+Example:
+
+``` .language-php
+'ckeditor-config-file-path' => '/assets/config_custom.js',
+```
+
 
 ## <a class="anchor" name="middleware" href="#middleware"></a> Middleware
 
