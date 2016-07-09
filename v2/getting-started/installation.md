@@ -6,7 +6,7 @@ subtitle: Getting Started
 - [Install AsgardCMS](#install-asgardcms)
 - [Getting help](#getting-help)
 
-## <a name="minimum-system-requirements" class="anchor" href="#minimum-system-requirements"></a> Minimum System Requirements
+## <a name="minimum-system-requirements" class="anchor" href="#minimum-system-requirements">Minimum System Requirements</a>
 
 To be able to run AsgardCMS you have to meet the following requirements:
 
