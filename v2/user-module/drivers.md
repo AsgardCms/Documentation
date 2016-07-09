@@ -8,9 +8,9 @@ subtitle: User Module
 
 The user module brings three important interfaces:
 
-- `Authentication` ([view interface](https://github.com/AsgardCms/Core/blob/master/Contracts/Authentication.php))
-- `UserRepository` ([view interface](https://github.com/AsgardCms/User/blob/master/Repositories/UserRepository.php))
-- `RoleRepository` ([view interface](https://github.com/AsgardCms/User/blob/master/Repositories/RoleRepository.php))
+- `Authentication` ([view interface](https://github.com/AsgardCms/User/blob/2.0/Contracts/Authentication.php))
+- `UserRepository` ([view interface](https://github.com/AsgardCms/User/blob/2.0/Repositories/UserRepository.php))
+- `RoleRepository` ([view interface](https://github.com/AsgardCms/User/blob/2.0/Repositories/RoleRepository.php))
 
 Thanks to these interface, the user and role systems can be completely decoupled from the implementation. This is what enables AsgardCMS to give you the option to either use Sentry or Sentinel out of the box.
 
