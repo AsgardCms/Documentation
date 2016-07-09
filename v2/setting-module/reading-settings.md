@@ -59,7 +59,7 @@ To get the site name setting in the core module:
 
 ## <a name="using-the-facade" class="anchor" href="#using-the-facade">Using the facade</a>
 
-**Depreciated.**
+> Depreciated.
 
 In views you can use the `Setting` facade with the `get()` method.
 
