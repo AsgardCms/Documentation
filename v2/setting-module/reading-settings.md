@@ -11,7 +11,7 @@ subtitle: Setting Module
 
 ## <a name="injecting-the-interface" class="anchor" href="#injecting-the-interface">Injecting the interface</a>
 
-To use a setting you can inject the [setting interface](https://github.com/nWidart-Modules/Core/blob/master/Contracts/Setting.php) into your method/constructor.
+To use a setting you can inject the [setting interface](https://github.com/AsgardCms/Setting/blob/2.0/Contracts/Setting.php) into your method/constructor.
 
 ``` .language-php
 use Modules\Core\Contracts\Setting;
