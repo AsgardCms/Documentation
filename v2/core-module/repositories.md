@@ -20,12 +20,9 @@ is something like the following:
 
 
 ``` .language-php
-$this->app->bind(
-    'Modules\Blog\Repositories\PostRepository',
-    function() {
-        return new EloquentPostRepository(new Post);
-    }
-);
+$this->app->bind(PostRepository::class, function() {
+    return new EloquentPostRepository(new Post);
+});
 ```
 
 Instead of passing a string as a second argument to your implementation class, you pass a closure with the implemented class with needs an instance of the model.
