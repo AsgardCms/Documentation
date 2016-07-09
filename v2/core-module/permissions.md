@@ -6,11 +6,11 @@ subtitle: Core Module
 - [Usage](#usage)
 - [Authentication Contract](#authentication-contract)
 
-### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
+## <a class="anchor" name="introduction" href="#introduction">Introduction</a>
 
 In the same way the core listens for navigation items, it also listens for permissions. Your module can push the permissions it needs. This happens in a `permissions.php` configuration file.
 
-### <a class="anchor" name="usage" href="#usage"></a> Usage
+## <a class="anchor" name="usage" href="#usage">Usage</a>
 
 All you have to do is have a `permissions.php` file in the modules Config file. This file will contain the permissions for your module.
 
@@ -41,7 +41,7 @@ Each module can define its permissions per *category*, prefixed by the singular 
 
 That is all, the Core Module will loop over every configuration file and load them.
 
-### <a class="anchor" name="authentication-contract" href="#authentication-contract"></a> Authentication contract
+## <a class="anchor" name="authentication-contract" href="#authentication-contract">Authentication contract</a>
 
 Once you've setup the appropriate roles with their permissions in the backend interface, you can start checking for them in controllers, views etc.
 

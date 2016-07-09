@@ -8,7 +8,7 @@ subtitle: Getting Started
 - [Adding or updating translations](#adding-updating-translations)
 - [Additional resources](#additional-resources)
 
-## <a name="getting-setup" class="anchor" href="#getting-setup"></a> Getting setup
+## <a name="getting-setup" class="anchor" href="#getting-setup">Getting setup</a>
 
 ### Modules 
 
@@ -22,7 +22,7 @@ subtitle: Getting Started
 
 This is the same as modules except `cd`-ing into the `Themes/` folder and cloning desired themes in there.
 
-## <a name="style-guide" class="anchor" href="#style-guide"></a> Style guide
+## <a name="style-guide" class="anchor" href="#style-guide">Style guide</a>
 
 Please note AsgardCMS follows **[PSR-1](http://www.php-fig.org/psr/psr-1/)** and **[PSR-2](http://www.php-fig.org/psr/psr-2/)**. Please make sure your code follows those standards.
 
@@ -43,7 +43,7 @@ pcf="php-cs-fixer fix . --config-file='.php_cs' --verbose"
 Now I can type `pcf` in the root directory of the module, and it'll just work, giving that there's a `.php_cs` file.
 
 
-## <a name="making-changes" class="anchor" href="#making-changes"></a> Making changes
+## <a name="making-changes" class="anchor" href="#making-changes">Making changes</a>
 
 Once you have your copy of AsgardCMS installed and configured for contributing purposes, you're ready to make changes.
 
@@ -66,7 +66,8 @@ This means:
 	- [Squash commits](https://ariejan.net/2011/07/05/git-squash-your-latests-commits-into-one/) if necessary to create 	a nice history,
 	- Send a pull request to the `master` branch of the module/theme your modifying.
 
-## <a name="adding-updating-translations" class="anchor" href="#adding-updating-translations"></a> Adding or updating translations
+## <a name="adding-updating-translations" class="anchor" href="#adding-updating-translations">Adding or updating translations</a>
+
 
 Adding new translations or updating existing translations to core modules is very easy in AsgardCms. All translations are centralised in the [Translation](https://github.com/AsgardCms/Translation) module. 
 
@@ -77,7 +78,8 @@ The translations are located in the `Resources/lang` folder, each module has its
 If you want to add a new language, duplicate the `en` folder of each module and renaming it to your desired locale. The English translations will usually the more complete ones, that's why it's best to use those as a starting point. 
 
 
-## <a name="additional-resources" class="anchor" href="#additional-resources"></a> Additional resources
+## <a name="additional-resources" class="anchor" href="#additional-resources">Additional resources</a>
+
 
 * [General GitHub documentation](http://help.github.com/)
 * [GitHub pull request documentation](http://help.github.com/send-pull-requests/)

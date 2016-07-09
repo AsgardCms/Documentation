@@ -11,7 +11,7 @@ subtitle: Core Module
 
 This **Core Module** has one main configuration item, you'll find it at `config/asgard.core.core.php`.
 
-## <a class="anchor" name="admin-prefix" href="#admin-prefix"></a> Admin Prefix
+## <a class="anchor" name="admin-prefix" href="#admin-prefix">Admin Prefix</a>
 
 With this configuration you can set how you access the admin dashboard. By default it is set to `backend`. Meaning you can access your admin dashboard on the following url `localhost:8000/backend` (if you're using the `artisan serve` command).
 
@@ -19,7 +19,7 @@ With this configuration you can set how you access the admin dashboard. By defau
 'admin-prefix' => 'backend'
 ```
 
-## <a class="anchor" name="themes-path" href="#themes-path"></a> Themes Path
+## <a class="anchor" name="themes-path" href="#themes-path">Themes Path</a>
 
 This is the location of the Themes.
 
@@ -27,7 +27,7 @@ This is the location of the Themes.
 'themes_path' => base_path() . '/Themes',
 ```
 
-## <a class="anchor" name="admin-theme" href="#admin-theme"></a> Admin theme
+## <a class="anchor" name="admin-theme" href="#admin-theme">Admin theme</a>
 
 With this setting you can change the theme used in the administration. Make sure your admin theme has the **type** set to `backend`.
 
@@ -39,7 +39,7 @@ It defaults to `AdminLTE`.
 ```
 
 
-## <a class="anchor" name="adminlte-skin" href="#adminlte-skin"></a> AdminLTE skin
+## <a class="anchor" name="adminlte-skin" href="#adminlte-skin">AdminLTE skin</a>
 
 You can customize the AdminLTE colors with this setting. The following colors are available for you to use: 
 
@@ -57,7 +57,7 @@ This defaults to the blue skin.
 ```
 
 
-## <a class="anchor" name="custom-ckeditor-config" href="#custom-ckeditor-config"></a> Custom Ckeditor Config path
+## <a class="anchor" name="custom-ckeditor-config" href="#custom-ckeditor-config">Custom Ckeditor Config path</a>
 
 In case you wish to customise ckeditor and the default configuration provided doesn't suit you, you can define a custom ckeditor configuration file here. The paths needs to be relative to the `public/` directory.
 
@@ -68,6 +68,6 @@ Example:
 ```
 
 
-## <a class="anchor" name="middleware" href="#middleware"></a> Middleware
+## <a class="anchor" name="middleware" href="#middleware">Middleware</a>
 
 Here you can add or remove middleware of different types of routes (admin, frontend and api). Add your own middleware here on their respective types.

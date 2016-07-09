@@ -4,7 +4,7 @@ subtitle: Setting Module
 
 - [Available fields](#available-fields)
 
-### <a name="available-fields" class="anchor" href="#available-fields"></a> Available fields
+## <a name="available-fields" class="anchor" href="#available-fields">Available fields</a>
 
 The setting module has the basic input fields available for you. These fields are available both for translatable fields as plain fields.
 

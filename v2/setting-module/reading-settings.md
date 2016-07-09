@@ -9,7 +9,7 @@ subtitle: Setting Module
 - [Using the helper function](#using-the-helper-function)
 - [Using the facade](#using-the-facade)
 
-## <a name="injecting-the-interface" class="anchor" href="#injecting-the-interface"></a> Injecting the interface
+## <a name="injecting-the-interface" class="anchor" href="#injecting-the-interface">Injecting the interface</a>
 
 To use a setting you can inject the [setting interface](https://github.com/nWidart-Modules/Core/blob/master/Contracts/Setting.php) into your method/constructor.
 
@@ -29,24 +29,24 @@ public function __construct(Setting $setting)
 }
 ```
 
-## <a name="using-the-interface" class="anchor" href="#using-the-interface"></a> Using the interface
+## <a name="using-the-interface" class="anchor" href="#using-the-interface">Using the interface</a>
 
 Once this is done you can use the interface to get a setting, in a given locale.
 Since settings can be translatable or not, you can optionally specify the language.
 
-### <a name="get-setting-in-current-locale" class="anchor" href="#get-setting-in-current-locale"></a> Get setting in current locale
+### <a name="get-setting-in-current-locale" class="anchor" href="#get-setting-in-current-locale">Get setting in current locale</a>
 
 ``` .language-php
 $siteName = $this->setting->get('core::site-name', locale())
 ```
 
-### <a name="get-a-non-translatable-setting" class="anchor" href="#get-a-non-translatable-setting"></a> Get a non translatable setting
+### <a name="get-a-non-translatable-setting" class="anchor" href="#get-a-non-translatable-setting">Get a non translatable setting</a>
 
 ``` .language-php
 $postsPerPage = $this->setting->get('blog::posts-per-page');
 ```
 
-## <a name="using-the-helper-function" class="anchor" href="#using-the-helper-function"></a> Using the helper function
+## <a name="using-the-helper-function" class="anchor" href="#using-the-helper-function">Using the helper function</a>
 
 In your views you can directly use the `setting()` function.
 
@@ -57,7 +57,7 @@ To get the site name setting in the core module:
 ```
 
 
-## <a name="using-the-facade" class="anchor" href="#using-the-facade"></a> Using the facade
+## <a name="using-the-facade" class="anchor" href="#using-the-facade">Using the facade</a>
 
 **Depreciated.**
 

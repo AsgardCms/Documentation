@@ -7,19 +7,19 @@ subtitle: Core Module
 - [Single Menu Item](#single-menu-item)
 - [Menu With Submenus](#menu-with-submenus)
 
-## <a class="anchor" name="introduction" href="#introduction"></a> Introduction
+## <a class="anchor" name="introduction" href="#introduction">Introduction</a>
 
 If you want your module to have its navigation item in the dashboard, it's very easy. AsgardCMS uses the [Laravel-Sidebar](https://github.com/Maatwebsite/Laravel-Sidebar) package. This package enables us to add sidebar items, subitems, groups, append badges, quicklinks etc.
 
 The basic gist is that the core module listens for incoming menu items and loops over them to display the navigation. This works by leveraging Laravel's View Composers.
 
-## <a class="anchor" name="usage" href="#usage"></a> Usage
+## <a class="anchor" name="usage" href="#usage">Usage</a>
 
 First thing you have to do is creating a sidebar extender. Under the `Sidebar` namespace in your module.
 
 > Note: this is automatically generated when using the Module Scaffold command.
 
-## <a class="anchor" name="single-menu-item" href="#single-menu-item"></a> Single menu item
+## <a class="anchor" name="single-menu-item" href="#single-menu-item">Single menu item</a>
 
 This is how the page module handles it, in `Modules/Pages/Sidebar/SidebarExtender.php`:
 
@@ -94,7 +94,7 @@ A `weight()` method can optionally be used to set the position of the item. The 
 And finally `authorize()` receives a boolean and determines whether or not to display the item.
 
 
-## <a class="anchor" name="menu-with-submenus" href="#menu-with-submenus"></a> Menu with submenus
+## <a class="anchor" name="menu-with-submenus" href="#menu-with-submenus">Menu with submenus</a>
 
 If you want a submenu, we basically just add a items to the items collection.
 

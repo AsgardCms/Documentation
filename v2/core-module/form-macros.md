@@ -17,10 +17,10 @@ In order to avoid writing the same thing over and over, AsgardCms provides you w
 
 They exists in two kinds, translatable fields and non translatable fields.
 
-## <a class="anchor" name="translatable-fields" href="#translatable-fields"></a> Translatable fields
+## <a class="anchor" name="translatable-fields" href="#translatable-fields">Translatable fields</a>
 
 
-### <a class="anchor" name="translatable-input" href="#translatable-input"></a> Translatable Input
+### <a class="anchor" name="translatable-input" href="#translatable-input">Translatable Input</a>
 
 This is the method signature:
 
@@ -42,7 +42,7 @@ This will look like the following:
 ```
 
 
-### <a class="anchor" name="translatable-textarea" href="#translatable-textarea"></a> Translatable Textarea
+### <a class="anchor" name="translatable-textarea" href="#translatable-textarea">Translatable Textarea</a>
 
 This is the method signature:
 
@@ -64,7 +64,7 @@ This will look like the following:
 ```
 
 
-### <a class="anchor" name="translatable-checkbox" href="#translatable-checkbox"></a> Translatable Checkbox
+### <a class="anchor" name="translatable-checkbox" href="#translatable-checkbox">Translatable Checkbox</a>
 
 This is the method signature:
 
@@ -85,7 +85,7 @@ This will look like the following:
 {!! Form::i18nCheckbox('is_online', 'field title', $errors, $lang, $object) !!} // Edit view
 ```
 
-### <a class="anchor" name="translatable-select" href="#translatable-select"></a> Translatable Select
+### <a class="anchor" name="translatable-select" href="#translatable-select">Translatable Select</a>
 
 This is the method signature:
 
@@ -109,11 +109,11 @@ This will look like the following:
 ```
 
 
-## <a class="anchor" name="non-translatable-fields" href="#non-translatable-fields"></a> Non-translatable fields
+## <a class="anchor" name="non-translatable-fields" href="#non-translatable-fields">Non-translatable fields</a>
 
 These are pretty much identical to the translatable macros, except they don't have a `$lang` argument.
 
-### <a class="anchor" name="normal-input" href="#normal-input"></a> Normal Input
+### <a class="anchor" name="normal-input" href="#normal-input">Normal Input</a>
 
 This is the method signature:
 
@@ -135,7 +135,7 @@ This will look like the following:
 
 
 
-### <a class="anchor" name="normal-textarea" href="#normal-textarea"></a> Normal Textarea
+### <a class="anchor" name="normal-textarea" href="#normal-textarea">Normal Textarea</a>
 
 This is the method signature:
 
@@ -157,7 +157,7 @@ This will look like the following:
 
 
 
-### <a class="anchor" name="normal-checkbox" href="#normal-checkbox"></a> Normal Checkbox
+### <a class="anchor" name="normal-checkbox" href="#normal-checkbox">Normal Checkbox</a>
 
 This is the method signature:
 
@@ -177,7 +177,7 @@ This will look like the following:
 {!! Form:: normalCheckbox('is_online', 'field title', $errors, $object) !!} // Edit view
 ```
 
-### <a class="anchor" name="normal-select" href="#normal-select"></a> Normal Select
+### <a class="anchor" name="normal-select" href="#normal-select">Normal Select</a>
 
 This is the method signature:
 

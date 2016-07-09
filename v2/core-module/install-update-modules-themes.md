@@ -21,7 +21,7 @@ That's it, thanks to this, AsgardCms knows where to put those packages. Make sur
 
 
 
-## <a class="anchor" name="install-module-theme" href="#install-module-theme"></a> Install an existing module/theme
+## <a class="anchor" name="install-module-theme" href="#install-module-theme">Install an existing module/theme</a>
 
 Now that you know that a module or theme is a simple composer package, to install one on you AsgardCms project, just run the usual `composer require vendor/name` in your terminal.
 
@@ -75,6 +75,6 @@ resources/lang/ModuleName
 ```
 
 
-## <a class="anchor" name="update-module-theme" href="#update-module-theme"></a> Update a module/theme
+## <a class="anchor" name="update-module-theme" href="#update-module-theme">Update a module/theme</a>
 
 To fetch updates from a module or a theme you can run `composer update`.

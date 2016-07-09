@@ -8,7 +8,7 @@ subtitle: Core Module
 
 
 
-### <a class="anchor" name="usage" href="#usage"></a> Usage
+## <a class="anchor" name="usage" href="#usage">Usage</a>
 
 
 The core module has a [base repository](https://github.com/nWidart-Modules/Core/blob/master/Repositories/BaseRepository.php) and an abstract [Eloquent implementation](https://github.com/nWidart-Modules/Core/blob/master/Repositories/Eloquent/EloquentBaseRepository.php).
@@ -31,7 +31,7 @@ $this->app->bind(
 Instead of passing a string as a second argument to your implementation class, you pass a closure with the implemented class with needs an instance of the model.
 
 
-### <a class="anchor" name="non_translatable_usage" href="#non_translatable_usage"></a> Non translatable usage
+## <a class="anchor" name="non_translatable_usage" href="#non_translatable_usage">Non translatable usage</a>
 
 
 If your entity isn't translatable you'll have to overwrite the `all` and `find($id)` methods on your eloquent repository implementation:

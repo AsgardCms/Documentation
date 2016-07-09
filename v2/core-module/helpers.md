@@ -5,7 +5,7 @@ subtitle: Core Module
 - [on_route](#on_route)
 - [locale](#locale)
 
-### <a class="anchor" name="on_route" href="#on_route"></a> On route
+## <a class="anchor" name="on_route" href="#on_route">On route</a>
 
 The `on_route()` helper function is pretty straightforward, it allows you to quickly check if the user is on the given route. This is usually used for setting active classes on a menu.
 
@@ -18,7 +18,7 @@ Example usage:
 ```
 
 
-### <a class="anchor" name="locale" href="#locale"></a> Locale
+## <a class="anchor" name="locale" href="#locale">Locale</a>
 
 The `locale()` helper function is used to **get the current active locale** on the application. 
 

@@ -13,7 +13,7 @@ subtitle: User Module
 The User module is nice for handling authentication and registration, but it is very likely that you are going to want to add more data to your user then the default first and last name. Here we're going to see how to add more data to our user.
 
 
-## <a class="anchor" name="creating-a-profile-module" href="#creating-a-profile-module"></a> Creating a Profile module
+## <a class="anchor" name="creating-a-profile-module" href="#creating-a-profile-module">Creating a Profile module</a>
 
 First thing we need to do is creating a Profile module. You can do this using the [Module Scaffold](https://asgardcms.com/en/docs/workshop-module/module-scaffold) tool, or by creating the module manually.
 
@@ -24,7 +24,7 @@ Don't forget to add the module in the `Modules/.gitignore` file by adding `!Prof
 By default the scaffolder tool will create entities as if they were translatable, we don't need this feature on the Profile so we can remove the `ProfileTranslation` entity and the migrations for the translations.
 
 
-## <a class="anchor" name="adding-custom-profile-fields" href="#adding-custom-profile-fields"></a> Adding custom profile fields
+## <a class="anchor" name="adding-custom-profile-fields" href="#adding-custom-profile-fields">Adding custom profile fields</a>
 
 Open the migration file that was generated, and add the fields you would like to have on the use profile. As an example:
 
@@ -47,7 +47,7 @@ Schema::create('profile__profiles', function (Blueprint $table) {
 Now run the migrations using `php artisan module:migrate Profile`.
 
 
-## <a class="anchor" name="publishing-user-views" href="#publishing-user-views"></a> Publishing user views
+## <a class="anchor" name="publishing-user-views" href="#publishing-user-views">Publishing user views</a>
 
 Next, we're going to add those fields on on register page. Since the register views are in the User module, which we cannot edit (**consider any module not in the .gitignore as a package in the vendor folder**). To customize the login and register views we're going to publish those views using the following command:
 
@@ -58,7 +58,7 @@ php artisan vendor:publish --provider="Modules\User\Providers\UserServiceProvide
 After this you'll see the views have been published in the `resources/views/asgard` folder.
 
 
-## <a class="anchor" name="adding-custom-fields-on-register-view" href="#adding-custom-fields-on-register-view"></a> Adding custom fields on the register view
+## <a class="anchor" name="adding-custom-fields-on-register-view" href="#adding-custom-fields-on-register-view">Adding custom fields on the register view</a>
 
 
 Now that we have the register view, open it and add the fields by following the following field naming convention :
@@ -115,7 +115,7 @@ An example from our migration :
 
 And that's all there is to it to add our custom fields on the view.
 
-## <a class="anchor" name="setting-up-relations" href="#setting-up-relations"></a> Setting up relations
+## <a class="anchor" name="setting-up-relations" href="#setting-up-relations">Setting up relations</a>
 
 The final thing we need to do is setting up the relation, both on the Profile entity as on the User entity. A profile belongs to a user and a user belongs to a profile.
 
@@ -160,7 +160,7 @@ return [
 
 We can now access the user profile information using `$user->profile->street`.
 
-## <a class="anchor" name="adding-data-on-users-table" href="#adding-data-on-users-table"></a> Adding data on the users table
+## <a class="anchor" name="adding-data-on-users-table" href="#adding-data-on-users-table">Adding data on the users table</a>
 
 You can add additional columns on the users table if that's really needed. For instance if you want to have an username.
 

@@ -7,7 +7,7 @@ subtitle: Setting Module
 
 Adding settings for you module is very easy. All you need to do is add a `settings.php` configuration file in `YourModule/config/settings.php`, and return an array of settings you want.
 
-### <a name="registering-translatable-settings" class="anchor" href="#registering-translatable-settings"></a> Registering translatable settings
+## <a name="registering-translatable-settings" class="anchor" href="#registering-translatable-settings">Registering translatable settings</a>
 
 The settings are registered in the following manner:
 
@@ -45,7 +45,7 @@ The information array needs the following:
 - a `default` key (*optional*): defines a default value for your setting if none is present and none is set in the third argument of `Setting::get()`.
 
 
-### <a name="registering-plain-settings" class="anchor" href="#registering-plain-settings"></a> Registering Plain settings
+## <a name="registering-plain-settings" class="anchor" href="#registering-plain-settings">Registering Plain settings</a>
 
 Not every setting has to be translatable, plain settings are settings that aren't translated.
 

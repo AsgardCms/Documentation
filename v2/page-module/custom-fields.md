@@ -11,7 +11,7 @@ It is often required to add more fields to a page than the default provided ones
 For an in-depth overview you can watch the following video on [adding custom fields to the page module](https://www.youtube.com/watch?v=HpzYIWOdzv8).
 
 
-## <a name="configuration" class="anchor" href="#configuration"></a> Configuration
+## <a name="configuration" class="anchor" href="#configuration">Configuration</a>
 
 
 ### Defining the fields
@@ -38,12 +38,12 @@ In these arrays you can give on array of fields for translatable fields (create 
 
 In that same config file you'll also see a `relations` key, just as with the User module, you can add dynamic relations with the Page entity. This will mostly be with your custom module that will have the entity with the additional data to be stored
 
-## <a name="events" class="anchor" href="#events"></a> Events
+## <a name="events" class="anchor" href="#events">Events</a>
 
 The way to 'intercept' the posted data, is by hooking into the `PageWasCreated` and `PageWasUpdated` events. These events both have the `pageId` (int) and `data` (array). The `data` contains the **posted data**.
 
 
-## <a name="usage" class="anchor" href="#usage"></a> Usage
+## <a name="usage" class="anchor" href="#usage">Usage</a>
 
 With the configuration setup, and your event handlers in place, you'll have the custom data stored in database. To display the data you can simply call the relation you setup in the configuration as a *method*.
 

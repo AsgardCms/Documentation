@@ -5,7 +5,7 @@ subtitle: Getting Started
 - [Server requirements](#server-requirements)
 - [Used packages](#used-packages)
 
-### <a name="server-requirements" class="anchor" href="#server-requirements"></a> Server requirements
+## <a name="server-requirements" class="anchor" href="#server-requirements">Server requirements</a>
 
 The server requirements are very similar to Laravel's server requirements:
 
@@ -19,12 +19,12 @@ The server requirements are very similar to Laravel's server requirements:
 - MySql 5.5
 
 
-### <a name="used-packages" class="anchor" href="#used-packages"></a> Used packages
+## <a name="used-packages" class="anchor" href="#used-packages">Used packages</a>
 
 **AsgardCms** leverages the open source community by using the following packages. Please refer to their documentation for additional information on their usage in AsgardCMS.
 
 - [floatingpointsoftware/stylist](https://github.com/floatingpointsoftware/stylist)
-- [pingpong-labs/modules](https://github.com/pingpong-labs/modules)
+- [nwidart/laravel-modules](https://github.com/nWidart/laravel-modules)
 - [laravelcollective/html](https://github.com/laravelcollective/html)
 - [laracasts/presenter](https://github.com/laracasts/presenter)
 - [dimsav/laravel-translatable](https://github.com/dimsav/laravel-translatable)

@@ -9,7 +9,7 @@ subtitle: Media Module
 
 If you want to get a specific thumbnail of an image you can have 2 choices. Either you're in a view, then you'll use the Facade, if not use class/method injection.
 
-### <a name="injection" class="anchor" href="#injection"></a> Injection
+## <a name="injection" class="anchor" href="#injection">Injection</a>
 
 ``` .language-php
 /**
@@ -29,7 +29,7 @@ public function index()
 ```
 
 
-### <a name="facade" class="anchor" href="#facade"></a> Facade
+## <a name="facade" class="anchor" href="#facade">Facade</a>
 
 In views, you can use the facade for ease of use. Simply send as first argument which image you want and which thumbnail:
 

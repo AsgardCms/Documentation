@@ -1,4 +1,4 @@
-title: Linking media to object
+title: Linking media to Models
 subtitle: Media Module
 -------
 
@@ -13,7 +13,7 @@ Lets say you have an articles module, and want your article to have a cover imag
 It is important to note that both types use the same `morphToMany` relation behind the scenes. It's only the UI which changes.
 
 
-## <a name="one-to-one-relation" class="anchor" href="#one-to-one-relation"></a> One to one relation
+## <a name="one-to-one-relation" class="anchor" href="#one-to-one-relation">One to one relation</a>
 
 
 Like the introduction said, this type of relation is for when you only need one file/image for a particular entity. In addition to this, the image can have a **zone** given. To stay consistent, using the Article module, example from the introduction, that cover image will have a zone of `coverimage`.
@@ -80,7 +80,7 @@ $coverimage = $this->file->findFileByZoneForEntity('coverimage', $article);
 One important note here is **the variable name has to be the same as the zone name**.
 
 
-## <a name="one-to-many-relation" class="anchor" href="#one-to-many-relation"></a> One to many relation
+## <a name="one-to-many-relation" class="anchor" href="#one-to-many-relation">One to many relation</a>
 
 This resembles very much the one-to-one relation, except the partial to include and the method to call to get all linked files.
 
@@ -141,7 +141,7 @@ $galleryFiles = $this->file->findMultipleFilesByZoneForEntity('gallery', $produc
 
 Again, it is important **the variable name is the same as the zone name**.
 
-## <a name="delete-polymorphic-relation" class="anchor" href="#delete-polymorphic-relation"></a> Deleting the polymorphic relation upon deletion of related model
+## <a name="delete-polymorphic-relation" class="anchor" href="#delete-polymorphic-relation">Deleting the polymorphic relation upon deletion of related model</a>
 
 Considering the example of a producting having images linked to it. When removing a product, we also want the polymorphic relation to be deleted (ie: the records in the `media__imageables` table). 
 

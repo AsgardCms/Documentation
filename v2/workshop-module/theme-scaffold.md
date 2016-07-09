@@ -7,13 +7,13 @@ subtitle: Workshop Module
 - [Manual creation](#manual-creation)
 
 
-### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
+## <a class="anchor" name="introduction" href="#introduction">Introduction</a>
 
 The theme scaffolder is a command line tool that will give you the ability to generate themes in a matter of seconds.
 
 To have a quick idea on what it does you can check out [this quickcast](http://quick.as/epduvv4b).
 
-### <a class="anchor" name="usage" href="#usage"></a> Usage
+## <a class="anchor" name="usage" href="#usage">Usage</a>
 
 The usage is pretty simple and straightforward. Simply call the following command from the project root:
 
@@ -31,7 +31,7 @@ You will be asked the following questions:
 And that's it. You'll find you newly created theme under the `Themes/` directory.
 
 
-### <a class="anchor" name="manual-creation" href="#manual-creation"></a> Manual creation
+## <a class="anchor" name="manual-creation" href="#manual-creation">Manual creation</a>
 
 You can create themes manually as well, all a theme needs is the `theme.json` file to be registerable on the [Stylist package](https://github.com/floatingpointsoftware/stylist).
 

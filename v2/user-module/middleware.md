@@ -5,7 +5,7 @@ subtitle: User Module
 - [Guest middleware](#guest_middleware)
 - [Logged in middleware](#logged_in_middleware)
 
-### <a class="anchor" name="guest_middleware" href="#guest_middleware"></a> Guest middleware
+## <a class="anchor" name="guest_middleware" href="#guest_middleware">Guest middleware</a>
 
 The guest middleware makes sure the current route can't be accessed by a logged in user.
 
@@ -21,7 +21,7 @@ $router->get('login', [
 ]);
 ```
 
-### <a class="anchor" name="logged_in_middleware" href="#logged_in_middleware"></a> Logged in middleware
+## <a class="anchor" name="logged_in_middleware" href="#logged_in_middleware">Logged in middleware</a>
 
 The logged in middleware makes sure the current route can **only** be accessed by logged in users. This will redirect the user to the login page if it fails.
 

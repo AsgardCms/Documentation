@@ -7,17 +7,17 @@ subtitle: Core Module
 - [Using in own Theme](#custom-theme)
 
 
-### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
+## <a class="anchor" name="introduction" href="#introduction">Introduction</a>
 
 The asset manager in AsgardCms is a helper to let you load assets faster without making you look at the filesystem to find assets. It is important to note that the asset manager is not a requirement, you can choose not to use it if you wish.
 
-### <a class="anchor" name="usage" href="#usage"></a> Usage
+## <a class="anchor" name="usage" href="#usage">Usage</a>
 
 
 Asgard Asset Manager is a 2 part package. First there is the **manager** in which you add *all* the assets you will need to build your site. This doesn't mean those assets will be included in all files, it merely means they will be ready for the **asset pipeline** to require them on the page.
 
 
-#### Asset Manager
+### Asset Manager
 
 
 You can add assets on the manager using two different ways:
@@ -46,7 +46,7 @@ public function addAssets(array $assets);
 As you can see you can either pass a dependency name and its path to `addAsset`, or by sending an array to `addAssets`. That array needs to have as key the dependency name and value the path to that dependency.
 
 
-#### Asset Pipeline
+### Asset Pipeline
 
 After adding all possible dependencies on the asset manager, you are ready to require them on a page.
 
@@ -68,7 +68,7 @@ Those 2 lines will add these assets on the desired view, that is all.
 
 If you're in an Admin Controller, you have access to the `assetPipeline` and `assetManager` properties simply by extending the `Modules\Core\Http\Controllers\Admin\AdminBaseController` Controller.
 
-##### Before and After
+#### Before and After
 
 The asset pipeline also enables you to add an asset at a specific position on the pipeline. Let's say for instance that your javascript plugin requires jQuery, you can call the asset pipeline like so:
 
@@ -86,7 +86,7 @@ Those methods are of course also available for css assets.
 
 
 
-### <a class="anchor" name="custom-theme" href="#custom-theme"></a> Using in own Theme
+## <a class="anchor" name="custom-theme" href="#custom-theme">Using in your own Theme</a>
 
 
 If you're on a custom admin or front end theme, you can create a view composer that will add the `cssFiles` and `jsFiles` variables onto the views.

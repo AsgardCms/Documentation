@@ -7,13 +7,13 @@ subtitle: Workshop Module
 - [Composer usage](#composer)
 
 
-### <a class="anchor" name="introduction" href="#introduction"></a> Introduction
+## <a class="anchor" name="introduction" href="#introduction">Introduction</a>
 
 The module scaffolder is a command line tool that will give you the ability to generate modules in a matter of seconds.
 
 To have a quick idea on what it does you can check out [this quickcast](http://quick.as/loki7l0).
 
-### <a class="anchor" name="usage" href="#usage"></a> Usage
+## <a class="anchor" name="usage" href="#usage">Usage</a>
 
 The usage is pretty simple and straightforward. Simply call the following command from the project root:
 
@@ -53,7 +53,8 @@ The last step required is to add you module in the `Modules/.gitignore` file as 
 
 This will tell git to ignore everything in the Modules folder except for your modules.
 
-### <a class="anchor" name="composer" href="#composer"></a> Composer usage
+## <a class="anchor" name="composer" href="#composer">Composer usage</a>
+
 If you want to use composer on your new module, you will need to change one simple thing, adding a custom repository :
 
 In your Modules/YourSuperModule/composer.json add

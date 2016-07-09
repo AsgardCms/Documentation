@@ -8,14 +8,14 @@ The dashboard is a very important part of the back-end of the CMS. It's the firs
 
 Widgets location are saved on a per user basis. Each logged in user with the correct permissions can re-arrange the widgets however he or she prefers.
 
-### <a name="defining-widgets" class="anchor" href="#defining-widgets"></a> Defining widgets
+## <a name="defining-widgets" class="anchor" href="#defining-widgets">Defining widgets</a>
 
 Creating widgets is very easy and straightforward. A widget is composed of the following parts:
 
 - A widget class
 - A widget view
 
-#### Widget class
+### Widget class
 
 First you'll have to create a widget class that extends an abstract class: `BaseWidget`. This BaseWidget class will enforce you to implement the following methods:
 
@@ -34,12 +34,12 @@ First you'll have to create a widget class that extends an abstract class: `Base
 
 [View an example widget class.](https://github.com/AsgardCms/Blog/blob/master/Widgets/PostsWidget.php)
 
-#### Widget view
+### Widget view
 
 Now you can make your widget view. You can find some inspiration on the widgets page of the [Admin LTE theme](https://almsaeedstudio.com/themes/AdminLTE/pages/widgets.html).
 
 
-#### Registering the widget
+### Registering the widget
 
 As a final step you need to define your active widgets. To do so, you need to add a `Widgets` array in your `module.json` file, with an array of widget classes.
 

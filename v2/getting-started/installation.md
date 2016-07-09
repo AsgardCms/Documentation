@@ -21,7 +21,7 @@ To be able to run AsgardCMS you have to meet the following requirements:
 - MySql 5.5
 - One of the following cache drivers: `memcached`, `redis`, `apc`. (defaults to `array`)
 
-## <a name="install-asgardcms" class="anchor" href="#install-asgardcms"></a> Install AsgardCMS
+## <a name="install-asgardcms" class="anchor" href="#install-asgardcms">Install AsgardCMS</a>
 
 If you prefer a video to see how the installation process goes, [watch the install video](https://www.youtube.com/watch?v=MeX_D-aql6g).
 
@@ -61,7 +61,7 @@ This install command will perform the following actions:
 You can now login on `/auth/login` with your email and password asked during the install command. After you've logged in you'll be able to access the administration panel on the `/backend` URI.
 
 
-## <a name="getting-help" class="anchor" href="#getting-help"></a> Getting help
+## <a name="getting-help" class="anchor" href="#getting-help">Getting help</a>
 
 If you have **feedback** to give, **ideas** you would like implemented, by all means share them on the [forum](http://forum.asgardcms.com) in the "Comments and Feedback" section.
 

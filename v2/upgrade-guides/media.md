@@ -8,14 +8,14 @@ subtitle: Media module
 - [From 1.16.0 to 1.17.0](#upgrade-1.17.0)
 - [From 1.15.0 to 1.16.0](#upgrade-1.16.0)
 
-## <a name="upgrade-1.23.0" class="anchor" href="#upgrade-1.23.0"></a> From 1.22.0 to **1.23.0**
+## <a name="upgrade-1.23.0" class="anchor" href="#upgrade-1.23.0">From 1.22.0 to **1.23.0**</a>
 
 **events.php configuration file not needed**
 
 This file is not needed anymore.
 
 
-## <a name="upgrade-1.22.0" class="anchor" href="#upgrade-1.22.0"></a> From 1.21.0 to **1.22.0**
+## <a name="upgrade-1.22.0" class="anchor" href="#upgrade-1.22.0">From 1.21.0 to **1.22.0**</a>
 
 **New configuration file `config/asgard.media.events.php`**
 
@@ -25,7 +25,7 @@ Create the file your self in the configuration folder with the [following conten
 
 
 
-## <a name="upgrade-1.18.0" class="anchor" href="#upgrade-1.18.0"></a> From 1.17.0 to **1.18.0**
+## <a name="upgrade-1.18.0" class="anchor" href="#upgrade-1.18.0">From 1.17.0 to **1.18.0**</a>
 
 **Queued jobs**
 
@@ -34,7 +34,7 @@ The `RefreshThumbnailCommand` now uses a queued job as well as a previously queu
 This requires the presence of the abstract [`Job`](https://github.com/AsgardCms/Platform/blob/master/app/Jobs/Job.php) class in `app/Jobs/Job.php`.
 
 
-## <a name="upgrade-1.17.0" class="anchor" href="#upgrade-1.17.0"></a> From 1.16.0 to **1.17.0**
+## <a name="upgrade-1.17.0" class="anchor" href="#upgrade-1.17.0">From 1.16.0 to **1.17.0**</a>
 
 **Translations have been removed**
 
@@ -44,7 +44,7 @@ All translations files were removed from the individual modules and moved to the
 composer require asgardcms/translation-module
 ```
 
-## <a name="upgrade-1.16.0" class="anchor" href="#upgrade-1.16.0"></a> From 1.15.0 to **1.16.0**
+## <a name="upgrade-1.16.0" class="anchor" href="#upgrade-1.16.0">From 1.15.0 to **1.16.0**</a>
 
 **New `filesystem` configuration item**
 

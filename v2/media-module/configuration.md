@@ -10,7 +10,7 @@ subtitle: Media Module
 
 The **Media module** configuration file can be found at `config/asgard.media.config.php`.
 
-## <a class="anchor" name="filesystem" href="#filesystem"></a> Filesystem
+## <a class="anchor" name="filesystem" href="#filesystem">Filesystem</a>
 
 Define the filesystem you would like to use to store the media. Currently only disk and s3 are supported. 
 
@@ -20,7 +20,7 @@ Feel free to an [UrlResolver](https://github.com/AsgardCms/Media/blob/master/Url
 'filesystem' => 'local',
 ```
 
-## <a class="anchor" name="media-assets-path" href="#media-assets-path"></a> Media assets path
+## <a class="anchor" name="media-assets-path" href="#media-assets-path">Media assets path</a>
 
 
 This is the path where the media files will be uploaded.
@@ -31,7 +31,7 @@ It defaults to `/assets/media/`.
 'files-path' => '/assets/media/',
 ```
 
-## <a class="anchor" name="allowed-types" href="#allowed-types"></a> Allowed types
+## <a class="anchor" name="allowed-types" href="#allowed-types">Allowed types</a>
 
 Specify all the allowed file extensions a user can upload on the server.
 
@@ -41,7 +41,7 @@ It defaults to `.jpg,.png`.
 'allowed-types' => '.jpg,.png',
 ```
 
-## <a class="anchor" name="max-file-size" href="#max-file-size"></a> Max file size
+## <a class="anchor" name="max-file-size" href="#max-file-size">Max file size</a>
 
 Determine the max file size upload rate, defined in **mb**.
 
@@ -51,7 +51,7 @@ It defaults to **5mb**.
 'max-file-size' => '5',
 ```
 
-## <a class="anchor" name="max-total-size" href="#max-total-size"></a> Max total size
+## <a class="anchor" name="max-total-size" href="#max-total-size">Max total size</a>
 
 Determine the max total media folder size, expressed in bytes.
 

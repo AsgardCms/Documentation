@@ -5,7 +5,7 @@ subtitle: Media Module
 - [Basic Usage](#basic-usage)
 - [Filters](#filters)
 
-### <a name="basic-usage" class="anchor" href="#basic-usage"></a> Basic usage
+## <a name="basic-usage" class="anchor" href="#basic-usage">Basic usage</a>
 
 You can define a set of thumbnails your site needs.
 
@@ -29,7 +29,7 @@ return [
 ];
 ```
 
-### <a name="filters" class="anchor" href="#filters"></a> Filters
+## <a name="filters" class="anchor" href="#filters">Filters</a>
 
 The filters use the [Intervention/Image](http://image.intervention.io/) library, almost all the filters it has can be used.
 
@@ -54,7 +54,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Trim](#trim)
 - [Widen](#widen)
 
-#### <a name="crop" class="anchor" href="#crop"></a> Crop
+### <a name="crop" class="anchor" href="#crop">Crop</a>
 
 **Example**
 
@@ -74,7 +74,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - **x:** [optional] X-Coordinate of the top-left corner if the rectangular cutout. By default the rectangular part will be centered on the current image.
 - **y:** [optional] Y-Coordinate of the top-left corner if the rectangular cutout. By default the rectangular part will be centered on the current image.
 
-#### <a name="fit" class="anchor" href="#fit"></a> Fit
+### <a name="fit" class="anchor" href="#fit">Fit</a>
 
 **Example**
 
@@ -110,7 +110,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 
 
 
-#### <a name="blur" class="anchor" href="#blur"></a> Blur
+### <a name="blur" class="anchor" href="#blur">Blur</a>
 
 Apply a gaussian blur filter with a optional amount on the current image. Use values between `0` and `100`.
 
@@ -126,7 +126,7 @@ Apply a gaussian blur filter with a optional amount on the current image. Use va
 
 - **amount:** [optional] The amount of the blur strength. Use values between 0 and 100. Default: 1
 
-#### <a name="brightness" class="anchor" href="#brightness"></a> Brightness
+### <a name="brightness" class="anchor" href="#brightness">Brightness</a>
 
 Changes the brightness of the current image by the given level. Use values between `-100` for min. brightness `0` for no change and `+100` for max. brightness.
 
@@ -142,7 +142,7 @@ Changes the brightness of the current image by the given level. Use values betwe
 
 - **level:** [required] Level of brightness change applied to the current image. Use values between -100 and +100.
 
-#### <a name="colorize" class="anchor" href="#colorize"></a> Colorize
+### <a name="colorize" class="anchor" href="#colorize">Colorize</a>
 
 Change the RGB color values of the current image on the given channels **red**, **green** and **blue**. The input values are normalized so you have to include parameters from 100 for maximum color value `0` for no change and `-100` to take out all the certain color on the image.
 
@@ -163,7 +163,7 @@ Change the RGB color values of the current image on the given channels **red**, 
 - **blue:** [required] Add or take out a amount of blue color on the image. Use values between -100 and +100.
 
 
-#### <a name="contrast" class="anchor" href="#contrast"></a> Contrast
+### <a name="contrast" class="anchor" href="#contrast">Contrast</a>
 
 Changes the contrast of the current image by the given level. Use values between `-100` for min. contrast 0 for no change and `+100` for max. contrast.
 
@@ -180,7 +180,7 @@ Changes the contrast of the current image by the given level. Use values between
 - **level:** [required] Level of contrast change applied to the current image. Use values between -100 and +100.
 
 
-### <a name="flip" class="anchor" href="#flip"></a> Flip
+### <a name="flip" class="anchor" href="#flip">Flip</a>
 
 Mirror the current image horizontally or vertically by specifying the mode.
 
@@ -196,7 +196,7 @@ Mirror the current image horizontally or vertically by specifying the mode.
 
 - **mode:** [required] Specify the mode the image will be flipped. You can set h for horizontal (default) or v for vertical flip.
 
-#### <a name="gamma" class="anchor" href="#gamma"></a> Gamma
+### <a name="gamma" class="anchor" href="#gamma">Gamma</a>
 
 Performs a gamma correction operation on the current image.
 
@@ -213,7 +213,7 @@ Performs a gamma correction operation on the current image.
 - **correction:** [required] Specify the mode the image will be flipped. You can set h for horizontal (default) or v for vertical flip.
 
 
-#### <a name="greyscale" class="anchor" href="#greyscale"></a> Greyscale
+### <a name="greyscale" class="anchor" href="#greyscale">Greyscale</a>
 
 Turns image into a greyscale version.
 
@@ -228,7 +228,7 @@ Turns image into a greyscale version.
 None
 
 
-#### <a name="heighten" class="anchor" href="#heighten"></a> Heighten
+### <a name="heighten" class="anchor" href="#heighten">Heighten</a>
 
 Resizes the current image to new **height**, constraining aspect ratio. Pass an optional Closure **callback** as third parameter, to apply additional constraints like preventing possible upsizing.
 
@@ -248,7 +248,7 @@ Resizes the current image to new **height**, constraining aspect ratio. Pass an 
 - **height:** [required] The new height of the image
 - **callback:** [optional] Closure callback defining constraint to prevent unwanted upsizing of the image.
 
-#### <a name="invert" class="anchor" href="#invert"></a> Invert
+### <a name="invert" class="anchor" href="#invert">Invert</a>
 
 Reverses all colors of the current image.
 
@@ -262,7 +262,7 @@ Reverses all colors of the current image.
 
 None
 
-#### <a name="limitcolors" class="anchor" href="#limitcolors"></a> LimitColors
+### <a name="limitcolors" class="anchor" href="#limitcolors">LimitColors</a>
 
 Method converts the existing colors of the current image into a color table with a given maximum **count** of colors. The function preserves as much alpha channel information as possible and blends transparent pixels against a optional **matte color**.
 
@@ -281,7 +281,7 @@ Method converts the existing colors of the current image into a color table with
 - **matte:** [optional] A color to blend transparent pixels against. Default: no matte color
 
 
-#### <a name="opacity" class="anchor" href="#opacity"></a> Opacity
+### <a name="opacity" class="anchor" href="#opacity">Opacity</a>
 
 Set the **opacity** in percent of the current image ranging from 100% for opaque and 0% for full transparency.
 
@@ -299,7 +299,7 @@ Set the **opacity** in percent of the current image ranging from 100% for opaque
 
 - **transparency:** [required] The new percent of transparency for the current image.
 
-#### <a name="orientate" class="anchor" href="#orientate"></a> Orientate
+### <a name="orientate" class="anchor" href="#orientate">Orientate</a>
 
 This method reads the EXIF image profile setting 'Orientation' and performs a rotation on the image to display the image correctly.
 
@@ -315,7 +315,7 @@ This method reads the EXIF image profile setting 'Orientation' and performs a ro
 None
 
 
-#### <a name="pixelate" class="anchor" href="#pixelate"></a> Pixelate
+### <a name="pixelate" class="anchor" href="#pixelate">Pixelate</a>
 
 Applies a pixelation effect to the current image with a given **size** of pixels.
 
@@ -333,7 +333,7 @@ Applies a pixelation effect to the current image with a given **size** of pixels
 - **size:** [required] Size of the pixels.
 
 
-#### <a name="resize" class="anchor" href="#resize"></a> Resize
+### <a name="resize" class="anchor" href="#resize">Resize</a>
 
 Resizes current image based on given **width** and/or **height**. To constraint the resize command, pass an optional Closure **callback** as third parameter.
 
@@ -357,7 +357,7 @@ Resizes current image based on given **width** and/or **height**. To constraint 
 - **callback:** [optional] Closure callback defining constraints on the resize. It's possible to constraint the **aspect-ratio** and/or a unwanted **upsizing** of the image. 
 
 
-#### <a name="rotate" class="anchor" href="#rotate"></a> Rotate
+### <a name="rotate" class="anchor" href="#rotate">Rotate</a>
 
 Rotate the current image counter-clockwise by a given **angle**. Optionally define a **background color** for the uncovered zone after the rotation.
 
@@ -377,7 +377,7 @@ Rotate the current image counter-clockwise by a given **angle**. Optionally defi
 - **bgcolor:** [required] A background color for the uncovered zone after the rotation. Default: `#000000`
 
 
-#### <a name="sharpen" class="anchor" href="#sharpen"></a> Sharpen
+### <a name="sharpen" class="anchor" href="#sharpen">Sharpen</a>
 
 Sharpen current image with an optional **amount**. Use values between `0` and `100`.
 
@@ -395,7 +395,7 @@ Sharpen current image with an optional **amount**. Use values between `0` and `1
 - **amount:** [optional] The amount of the sharpening strength. Method accepts values between `0` and `100`. Default: `10`
 
 
-#### <a name="trim" class="anchor" href="#trim"></a> Trim
+### <a name="trim" class="anchor" href="#trim">Trim</a>
 
 Trim away image space in given color. Define an optional **base** to pick a color at a certain position and borders that should be trimmed **away**. You can also set an optional **tolerance** level, to trim similar colors and add a **feathering** border around the trimmed image.
 
@@ -437,7 +437,7 @@ Trim away image space in given color. Define an optional **base** to pick a colo
 - **feather:** [optional] Sometimes it may be useful to leave a untouched "border" around an object while trimming. Especially when trimming non-solid backgrounds you can expand (positive value) or contract (negative value) the space around the trimmed object by a certain amount of pixels. Default: `0`
 
 
-#### <a name="widen" class="anchor" href="#widen"></a> Widen
+### <a name="widen" class="anchor" href="#widen">Widen</a>
 
 Resizes the current image to new **width**, constraining aspect ratio. Pass an optional Closure **callback** as third parameter, to apply additional constraints like preventing possible upsizing.
 

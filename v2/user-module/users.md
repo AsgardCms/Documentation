@@ -5,7 +5,7 @@ subtitle: User Module
 - [Getting logged in User](#getting-logged-in-user)
 - [Getting logged in User in views](#getting-logged-in-user-in-views)
 
-## <a class="anchor" name="getting-logged-in-user" href="#getting-logged-in-user"></a> Getting logged in User
+## <a class="anchor" name="getting-logged-in-user" href="#getting-logged-in-user">Getting logged in User</a>
 
 To get the currently logged in user you can inject the [Authentication interface](https://github.com/AsgardCms/Core/blob/master/Contracts/Authentication.php) in your controller, or a view composer and using the following:
 
@@ -26,7 +26,7 @@ public function check();
 ```
 
 
-## <a class="anchor" name="getting-logged-in-user-in-views" href="#getting-logged-in-user-in-views"></a> Getting logged in User in views
+## <a class="anchor" name="getting-logged-in-user-in-views" href="#getting-logged-in-user-in-views">Getting logged in User in views</a>
 
 ### Recommended: View Composer
 

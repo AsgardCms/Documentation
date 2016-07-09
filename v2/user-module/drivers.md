@@ -14,13 +14,13 @@ The user module brings three important interfaces:
 
 Thanks to these interface, the user and role systems can be completely decoupled from the implementation. This is what enables AsgardCMS to give you the option to either use Sentry or Sentinel out of the box.
 
-## <a class="anchor" name="user-and-role-providers" href="#user-and-role-providers"></a> User and Role providers
+## <a class="anchor" name="user-and-role-providers" href="#user-and-role-providers">User and Role providers</a>
 
 AsgardCMS comes **out of the box** with the following User and Role providers:
   
 - [Cartalyst Sentinel](https://cartalyst.com/manual/sentinel/1.0?utm_source=asgard-cms&utm_medium=readme&utm_campaign=asgard-cms)
 
-## <a class="anchor" name="implementing-custom-providers" href="#implementing-custom-providers"></a> Implementing custom providers
+## <a class="anchor" name="implementing-custom-providers" href="#implementing-custom-providers">Implementing custom providers</a>
 
 You are absolutely free to implement other user/role/authentication providers. You could for instance make an implementation for the popular packages Confide and Entrust, or maybe you're satisfied with the basic laravel implementation. 
 

@@ -10,7 +10,7 @@ subtitle: Themes
 
 In this section we will go over on how to create and manage themes. You can view a demo frontend, [Flatly](https://github.com/AsgardCms/Flatly-theme) theme and [demo backend theme](https://github.com/AsgardCms/AdminLTE) for your inspiration.
 
-### <a name="folder-structure" class="anchor" href="#folder-structure"></a> Folder structure
+## <a name="folder-structure" class="anchor" href="#folder-structure">Folder structure</a>
 
 A theme has to have a `theme.json` file which will contain the theme name, its description and type (frontend | backend). All your views will be located in the `views` directory. Those views will use assets that are located in the `assets` folder. This asset folder will be published in the public directory. I'd recommend placing your `less`, `sass`, `coffeescript` files inside a `resources` folder which thanks to gulp will be published to the `assets` folder. 
 
@@ -54,7 +54,7 @@ The primary difference between both, beyond the obvious reason, is that the **ba
 To set a backend theme, you need to edit the `config/asgard.core.core.php` config file and set the `admin-theme` option. The has to correspond with the `name` key in `module.json`.
 
 
-### <a name="commands" class="anchor" href="#commands"></a> Commands
+## <a name="commands" class="anchor" href="#commands">Commands</a>
 
 As you can see the assets live in the `Themes` folder in the root directory. To publish the assets to the public directory and make the accessible to the webserver, you have to use a publish command:
 
@@ -63,7 +63,7 @@ php artisan asgard:publish:theme
 ```
 
 
-### <a name="linking-to-theme-assets" class="anchor" href="#linking-to-theme-assets"></a> Linking to theme assets
+## <a name="linking-to-theme-assets" class="anchor" href="#linking-to-theme-assets">Linking to theme assets</a>
 
 To link to a theme asset you can use the following helpers:
 
@@ -80,14 +80,14 @@ If you want to directly get a URL of a resource you can use the following helper
 <link rel="shortcut icon" href="{{ Theme::url('favicon.ico') }}">
 ```
 
-### <a name="display-a-theme-page" class="anchor" href="#display-a-theme-page"></a> Display a theme page
+## <a name="display-a-theme-page" class="anchor" href="#display-a-theme-page">Display a theme page</a>
 
 To display a page from a theme, or using its layout, there is nothing new; use the `View::make` as normal.
 
 For instance if you have set the active theme to `Demo`, when you use `View::make('index')`, it'll check for the page inside your Demo theme folder `Themes/demo/index.blade.php`.
 
 
-### <a name="elixir" class="anchor" href="#elixir"></a> Elixir publish helper
+## <a name="elixir" class="anchor" href="#elixir">Elixir publish helper</a>
 
 Since all assets need to be published to the `public/` folder you can use the following custom **mix** for [Laravel Elixir](http://laravel.com/docs/5.1/elixir).
 
