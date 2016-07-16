@@ -8,7 +8,7 @@ subtitle: Tag Module
 - [Store tags](#store-tags)
 
 
-## <a name="add-interface-trait" class="anchor" href="#add-interface-trait">Add interface & trait on desired entity</a>
+## <a name="add-interface-trait" class="anchor" href="#add-interface-trait">1. Add interface & trait on desired entity</a>
 
 Your entity needs to implement the `Modules\Tag\Contracts\TaggableInterface` interface.
 
@@ -28,7 +28,7 @@ protected static $entityNamespace = 'asgardcms/media';
 ```
 
 
-## <a name="define-namespace" class="anchor" href="#define-namespace">Defining a new namespace to use for tags</a>
+## <a name="define-namespace" class="anchor" href="#define-namespace">2. Defining a new namespace to use for tags</a>
 
 In your module Service Provider, `boot()` method, you now need to add the namespace it's going to use. This can be done using the `TagManager` interface.
 
@@ -39,7 +39,7 @@ $this->app[TagManager::class]->registerNamespace(new File());
 And with this, the Tag Module is aware of the new namespace.
 
 
-## <a name="display-tags" class="anchor" href="#display-tags">Display the tag field on your views</a>
+## <a name="display-tags" class="anchor" href="#display-tags">3. Display the tag field on your views</a>
 
 
 By using a custom blade directive you can include the tags field on your views. 
@@ -53,7 +53,7 @@ By using a custom blade directive you can include the tags field on your views.
 ````
 
 
-## <a name="store-tags" class="anchor" href="#store-tags">Store tags</a>
+## <a name="store-tags" class="anchor" href="#store-tags">4. Store tags</a>
 
 
 In your repositories you need to call the `setTags()` method to persist the tags on your entity.
