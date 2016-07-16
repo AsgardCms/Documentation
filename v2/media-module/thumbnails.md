@@ -9,25 +9,27 @@ subtitle: Media Module
 
 You can define a set of thumbnails your site needs.
 
-This can be done by adding thumbnails settings file in your module. The file has to be called `thumbnails.php`, hence the complete path `Modules\YourModule\Config\thumbnails.php`.
+This can be done by using the `ThumbnailManager` interface and calling the `registerThumbnail()` on that.
 
 Thumbnails are set by key and can have a set of attributes. For instance you could have a 'smallThumb' that crops the image and adds a blur filter. This is possible with this module.
 
-For the example previously stated, the thumbnail settings file can start like this:
+For the example previously stated, you can call the following in your Module's Service Provider class in the `boot()` method:
 
 ``` .language-php
-return [
-    'smallThumb' => [
-        'crop' => [
-            'width' => '100',
-            'height' => '200'
-        ],
-        'blur' => [
-            'amount' => '15'
-        ],
-    ]
-];
+$this->app[ThumbnailManager::class]->registerThumbnail('smallThumb', [
+    'resize' => [
+        'width' => 50,
+        'height' => null,
+        'callback' => function ($constraint) {
+            $constraint->aspectRatio();
+            $constraint->upsize();
+        },
+    ],
+]);
 ```
+
+This will make the Media module aware of your thumbnails.
+
 
 ## <a name="filters" class="anchor" href="#filters">Filters</a>
 
