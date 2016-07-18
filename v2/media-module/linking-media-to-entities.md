@@ -1,4 +1,4 @@
-title: Linking media to Models
+title: Linking media to Entities
 subtitle: Media Module
 -------
 
