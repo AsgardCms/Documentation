@@ -9,7 +9,11 @@ subtitle: Media Module
 
 You can use the media uploaded in any module you make. 
 
-Lets say you have an articles module, and want your article to have a cover image. This is when you'll want a '**one-to-one**' relation type. If for instance you have a product, which can have multiple images, you'll want a '**one-to-many**' relation type.
+Lets say you have an articles module, and want your article to have a *cover image*. This is when you'll want a '**one-to-one**' relation type. If for instance you have a product, which can have multiple images (a *gallery*), you'll want a '**one-to-many**' relation type.
+
+In this example, *cover_image* and *gallery* are what we call "zones". Zones are basically groups of files, which allows us to get all (or one) file(s) for a specific group, for an entity.
+
+Zones can be imagined as part of website pages, to which we assign files.
 
 It is important to note that both types use the same `morphToMany` relation behind the scenes. It's only the UI which changes.
 
