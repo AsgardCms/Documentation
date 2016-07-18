@@ -14,14 +14,14 @@ Lets say you have an articles module, and want your article to have a cover imag
 It is important to note that both types use the same `morphToMany` relation behind the scenes. It's only the UI which changes.
 
 
-## <a name="adding-media-relation-trait" class="anchor" href="#adding-media-relation-trait">Adding the `MediaRelation` trait</a>
+## <a name="adding-media-relation-trait" class="anchor" href="#adding-media-relation-trait">1. Adding the `MediaRelation` trait</a>
 
 First thing you need is add the `Modules\Media\Support\Traits\MediaRelation` trait onto your desired *entity* (an eloquent model).
 
 This will add a `files` morphToMany relation onto your entity.
 
 
-## <a name="display-input-on-views" class="anchor" href="#display-input-on-views">Display input on your views</a>
+## <a name="display-input-on-views" class="anchor" href="#display-input-on-views">2. Display input on your views</a>
 
 
 ### One to One (one file)
@@ -50,7 +50,7 @@ This is if you want to include multiple files for a given `zone`, like for examp
 @mediaMultiple('gallery', $article)
 ```
 
-## <a name="trigger-event" class="anchor" href="#trigger-event">Trigger event on create/update</a>
+## <a name="trigger-event" class="anchor" href="#trigger-event">3. Trigger event on create/update</a>
 
 These events will let the media module know it needs to handle the data from the form to link / unlink files.
 
@@ -94,7 +94,7 @@ class RecipeWasCreated implements StoringMedia
 }
 ```
 
-## <a name="delete-polymorphic-relation" class="anchor" href="#delete-polymorphic-relation">Deleting the polymorphic relation upon deletion of related model</a>
+## <a name="delete-polymorphic-relation" class="anchor" href="#delete-polymorphic-relation">4. Deleting the polymorphic relation upon deletion of related model</a>
 
 Considering the example of a product having images linked to it. When removing a product, we also want the polymorphic relation to be deleted (ie: the records in the `media__imageables` table). 
 
