@@ -6,7 +6,7 @@ subtitle: Tag Module
 - [Defining a new namespace to use for tags](#define-namespace)
 - [Display the tag field on your views](#display-tags)
 - [Store tags](#store-tags)
-- [Removing morph relationship on delete of entity]($remove-morph-relationship)
+- [Removing morph relationship on delete of entity](#remove-morph-relationship)
 
 
 ## <a name="add-interface-trait" class="anchor" href="#add-interface-trait">1. Add interface & trait on desired entity</a>
