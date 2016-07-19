@@ -6,6 +6,7 @@ subtitle: Tag Module
 - [Defining a new namespace to use for tags](#define-namespace)
 - [Display the tag field on your views](#display-tags)
 - [Store tags](#store-tags)
+- [Removing morph relationship on delete of entity]($remove-morph-relationship)
 
 
 ## <a name="add-interface-trait" class="anchor" href="#add-interface-trait">1. Add interface & trait on desired entity</a>
@@ -63,3 +64,23 @@ $file->setTags(array_get($data, 'tags'));
 ```
 
 And that's all on how to use tags for your entities.
+
+
+## <a name="remove-morph-relationship" class="anchor" href="#remove-morph-relationship">(optional) Removing morph relationship on delete of entity</a>
+
+When you delete the entity to which there are tags linked to, you might want to delete the relation between your entity and the tags (the morph relationship). This relationship can be viewed in the `tag__tagged` table.
+
+To delete this link when deleting your entity, you can call the following method in your repository, for instance the destroy method:
+
+```.language-php
+public function destroy($page)
+{
+    $page->untag();
+
+    event(new PageWasDeleted($page));
+
+    return $page->delete();
+}
+```
+
+When the `untag()` methods gets no argument, it will remove all links for the entity.
