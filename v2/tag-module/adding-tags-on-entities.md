@@ -15,7 +15,7 @@ Your entity needs to implement the `Modules\Tag\Contracts\TaggableInterface` int
 
 In order for your entity to satisfy this interface it needs to use the following traits:
 
-- `Modules\Tag\Traits\NamespacedEntity`
+- `Modules\Core\Traits\NamespacedEntity`
 - `Modules\Tag\Traits\TaggableTrait`
 
 Tags are organised by namespace. This is used in order to get the tags for a specific namespace on the display of the field. It also creates tags for that namespace if tags need to be created.
