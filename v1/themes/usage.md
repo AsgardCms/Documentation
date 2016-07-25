@@ -51,7 +51,7 @@ The `theme.json` file has to have a `type` key. This has to be either **backend*
 
 The primary difference between both, beyond the obvious reason, is that the **backend** theme *won't* show up in the settings module in the theme dropdown.
 
-To set a backend theme, you need to edit the `config/asgard.core.core.php` config file and set the `admin-theme` option. The has to correspond with the `name` key in `module.json`.
+To set a backend theme, you need to edit the `config/asgard.core.core.php` config file and set the `admin-theme` option. The has to correspond with the `name` key in `theme.json`.
 
 
 ### <a name="commands" class="anchor" href="#commands"></a> Commands
