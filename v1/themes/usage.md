@@ -123,7 +123,7 @@ Elixir will now compile `main.less`, and publish the compiled css to the `public
 
 ### <a name="display-images" class="anchor" href="#display-images"></a> Displaying images
 
-There are couple of ways to display an image from your theme. Assuming your image is located in  `public/themes/your_theme/images/logo.png`.
+There are couple of ways to display an image from your theme. Assming your image is located in  `public/themes/your_theme/images/logo.png`.
 
 ``` .language-markup
 {{ Theme::image('images/logo.png') }}
