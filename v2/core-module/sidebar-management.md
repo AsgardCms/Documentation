@@ -6,6 +6,7 @@ subtitle: Core Module
 - [Usage](#usage)
 - [Single Menu Item](#single-menu-item)
 - [Menu With Submenus](#menu-with-submenus)
+- [Overwriting Default Sidebars](#overwrite-default-sidebars)
 
 ## <a class="anchor" name="introduction" href="#introduction">Introduction</a>
 
@@ -171,3 +172,16 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
 You can find this class in `Modules/User/Sidebar/SidebarExtender.php`
 
 And that is all you have to do to add your menu item.
+
+
+## <a class="anchor" name="overwrite-default-sidebars" href="#overwrite-default-sidebars">Overwriting Default Sidebars</a>
+
+AsgardCMS comes with default modules, which all have their own sidebar class. If the structure those classes don't correspond to what you would like to have, you have the possibility to overwrite those sidebar classes, on a per module basis.
+
+Let say you want to overwrite the sidebar of the Menu module. 
+
+Open the published menu module config file located at `config/asgard/menu/config.php`.
+
+In here you will find a `custom-sidebar` key. This is where you can define your own sidebar class. Enter the full namespace to your customised sidebar class here and that will be used instead of the one provided by the menu module.
+
+This works for any AsgardCMS module. If the config key `custom-sidebar` does not exist, it can be added and will be used.
