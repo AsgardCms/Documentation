@@ -7,7 +7,7 @@ subtitle: Core module
 
 ## <a name="upgrade-2.0" class="anchor" href="#upgrade-2.0">From v1 to **v2**</a>
 
-**[Changelog](https://github.com/AsgardCms/Core/blob/2.0/changelog.yml)**
+**[> Changelog](https://github.com/AsgardCms/Core/blob/2.0/changelog.yml)**
 
 **Re-problish configuration files**
 
