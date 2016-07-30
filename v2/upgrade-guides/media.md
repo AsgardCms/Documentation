@@ -2,11 +2,25 @@ title: Upgrade Guide
 subtitle: Media module
 -------
 
+- [From v1 to v2](#upgrade-2.0)
 - [From 1.22.0 to 1.23.0](#upgrade-1.23.0)
 - [From 1.21.0 to 1.22.0](#upgrade-1.22.0)
 - [From 1.17.0 to 1.18.0](#upgrade-1.18.0)
 - [From 1.16.0 to 1.17.0](#upgrade-1.17.0)
 - [From 1.15.0 to 1.16.0](#upgrade-1.16.0)
+
+## <a name="upgrade-2.0" class="anchor" href="#upgrade-2.0">From v1 to **v2**</a>
+
+**[> Changelog](https://github.com/AsgardCms/Media/blob/2.0/changelog.yml)**
+
+**New blade directives**
+
+It isn't needed anymore to use the `@include` directives. Instead the menu module comes with its own directives, `@mediaSingle` and `@mediaMultiple`.
+
+Learn all about those new directives on the [updated documentation](https://asgardcms.com/docs/v2/media-module/linking-media-to-entities).
+
+These directes can now also be used on the *create views*!
+
 
 ## <a name="upgrade-1.23.0" class="anchor" href="#upgrade-1.23.0">From 1.22.0 to **1.23.0**</a>
 
