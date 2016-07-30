@@ -51,6 +51,15 @@ $router->get('users', [
 
 The value after `can:` is the corresponding key in your `permissions.php` file.
 
+**`users.php` config file rename**
+
+the `users.php` configuration file was renamed to `config.php` in the User module.
+
+This mean if you used those configuration items in your modules you need to replace:
+
+- `config('asgard.user.users`
+- by: `config('asgard.user.config`
+
 
 ## <a name="upgrade-1.14.0" class="anchor" href="#upgrade-1.14.0">From 1.13.1 to **1.14.0**</a>
 
