@@ -6,6 +6,7 @@ subtitle: Setting Module
 - [Using the interface](#using-the-interface)
 	- [Get setting in current locale](#get-setting-in-current-locale)
 	- [Get a non translatable setting](get-a-non-translatable-setting)
+- [Using the @setting blade directive](#blade-directive)
 - [Using the helper function](#using-the-helper-function)
 - [Using the facade](#using-the-facade)
 
@@ -46,9 +47,23 @@ $siteName = $this->setting->get('core::site-name', locale())
 $postsPerPage = $this->setting->get('blog::posts-per-page');
 ```
 
+## <a name="blade-directive" class="anchor" href="#blade-directive">Using the @setting blade directive</a>
+
+In your views you can call the `@setting()` blade directive.
+
+``` .language-php
+@setting('core::site-name');
+
+// Get the setting value in a specific locale
+@setting('core::site-name', 'fr');
+
+// Set a custom default value
+@setting('core::site-name', null, 'Default name');
+```
+
 ## <a name="using-the-helper-function" class="anchor" href="#using-the-helper-function">Using the helper function</a>
 
-In your views you can directly use the `setting()` function.
+In your views or any other class you can directly use the `setting()` function.
 
 To get the site name setting in the core module:
 
