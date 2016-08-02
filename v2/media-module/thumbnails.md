@@ -3,6 +3,7 @@ subtitle: Media Module
 -------
 
 - [Basic Usage](#basic-usage)
+- [Image quality](#image-quality)
 - [Filters](#filters)
 
 ## <a name="basic-usage" class="anchor" href="#basic-usage">Basic usage</a>
@@ -29,6 +30,24 @@ $this->app[ThumbnailManager::class]->registerThumbnail('smallThumb', [
 ```
 
 This will make the Media module aware of your thumbnails.
+
+## <a name="image-quality" class="anchor" href="#image-quality">Image quality</a>
+
+Each thumbnail can optionally also specify the image quality. This defaults to `90` and can be overwritten like so:
+
+``` .language-php
+$this->app[ThumbnailManager::class]->registerThumbnail('smallThumb', [
+    'quality' => 60,
+    'resize' => [
+        'width' => 50,
+        'height' => null,
+        'callback' => function ($constraint) {
+            $constraint->aspectRatio();
+            $constraint->upsize();
+        },
+    ],
+]);
+```
 
 
 ## <a name="filters" class="anchor" href="#filters">Filters</a>
