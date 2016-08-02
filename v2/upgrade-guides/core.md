@@ -101,3 +101,9 @@ If you did use them replace:
 
 - `Pingpong\Modules`
 - by: `Nwidart\Modules`
+
+**Google Analytics setting name change**
+
+The previously called setting name `core::google-analytics`, has been renamed to `core::analytics-script`.
+
+Update your database to match the new keyname, or re-save the settings.
