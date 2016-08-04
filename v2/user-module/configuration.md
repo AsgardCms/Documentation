@@ -9,7 +9,7 @@ subtitle: User Module
 - [Allow/Disallow user registrations](#user-registrations)
 - [User driver](#user-driver)
 
-The **User module** configuration file can be found at `config/asgard.user.users.php`.
+The **User module** configuration file can be found at `config/asgard/user/config.php`.
 
 ## <a class="anchor" name="adding-data-on-users-table" href="#adding-data-on-users-table">Adding data on the users table</a>
 

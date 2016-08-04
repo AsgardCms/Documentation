@@ -9,7 +9,7 @@ subtitle: Core Module
 - [Custom Ckeditor config path]($custom-ckeditor-config)
 - [Middleware](#middleware)
 
-This **Core Module** has one main configuration item, you'll find it at `config/asgard.core.core.php`.
+This **Core Module** has one main configuration item, you'll find it at `config/asgard/core/core.php`.
 
 ## <a class="anchor" name="admin-prefix" href="#admin-prefix">Admin Prefix</a>
 
