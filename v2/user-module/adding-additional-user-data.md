@@ -166,7 +166,7 @@ You can add a relation for the profile like so:
     'relations' => [
         ...
         'profile' => function ($self) {
-            return $self->belongsTo(\Modules\Profile\Entities\Profile::class, 'id', 'user_id');
+            return $self->hasOne(\Modules\Profile\Entities\Profile::class, 'user_id', 'id');
         },
     ],
 ```
