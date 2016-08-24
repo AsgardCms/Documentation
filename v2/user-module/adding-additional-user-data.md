@@ -142,20 +142,33 @@ Now to get the user from a profile just use `$profile->user->id`.
 
 This one is special since we cannot edit our User module directly, since this module is managed by composer and is not present in our `Modules/.gitignore` file.
 
-To add the relation on our User, we need to create a `relations.php` file in the `Config` folder of our application. 
+To add the relation on our User, we need to edit the `config.php` file in the `/config/asgard/user/` folder of our application. 
 
-This is what this file looks like for user User relation:
+Navigate to the section titled `Dynamic relations`, by default it looks like this:
 
 ``` .language-php
-<?php
+/*
+     |--------------------------------------------------------------------------
+     | Dynamic relations
+     |--------------------------------------------------------------------------
+     | Add relations that will be dynamically added to the User entity
+     */
+    'relations' => [
+//        'extension' => function ($self) {
+//            return $self->belongsTo(UserExtension::class, 'user_id', 'id')->first();
+//        }
+    ],
+```
 
-return [
-    'User' => [
+You can add a relation for the profile like so:
+
+```.language-php
+    'relations' => [
+        ...
         'profile' => function ($self) {
-            return $self->belongsTo('Modules\Profile\Entities\Profile', 'id', 'user_id')->first();
-        }
-    ]
-];
+            return $self->hasOne(\Modules\Profile\Entities\Profile::class, 'user_id', 'id');
+        },
+    ],
 ```
 
 We can now access the user profile information using `$user->profile->street`.
