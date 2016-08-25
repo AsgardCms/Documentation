@@ -74,6 +74,7 @@ The filters use the [Intervention/Image](http://image.intervention.io/) library,
 - [Sharpen](#sharpen)
 - [Trim](#trim)
 - [Widen](#widen)
+- [Canvas Resize](#canvas-resize)
 
 ### <a name="crop" class="anchor" href="#crop">Crop</a>
 
@@ -477,3 +478,42 @@ Resizes the current image to new **width**, constraining aspect ratio. Pass an o
 
 - **width:** [required] The new width of the image
 - **callback:** [optional] Closure callback defining constraint to prevent unwanted upsizing of the image.
+
+### <a name="canvas-resize" class="anchor" href="#canvas-resize">Canvas Resize</a>
+
+Resize the boundaries of the current image to given **width and height**. An **anchor** can be defined to determine from what point of the image the resizing is going to happen. Set the mode to **relative** to add or subtract the given width or height to the actual image dimensions. You can also pass a **background color** for the emerging area of the image.
+
+**Example**
+
+``` .language-php
+'resizeCanvas' => [
+    'width' => 100,
+    'height' => 100,
+    'anchor' => 'center',
+    'relative' => false,
+    'bgcolor' => 'rgba(255, 255, 255, 0)',
+],
+```
+
+**Parameters**
+
+- **width:** [required] The new width in pixels of the image in absolute mode or the amount of pixels to add or subtract from height in relative mode.
+- **height:** [required] The new height in pixels of the image in absolute mode or the amount of pixels to add or subtract from height in relative mode.
+- **anchor:** [optional]
+
+	Set a point from where the image resizing is going to happen. For example if you are setting the anchor to `bottom-left` this side is pinned and the values of width/height will be added or subtracted to the top-right corner of the image.
+
+	The possible values for this parameter are:
+
+	- top-left
+	- top
+	- top-right
+	- left
+	- center (default)
+	- right
+	- bottom-left
+	- bottom
+	- bottom-right
+
+- **relative:** [optional] Determine that the resizing is going to happen in relative mode. Meaning that the values of width or height will be added or substracted from the current height of the image. Default: `false`
+- **bgcolor:** [optional] A background color for the new areas of the image. The background color can be passed in in different [color formats](http://image.intervention.io/getting_started/formats). Default: `#000000`
