@@ -12,11 +12,51 @@ subtitle: Getting Started
 
 ### Modules 
 
-- Have an installation of [AsgardCMS/Platform](https://github.com/AsgardCms/Platform) 
+- Clone the [AsgardCMS/Platform](https://github.com/AsgardCms/Platform)
 - Remove the `.git/` directory
 - Remove all modules from `composer.json` file (or only the one you want to contribute to)
-- `cd` into the `Modules/` folder and clone each Module individually (or only the one you want to contribute to)
-- Install AsgardCMS as usual `php artisan asgard:install`
+- `cd` into the `Modules/` folder and clone each Module individually (or only the one you want to contribute to). Here is a list of all core modules you can clone.
+	- `git@github.com:AsgardCms/Core.git`
+	- `git@github.com:AsgardCms/Dashboard.git`
+	- `git@github.com:AsgardCms/User.git`
+	- `git@github.com:AsgardCms/Setting.git`
+	- `git@github.com:AsgardCms/Media.git`
+	- `git@github.com:AsgardCms/Page.git`
+	- `git@github.com:AsgardCms/Menu.git`
+	- `git@github.com:AsgardCms/Workshop.git`
+	- `git@github.com:AsgardCms/Translation.git`
+	- `git@github.com:AsgardCms/Tag.git`
+- Go into `config/app.php` and temporaly comment out the `AsgardServiceProvider`
+- Add the following dependencies to your global `composer.json file`
+	
+	```
+    "laravelcollective/html": "~5.2",
+    "pingpong/menus": "~2.2",
+    "laracasts/presenter": "~0.2",
+    "guzzlehttp/guzzle": "~5.0",
+    "dimsav/laravel-translatable": "~5.5",
+    "mcamara/laravel-localization": "~1.1",
+    "intervention/image": "~2.3",
+    "floatingpoint/stylist": "dev-master",
+    "maatwebsite/laravel-sidebar": "~2.1",
+    "typicms/nestablecollection": "1.1.1",
+    "symfony/yaml": "~2.8",
+    "doctrine/dbal": "^2.6@dev",
+    "predis/predis": "^1.1@dev",
+    "pusher/pusher-php-server": "dev-master",
+    "maatwebsite/excel": "~2.1",
+    "league/csv": "~7.2.0",
+    "venturecraft/revisionable": "1.*",
+    "league/flysystem-aws-s3-v3": "~1.0",
+    "league/flysystem-memory": "^1.0",
+    "ramsey/uuid": "^3.4",
+    "nwidart/laravel-modules": "~0.1"
+    ```
+
+- Run `composer install`
+- Go back into `config/app.php` and uncomment the `AsgardServiceProvider` line
+- Install AsgardCMS as usual `php artisan asgard:install` (use Vagrant/Homestead/Docker/Valet or whatever you like to run the website)
+
 
 ### Themes
 
