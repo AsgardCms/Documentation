@@ -15,17 +15,21 @@ subtitle: Getting Started
 - Clone the [AsgardCMS/Platform](https://github.com/AsgardCms/Platform)
 - Remove the `.git/` directory
 - Remove all modules from `composer.json` file (or only the one you want to contribute to)
-- `cd` into the `Modules/` folder and clone each Module individually (or only the one you want to contribute to). Here is a list of all core modules you can clone.
-	- `git@github.com:AsgardCms/Core.git`
-	- `git@github.com:AsgardCms/Dashboard.git`
-	- `git@github.com:AsgardCms/User.git`
-	- `git@github.com:AsgardCms/Setting.git`
-	- `git@github.com:AsgardCms/Media.git`
-	- `git@github.com:AsgardCms/Page.git`
-	- `git@github.com:AsgardCms/Menu.git`
-	- `git@github.com:AsgardCms/Workshop.git`
-	- `git@github.com:AsgardCms/Translation.git`
-	- `git@github.com:AsgardCms/Tag.git`
+- `cd` into the `Modules/` folder and clone each Module individually (or only the one you want to contribute to). The following command will clone all core modules.
+
+	```
+	git clone git@github.com:AsgardCms/Core.git && \
+	git clone git@github.com:AsgardCms/Dashboard.git &&  \ 
+	git clone git@github.com:AsgardCms/User.git && \
+	git clone git@github.com:AsgardCms/Setting.git && \
+	git clone git@github.com:AsgardCms/Media.git && \
+	git clone git@github.com:AsgardCms/Page.git && \ 
+	git clone git@github.com:AsgardCms/Page.git && \
+	git clone git@github.com:AsgardCms/Menu.git && \
+	git clone git@github.com:AsgardCms/Workshop.git && \
+	git clone git@github.com:AsgardCms/Translation.git && \
+	git clone git@github.com:AsgardCms/Tag.git
+	```
 - Go into `config/app.php` and temporaly comment out the `AsgardServiceProvider`
 - Add the following dependencies to your global `composer.json file`
 	
