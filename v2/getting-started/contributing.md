@@ -24,7 +24,6 @@ subtitle: Getting Started
 	git clone git@github.com:AsgardCms/Setting.git && \
 	git clone git@github.com:AsgardCms/Media.git && \
 	git clone git@github.com:AsgardCms/Page.git && \ 
-	git clone git@github.com:AsgardCms/Page.git && \
 	git clone git@github.com:AsgardCms/Menu.git && \
 	git clone git@github.com:AsgardCms/Workshop.git && \
 	git clone git@github.com:AsgardCms/Translation.git && \
@@ -60,6 +59,8 @@ subtitle: Getting Started
 - Run `composer install`
 - Go back into `config/app.php` and uncomment the `AsgardServiceProvider` line
 - Install AsgardCMS as usual `php artisan asgard:install` (use Vagrant/Homestead/Docker/Valet or whatever you like to run the website)
+
+Note: 
 
 
 ### Themes
