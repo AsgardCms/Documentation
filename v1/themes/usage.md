@@ -7,6 +7,7 @@ subtitle: Themes
 - [Linking to theme assets](#linking-to-theme-assets)
 - [Display a theme page](#display-a-theme-page)
 - [Elixer publish helper](#elixir)
+- [Displaying images](#display-images)
 
 In this section we will go over on how to create and manage themes. You can view a demo frontend, [Flatly](https://github.com/AsgardCms/Flatly-theme) theme and [demo backend theme](https://github.com/AsgardCms/AdminLTE) for your inspiration.
 
@@ -119,3 +120,15 @@ mix
 ```
 
 Elixir will now compile `main.less`, and publish the compiled css to the `public/` folder.
+
+### <a name="display-images" class="anchor" href="#display-images"></a> Displaying images
+
+There are couple of ways to display an image from your theme. Assuming your image is located in  `public/themes/your_theme/images/logo.png`.
+
+``` .language-markup
+{{ Theme::image('images/logo.png') }}
+
+<img src="{{ Theme::url('images/logo.png') }}" />
+reply
+```
+
