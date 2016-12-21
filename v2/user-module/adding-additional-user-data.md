@@ -6,7 +6,8 @@ subtitle: User Module
 - [Adding custom profile fields](#adding-custom-profile-fields)
 - [Publishing user views](#publishing-user-views)
 - [Adding custom fields on the register view](#adding-custom-fields-on-register-view)
-- [Setting up relations](#setting-up-relations)
+- [Setting up relationships](#setting-up-relationships)
+- [Automatically loading relationships](#automatically-loading-relationships)
 - [Adding data on the users table](#adding-data-on-users-table)
 
 
@@ -115,9 +116,9 @@ An example from our migration :
 
 And that's all there is to it to add our custom fields on the view.
 
-## <a class="anchor" name="setting-up-relations" href="#setting-up-relations">Setting up relations</a>
+## <a class="anchor" name="setting-up-relationships" href="#setting-up-relationships">Setting up relationships</a>
 
-The final thing we need to do is setting up the relation, both on the Profile entity as on the User entity. A profile belongs to a user and a user belongs to a profile.
+The final thing we need to do is setting up the relationship, both on the Profile entity as on the User entity. A profile belongs to a user and a user has a profile.
 
 ### On Profile entity
 
@@ -134,7 +135,7 @@ public function user()
 ```
 This is added on the Profile entity found at `Modules/Profile/Entities/Profile.php`. 
 
-We're reading the user driver from the configuration and using that to setup our relation.
+We're reading the user driver from the configuration and using that to setup our relationship.
 
 Now to get the user from a profile just use `$profile->user->id`.
 
@@ -142,41 +143,38 @@ Now to get the user from a profile just use `$profile->user->id`.
 
 This one is special since we cannot edit our User module directly, since this module is managed by composer and is not present in our `Modules/.gitignore` file.
 
-To add the relation on our User, we need to edit the `config.php` file in the `/config/asgard/user/` folder of our application. 
+To add the relationship on our User, we need to add it as a macro (via Laravel's `Macroable` trait) in a service provider. This can be done in the `boot()` method of the Profile module's service provider (`Modules/Profile/Providers/ProfileServiceProvider.php`) or any other service provider that is loaded by Laravel. (For example, you can create a `RelationshipsServiceProvider` to only manage relationships. Just don't forget to add the new service provider to your `module.json`.)
 
-Navigate to the section titled `Dynamic relations`, by default it looks like this:
-
-``` .language-php
-/*
-     |--------------------------------------------------------------------------
-     | Dynamic relations
-     |--------------------------------------------------------------------------
-     | Add relations that will be dynamically added to the User entity
-     */
-    'relations' => [
-//        'extension' => function ($self) {
-//            return $self->belongsTo(UserExtension::class, 'user_id', 'id')->first();
-//        }
-    ],
-```
-
-You can add a relation for the profile like so:
+You can add a relationship for the profile like so:
 
 ```.language-php
-    'relations' => [
-        ...
-        'profile' => function ($self) {
-            return $self->hasOne(\Modules\Profile\Entities\Profile::class, 'user_id', 'id');
-        },
-    ],
+User::macro('profile', function () {
+    return $this->hasOne(\Modules\Profile\Entities\Profile::class, 'user_id', 'id');
+});
 ```
 
 We can now access the user profile information using `$user->profile->street`.
+
+## <a class="anchor" name="automatically-loading-relationships" href="#automatically-loading-relationships">Automatically loading relationships</a>
+
+In Laravel, the models have a property called `$with`. You can use this property to automatically load relationships when that model is used.
+
+In AsgardCms, this property can be filled via the configuration file located at `config/asgard/user/config.php`. Look for the `with` key. It will be an array of the names of the macros you create for relationships.
+
+For example:
+
+```.language-php
+'with' => [
+    'profile',
+],
+```
+
+This will automatically load the profile relationship from above.
 
 ## <a class="anchor" name="adding-data-on-users-table" href="#adding-data-on-users-table">Adding data on the users table</a>
 
 You can add additional columns on the users table if that's really needed. For instance if you want to have an username.
 
-In the users configuration file, located at `config/asgard.user.users.php`, there's a `fillable` key which contains an array of fillable fields for the user object.
+In the users configuration file, located at `config/asgard/user/config.php`, there's a `fillable` key which contains an array of fillable fields for the user object.
 
 Add the fields you want in this array. 
