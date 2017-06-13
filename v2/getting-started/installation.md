@@ -29,7 +29,7 @@ If you prefer a video to see how the installation process goes, [watch the insta
 ### Get AsgardCMS
 
 ``` .language-bash
-composer create-project asgardcms/platform=2.0.x-dev your-project-name
+composer create-project asgardcms/platform your-project-name
 ```
 
 ### Create a database
