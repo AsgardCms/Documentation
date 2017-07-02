@@ -122,7 +122,7 @@ Let's say you want to download the [AsgardCMS/Contact](https://github.com/Asgard
 php artisan asgard:download:module asgardcms/contact
 ```
 
-This will download the Contact mododule in your `Modules/` folder.
+This will download the Contact module in your `Modules/` folder.
 
 **Running migrations**
 
