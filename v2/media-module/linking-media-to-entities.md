@@ -32,6 +32,11 @@ This will add a `files` morphToMany relation onto your entity.
 
 This is if you want to include a single file for a given `zone`, like for example a `feature_image`.
 
+- The first argument is the name of the zone.
+- (optional) Second argument is the entity to store the media for.
+- (optional) Third argument can be a view to use. This will override the default media view with its input field.
+- (optional) Fourth and last argument can be a name to use. This will override the default name for the input field.
+
 Simple include the following blade directive:
 
 ``` .language-php
@@ -45,6 +50,11 @@ Simple include the following blade directive:
 ### One to Many (multiple files)
 
 This is if you want to include multiple files for a given `zone`, like for example a gallery of images. Those images can also be re-ordered.
+
+- The first argument is the name of the zone.
+- (optional) Second argument is the entity to store the media for.
+- (optional) Third argument can be a view to use. This will override the default media view with its input field.
+- (optional) Fourth and last argument can be a name to use. This will override the default name for the input field.
 
 ``` .language-php
 // Create view
