@@ -84,4 +84,4 @@ If you have **feedback** to give, **ideas** you would like implemented, by all m
 
 For **issues/bugs** your having, you can use the Github Issues to post those. All issues are grouped on the [AsgardCms/Platform](https://github.com/AsgardCms/Platform/issues) repository.
 
-If you just want to **talk**, join [our Slack channel](http://slack.asgardcms.com/).
+If you just want to **talk**, join [our Slack channel (http://slack.asgardcms.com/)](http://slack.asgardcms.com/).
