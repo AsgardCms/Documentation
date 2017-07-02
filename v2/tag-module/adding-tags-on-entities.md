@@ -47,7 +47,7 @@ By using a custom blade directive you can include the tags field on your views.
 
 - The first argument is the namespace to get the tags for.
 - (optional) Second argument is the entity to fetch the tags for (pre-filling the input if tags are present for given entity).
-- (optional) Third can be a view to use. This will override the default tags view with its input field.
+- (optional) Third argument can be a view to use. This will override the default tags view with its input field.
 - (optional) Fourth and last argument can be a name to use. This will override the default name for the input field.
 
 ```` .language-php
