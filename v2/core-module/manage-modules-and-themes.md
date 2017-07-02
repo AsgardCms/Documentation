@@ -1,10 +1,11 @@
-title: Install or Update a module/theme
+title: Manage Modules and Themes
 subtitle: Core Module
 -------
 
 - [Install an existing module/theme](#install-module-theme)
 - [Update a module/theme](#update-module-theme)
 - [Download an existing Module](#download-module)
+- [Delete an existing Module](#delete-module)
 
 
 It's important to know that a module and a theme, is just a simple **composer package**. Meaning that if your module has a dependency on another package or AsgardCMS-module, you can add those in the `require` key of the `composer.json` file of your module.
@@ -101,7 +102,7 @@ This is an alternative way of downloading existing modules. This won't use compo
 
 **Disadvantages to using download feature:**
 
-1. Not version management with the original repository
+1. No version management with the original repository
 
 After having downloaded a module, you can instantly start to customise it to your needs, and add it to your version control system.
 
@@ -146,14 +147,28 @@ Of course all those options, can be specified together:
 
 ``` .language-bash
 php artisan asgard:download:module asgardcms/contact --migrations --seeds --assets
+# or
+php artisan asgard:download:module asgardcms/contact --demo
 ```
 
 ### Download a specific branch
 
-The previous commends requires the wanted module to have a **github release**. This might not always be the case (though recommended). For this situation you can specify which branch to download using the `--branch` option
+The previous commands requires the wanted module to have a **github release**. This might not always be the case (though recommended). For this situation you can specify which branch to download using the `--branch` option
 
 ``` .language-bash
 php artisan asgard:download:module asgardcms/contact --branch=master
 ```
 
 This will not download the latest release, but instead the master branch.
+
+
+## <a class="anchor" name="delete-module" href="#delete-module">Delete an existing Module</a>
+
+If you want to remove a module, you can use the following command:
+
+``` .language-bash
+php artisan asgard:delete:module ModuleName --migrations
+```
+
+This will remove the module's tables, and remove any user or role that had permissions for this module.
+
