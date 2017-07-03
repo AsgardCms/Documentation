@@ -17,6 +17,8 @@ Zones can be imagined as part of website pages, to which we assign files.
 
 It is important to note that both types use the same `morphToMany` relation behind the scenes. It's only the UI which changes.
 
+**[A demonstration module is available here](https://github.com/AsgardCms/Media-link-example)**
+
 
 ## <a name="adding-media-relation-trait" class="anchor" href="#adding-media-relation-trait">1. Adding the `MediaRelation` trait</a>
 
