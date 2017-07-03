@@ -15,6 +15,12 @@ subtitle: Getting Started
 - Clone your fork,
 - Make your changes and send in a pull-request.
 
+**Which branch should I make my PR form and send it to?**
+
+- Current default branch (`2.0`) if you're sending something for version 2.0,
+- Next major release: `master` branch.
+
+
 
 ## <a name="style-guide" class="anchor" href="#style-guide">Style guide</a>
 
