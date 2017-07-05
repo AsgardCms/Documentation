@@ -21,6 +21,13 @@ Learn all about those new directives on the [updated documentation](https://asga
 
 These directes can now also be used on the *create views*!
 
+**Media urls**
+
+AsgardCMS use to resolve URLs on its own, ie making a url to a specific location based off the selected driver (local, s3, etc.). Now that Laravel has this functionallity built in, we're levering that feature since 2.0. 
+
+To keep your URLs intact you will have to set your `APP_URL` in your `.env` file. As well as update the `config/filesystem.php` to add a `URL` parameter to the local driver.
+You can view an example of this file at [this location](https://github.com/AsgardCms/Platform/blob/2.0/config/filesystems.php#L59).
+
 
 ## <a name="upgrade-1.23.0" class="anchor" href="#upgrade-1.23.0">From 1.22.0 to **1.23.0**</a>
 
