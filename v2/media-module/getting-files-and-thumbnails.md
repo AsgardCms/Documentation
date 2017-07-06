@@ -22,7 +22,7 @@ $images = $product->files()->where('zone', 'featured_images')->get();
 $images = $product->filesByZone('featured_images')->get();
 ```
 
-This is find, but isn't really pretty to use in views. To avoid this issue, we can leverage laravel's [accessor feature](https://laravel.com/docs/5.4/eloquent-mutators). Let's add one on our `Product` entity.
+This is fine, but isn't really pretty to use in views. To avoid this issue, we can leverage laravel's [accessor feature](https://laravel.com/docs/5.4/eloquent-mutators). Let's add one on our `Product` entity.
 
 ```.language-php
 class Product extends Model
