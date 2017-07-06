@@ -4,6 +4,7 @@ subtitle: Media Module
 
 - [Basic Usage](#basic-usage)
 - [Image quality](#image-quality)
+- [Refresh thumbnail command](#refresh-thumbnail-command)
 - [Filters](#filters)
 
 ## <a name="basic-usage" class="anchor" href="#basic-usage">Basic usage</a>
@@ -48,6 +49,18 @@ $this->app[ThumbnailManager::class]->registerThumbnail('smallThumb', [
     ],
 ]);
 ```
+
+## <a name="refresh-thumbnail-command" class="anchor" href="#refresh-thumbnail-command">Refresh thumbnail command</a>
+
+
+It is important you define your thumbnail with filters configuration before uploading any pictures. If you added new thumbnails or changed some thumbnail filters, after some media has already been uploaded you can run a refresh command to regenerate all thumbnails.
+
+The following command will refresh all thumbnails:
+
+``` .language-bash
+php artisan asgard:media:refresh
+```
+
 
 
 ## <a name="filters" class="anchor" href="#filters">Filters</a>
