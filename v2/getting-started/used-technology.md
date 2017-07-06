@@ -31,7 +31,7 @@ The server requirements are very similar to Laravel's server requirements:
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [maatwebsite/laravel-sidebar](https://github.com/maatwebsite/laravel-sidebar)
 - [intervention/image](https://github.com/intervention/image)
-- [pingpong-labs/menus](https://github.com/pingpong-labs/menus)
+- [nwidart/laravel-menus](https://github.com/nwidart/laravel-menus)
 - [typicms/nestablecollection](https://github.com/typicms/nestablecollection)
 - [orchestra/testbench](https://github.com/orchestral/testbench)
 - [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
