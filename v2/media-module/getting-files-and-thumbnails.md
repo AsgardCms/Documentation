@@ -40,7 +40,7 @@ Of course, this is not limited to images, but any type of file. This can also be
 
 ### MediaPath
 
-`MediaPath` is a value object that will be returned when you get a file from the previous methods. Usually you won't even notice. 
+`MediaPath` is a value object that will be returned when you get a file from the previous methods. Usually you won't even notice.
 
 We want to display our product images:
 
@@ -65,6 +65,18 @@ If a product had a single file, lets say a specification pdf:
 
 
 If you want to get a specific thumbnail of an image you can have 2 choices. Either you're in a view, then you'll use the Facade, if not use class/method injection.
+
+### Blade Directive
+
+``` .language-markup
+<img src="@thumbnail('/assets/media/original-image-name.png', 'smallThumb')" alt="" />
+```
+
+Or more realistically:
+
+``` .language-markup
+<img src="@thumbnail($product->featured_image->path, 'smallThumb')" alt="" />
+```
 
 ### Facade
 
