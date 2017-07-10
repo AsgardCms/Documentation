@@ -28,17 +28,16 @@ Please note AsgardCMS follows **[PSR-1](http://www.php-fig.org/psr/psr-1/)** and
 
 You can use a great tool : **[PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)** to make sure everything is following the correct coding style.
 
-Every module has a `.php_cs` config file to run **php-cs-fixer** with:
 
 ``` .language-bash
-$ cd Modules/{ModuleName}
-$ php-cs-fixer fix . --config-file=".php_cs" --verbose
+$ # in your Platform root directory 
+$ php-cs-fixer fix --verbose
 ```
 
 To avoid having to type this every time, I have this command aliased to `pcf`, like so:
 
 ``` .language-bash
-pcf="php-cs-fixer fix . --config-file='.php_cs' --verbose"
+pcf="php-cs-fixer fix --verbose"
 ```
 Now I can type `pcf` in the root directory of the module, and it'll just work, giving that there's a `.php_cs` file.
 
@@ -51,7 +50,7 @@ AsgardCMS follows a workflow similar to **[Git Flow branching model](https://www
 
 This means:
 
-- For a new feature: 
+- For a new feature:
 	- On `master` branch,
 	- Create a branch `feature/your-new-feature-name`,
 	- Add you changes,
@@ -69,13 +68,13 @@ This means:
 ## <a name="adding-updating-translations" class="anchor" href="#adding-updating-translations">Adding or updating translations</a>
 
 
-Adding new translations or updating existing translations to core modules is very easy in AsgardCms. All translations are centralised in the [Translation](https://github.com/AsgardCms/Translation) module. 
+Adding new translations or updating existing translations to core modules is very easy in AsgardCms. All translations are centralised in the [Translation](https://github.com/AsgardCms/Translation) module.
 
-All you need to do is fork that module, and add and/or update existing translations. 
+All you need to do is fork that module, and add and/or update existing translations.
 
 The translations are located in the `Resources/lang` folder, each module has its own subfolder, with under that the different locales.
 
-If you want to add a new language, duplicate the `en` folder of each module and renaming it to your desired locale. The English translations will usually the more complete ones, that's why it's best to use those as a starting point. 
+If you want to add a new language, duplicate the `en` folder of each module and renaming it to your desired locale. The English translations will usually the more complete ones, that's why it's best to use those as a starting point.
 
 
 ## <a name="additional-resources" class="anchor" href="#additional-resources">Additional resources</a>
