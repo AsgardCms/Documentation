@@ -17,8 +17,9 @@ To hook into those hooks you can create a listener class that is set to listen o
 In those events you have access to the following methods:
 
 - `getAttributes()`: Will return the current attributes of the entity
+- `getAttribute('name', 'default')`: Will return the `name` attribute
 - `setAttributes([])`: Will set your given attributes
-- `getOriginal()`: Will return the original attributes, untouched by other listeners
+- `getOriginal()`: Will return the original attributes, untouched by other listeners. Optional parameter can be used to get a specific original key
 
 The `PageIsUpdating` has one more method:
 
@@ -34,8 +35,8 @@ Lets say you want to upper case the page titles:
 ```.language-php
 Event::listen(PageIsUpdating::class, function (PageIsUpdating $event) {
     $attributes = [
-        'en' => ['title' => strtoupper(array_get($this->getAttributes(), 'en.title'))]
-        'fr' => ['title' => strtoupper(array_get($this->getAttributes(), 'fr.title'))]
+        'en' => ['title' => strtoupper($this->getAttributes('en.title'))]
+        'fr' => ['title' => strtoupper($this->getAttributes('fr.title'))]
     ];
     $event->setAttributes($attributes);
 });

@@ -17,8 +17,9 @@ To hook into those hooks you can create a listener class that is set to listen o
 In those events you have access to the following methods:
 
 - `getAttributes()`: Will return the current attributes of the entity
+- `getAttribute('name', 'default')`: Will return the `name` attribute
 - `setAttributes([])`: Will set your given attributes
-- `getOriginal()`: Will return the original attributes, untouched by other listeners
+- `getOriginal()`: Will return the original attributes, untouched by other listeners. Optional parameter can be used to get a specific original key
 
 The `UserIsUpdating` has one more method:
 
@@ -31,8 +32,8 @@ To keep the example simple we're going to use an inline listener using a closure
 
 ```.language-php
 Event::listen(UserIsCreating::class, function (UserIsCreating $event) {
-    $attributes['first_name'] = ucfirst($event->getAttributes()['first_name']);
-    $attributes['last_name'] = ucfirst($event->getAttributes()['last_name']);
+    $attributes['first_name'] = ucfirst($event->getAttribute('first_name'));
+    $attributes['last_name'] = ucfirst($event->getAttributes('last_name'));
     $event->setAttributes($attributes);
 });
 ```
