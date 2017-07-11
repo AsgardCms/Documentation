@@ -33,7 +33,7 @@ To keep the example simple we're going to use an inline listener using a closure
 ```.language-php
 Event::listen(UserIsCreating::class, function (UserIsCreating $event) {
     $attributes['first_name'] = ucfirst($event->getAttribute('first_name'));
-    $attributes['last_name'] = ucfirst($event->getAttributes('last_name'));
+    $attributes['last_name'] = ucfirst($event->getAttribute('last_name'));
     $event->setAttributes($attributes);
 });
 ```
