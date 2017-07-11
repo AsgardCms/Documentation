@@ -1,0 +1,44 @@
+title: Hooks
+subtitle: Page Module
+-------
+
+- [Hooking into hooks](#hooking-into-hooks)
+- [Example](#example)
+
+The page module comes with the following hooks. You can hook into those using the usual listener logic.
+
+- PageIsCreating
+- PageIsUpdating
+
+## <a class="anchor" name="hooking-into-hooks" href="#hooking-into-hooks">Hooking into hooks</a>
+
+To hook into those hooks you can create a listener class that is set to listen on the event you require. All events ending with `IsCreating` and `IsUpdating` across module implementing the [`EntityIsChanging`](https://github.com/AsgardCms/Platform/blob/2.0/Modules/Core/Contracts/EntityIsChanging.php) interface.
+
+In those events you have access to the following methods:
+
+- `getAttributes()`: Will return the current attributes of the entity
+- `setAttributes([])`: Will set your given attributes
+- `getOriginal()`: Will return the original attributes, untouched by other listeners
+
+The `PageIsUpdating` has one more method:
+
+- `getPage()`: Will return the page being updated
+
+
+## <a class="anchor" name="hook-example" href="#hook-example">Example</a>
+
+To keep the example simple we're going to use an inline listener using a closure instead of a full class.
+
+Lets say you want to upper case the page titles:
+
+```.language-php
+Event::listen(PageIsUpdating::class, function (PageIsUpdating $event) {
+    $attributes = [
+        'en' => ['title' => strtoupper(array_get($this->getAttributes(), 'en.title'))]
+        'fr' => ['title' => strtoupper(array_get($this->getAttributes(), 'fr.title'))]
+    ];
+    $event->setAttributes($attributes);
+});
+```
+
+And that's it! This will use those modified attributes before storing a page.
