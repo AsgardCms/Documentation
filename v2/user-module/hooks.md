@@ -20,6 +20,10 @@ In those events you have access to the following methods:
 - `setAttributes([])`: Will set your given attributes
 - `getOriginal()`: Will return the original attributes, untouched by other listeners
 
+The `UserIsUpdating` has one more method:
+
+- `getUser()`: Will return the user being updated
+
 
 ## <a class="anchor" name="hook-example" href="#hook-example">Example</a>
 
