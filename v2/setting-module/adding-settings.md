@@ -7,6 +7,13 @@ subtitle: Setting Module
 
 Adding settings for you module is very easy. All you need to do is add a `settings.php` configuration file in `YourModule/config/settings.php`, and return an array of settings you want.
 
+You will also have to load that setting file in your service provider, like so:
+
+```.language-php
+$this->publishConfig('moduleName', 'permissions');
+```
+The first argument is the **module name** and the second the **file name** without extension.
+
 ## <a name="registering-translatable-settings" class="anchor" href="#registering-translatable-settings">Registering translatable settings</a>
 
 The settings are registered in the following manner:
@@ -35,11 +42,11 @@ return [
 
 ```
 
-The **array key** being the setting name, holding an array of information. 
+The **array key** being the setting name, holding an array of information.
 
 The information array needs the following:
 
-- a `description` key: this will be the label / placeholder, 
+- a `description` key: this will be the label / placeholder,
 - a `view` key: which points to the view holding the field,
 - a `translatable` key: defines if the setting is translatable (set in multiple languages)
 - a `default` key (*optional*): defines a default value for your setting if none is present and none is set in the third argument of `Setting::get()`.
