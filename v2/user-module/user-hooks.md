@@ -1,4 +1,4 @@
-title: Hooks
+title: User Hooks
 subtitle: User Module
 -------
 

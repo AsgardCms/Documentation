@@ -1,4 +1,4 @@
-title: Hooks
+title: Page Hooks
 subtitle: Page Module
 -------
 
