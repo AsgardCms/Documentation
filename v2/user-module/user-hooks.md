@@ -6,6 +6,8 @@ The user module comes with the following hooks. You can hook into those using th
 
 - [UserIsCreating](#user-is-creating)
 - [UserIsUpdating](#user-is-updating)
+- [RoleIsCreating](#role-is-creating)
+- [RoleIsUpdating](#role-is-updating)
 
 [Please view the hook section in the Core module.](/docs/v2/core-module/hooks)
 
@@ -31,3 +33,11 @@ Event::listen(UserIsCreating::class, function (UserIsCreating $event) {
     $event->setAttributes($attributes);
 });
 ```
+
+## <a class="anchor" name="role-is-creating" href="#role-is-creating">RoleIsCreating</a>
+
+## <a class="anchor" name="role-is-updating" href="#role-is-updating">RoleIsUpdating</a>
+
+The `RoleIsUpdating` has one more method:
+
+- `getRole()`: Will return the role being updated
