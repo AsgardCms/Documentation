@@ -1,4 +1,4 @@
-title: File Hooks
+title: Media Hooks
 subtitle: Media Module
 -------
 
