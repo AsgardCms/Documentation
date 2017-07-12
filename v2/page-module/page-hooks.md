@@ -2,16 +2,13 @@ title: Page Hooks
 subtitle: Page Module
 -------
 
-- [Hooking into hooks](#hooking-into-hooks)
-- [Example](#example)
-
 The page module comes with the following hooks. You can hook into those using the usual listener logic.
 
 - [PageIsCreating](#page-is-creating)
 - [PageIsUpdating](#page-is-updating)
 - [ContentIsRendering](#content-is-rendering)
 
-[Please view the hook section in the Core module.]()
+[Please view the hook section in the Core module.](/docs/v2/core-module/hooks)
 
 ## <a class="anchor" name="page-is-creating" href="#page-is-creating">PageIsCreating</a>
 
