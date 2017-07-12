@@ -24,12 +24,10 @@ The `UserIsUpdating` has one more method:
 
 To keep the example simple we're going to use an inline listener using a closure instead of a full class.
 
-Lets say we
+Lets say we want to uppercase our tag:
 
 ```.language-php
-Event::listen(UserIsCreating::class, function (UserIsCreating $event) {
-    $attributes['first_name'] = ucfirst($event->getAttribute('first_name'));
-    $attributes['last_name'] = ucfirst($event->getAttribute('last_name'));
-    $event->setAttributes($attributes);
+Event::listen(TagIsCreating::class, function (TagIsCreating $event) {
+    $event->setAttributes(['en' => ['name' => ucfirst($event->getAttribute('en.name'))]);
 });
 ```
