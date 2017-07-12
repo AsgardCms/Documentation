@@ -5,7 +5,7 @@ subtitle: Setting Module
 The following events are triggered in the Setting Module:
 
 - [SettingWasCreated](#setting-was-created)
-- [SettingWasUpdate](#setting-was-updated)
+- [SettingWasUpdated](#setting-was-updated)
 
 
 ## <a name="setting-was-created" class="anchor" href="#setting-was-created">SettingWasCreated</a>
