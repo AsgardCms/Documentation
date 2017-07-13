@@ -22,7 +22,7 @@ The `IsUpdating` hooks will usually also have a method to get the entity being u
 
 ## <a class="anchor" name="editor-is-rendering" href="#editor-is-rendering">EditorIsRending</a>
 
-This hook enabled you to change which editor is used in the backend. Two editors are provider by default ckeditor and simplemde. Ckeditor is activated by default.
+This hook enabled you to change which editor is used in the backend. Two editors are provider by default **ckeditor** and **simplemde**. Ckeditor is activated by default.
 
 The event uses the asset pipeline, which requires your assets to be defined on the asset manager before hand. How to do this is explained [here](/docs/v2/core-module/assetmanager).
 
