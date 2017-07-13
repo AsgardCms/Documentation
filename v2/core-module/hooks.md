@@ -44,3 +44,5 @@ AsgardCMS comes with the following options built-in:
 
 - `\Modules\Core\Events\Handlers\LoadCkEditor::class`
 - `\Modules\Core\Events\Handlers\LoadSimpleMde::class`
+
+If you do choose the markdown editor, you might wonder how to parse and render the markdown, thankfully there's a hook for that: [`ContentIsRendering`](/docs/v2/page-module/page-hooks#content-is-rendering). AsgardCMS also comes with a ready to use event listener to render markdown using league/commonmark: [`RenderMarkdown`](https://github.com/AsgardCms/Platform/blob/2.0/Modules/Core/Events/Handlers/RenderMarkdown.php). Simply use this listener on the ContentIsRendering event and you're good to go.
