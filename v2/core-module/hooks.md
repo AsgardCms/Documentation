@@ -40,3 +40,7 @@ This [event](https://github.com/AsgardCms/Platform/blob/2.0/Modules/Core/Events/
 
 You can change which event listener is used by changing the `asgard.core.core.wysiwyg-handler` configuration option.
 
+AsgardCMS comes with the following options built-in:
+
+- `\Modules\Core\Events\Handlers\LoadCkEditor::class`
+- `\Modules\Core\Events\Handlers\LoadSimpleMde::class`
