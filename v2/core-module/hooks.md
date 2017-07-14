@@ -6,6 +6,7 @@ AsgardCMS gives you the ability to hook into different part of the application. 
 
 - [Hooking into entity hooks](#hooking-into-entity-hooks)
 - [EditorIsRendering](#editor-is-rendering)
+- [CollectingAssets](#collecting-assets)
 
 ## <a class="anchor" name="hooking-into-entity-hooks" href="#hooking-into-entity-hooks">Hooking into entity hooks</a>
 
@@ -46,3 +47,32 @@ AsgardCMS comes with the following options built-in:
 - `\Modules\Core\Events\Handlers\LoadSimpleMde::class`
 
 If you do choose the markdown editor, you might wonder how to parse and render the markdown, thankfully there's a hook for that: [`ContentIsRendering`](/docs/v2/page-module/page-hooks#content-is-rendering). AsgardCMS also comes with a ready to use event listener to render markdown using league/commonmark: [`RenderMarkdown`](https://github.com/AsgardCms/Platform/blob/2.0/Modules/Core/Events/Handlers/RenderMarkdown.php). Simply use this listener on the ContentIsRendering event and you're good to go.
+
+## <a class="anchor" name="collecting-assets" href="#collecting-assets">CollectingAssets</a>
+
+With this hook you can add your assets on every route, or optionally on some routes. The following methods are available:
+
+- `requireCss($asset)` Require a css asset.
+- `requireJs($asset)`: Require a js asset.
+- `onRoute($route)`: Check if the given route matches the current route. Supports wildcards with `*`.
+- `onRoutes($routes)`: Check if the given array of routes matches the current route. Supports wildcards with `*`.
+
+### CollectingAssets Example
+
+For the Page Module, we need iCheck on the create and edit pages, and Datatables on the page index.
+
+```.language-php
+Event::listen(CollectingAssets::class, function (CollectingAssets $event) {
+    if ($event->onRoutes(['*page*create', '*page*edit'])) {
+        $event->requireCss('icheck.blue.css');
+        $event->requireJs('icheck.js');
+    }
+    if ($event->onRoute('*page*index')) {
+        $event->requireCss('dataTables.bootstrap.css');
+        $event->requireJs('jquery.dataTables.js');
+        $event->requireJs('dataTables.bootstrap.js');
+    }
+});
+```
+
+
