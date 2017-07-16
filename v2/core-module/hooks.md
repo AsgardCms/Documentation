@@ -48,11 +48,10 @@ Same editor directive, with the locale omitted.
 
 ``` .language-php
 // Create
-@editor('body', trans('page::pages.form.body'), old("{$lang}.body"))
+@editor('body', trans('page::pages.form.body'), old('body'))
 
 // Edit
-<?php $old = $page->hasTranslation($lang) ? $page->translate($lang)->body : '' ?>
-@editor('body', trans('page::pages.form.body'), old("$lang.body", $old))
+@editor('body', trans('page::pages.form.body'), old('body', $old))
 ```
 
 ### Creating a custom editor
