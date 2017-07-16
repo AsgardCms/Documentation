@@ -27,6 +27,36 @@ This hook enables you to change which editor is used in the backend. Two editors
 
 The event uses the asset pipeline, which requires your assets to be defined on the asset manager before hand. How to do this is explained [here](/docs/v2/core-module/assetmanager).
 
+### Adding textarea fields with swappable wysiwygs in your modules
+
+Since a textarea needs to custom code to allow for the wysiwyg to be swappable, we've made a convenient helper blade directive for easy of use. It's now a simple matter of calling the following:
+
+#### Translatable
+
+``` .language-php
+// Create
+@editor('body', trans('page::pages.form.body'), old("{$lang}.body"), $lang)
+
+// Edit
+<?php $old = $page->hasTranslation($lang) ? $page->translate($lang)->body : '' ?>
+@editor('body', trans('page::pages.form.body'), old("$lang.body", $old), $lang)
+```
+
+#### Normal
+
+Same editor directive, with the locale omitted.
+
+``` .language-php
+// Create
+@editor('body', trans('page::pages.form.body'), old("{$lang}.body"))
+
+// Edit
+<?php $old = $page->hasTranslation($lang) ? $page->translate($lang)->body : '' ?>
+@editor('body', trans('page::pages.form.body'), old("$lang.body", $old))
+```
+
+### Creating a custom editor
+
 This [event](https://github.com/AsgardCms/Platform/blob/2.0/Modules/Core/Events/EditorIsRendering.php) has the following methods:
 
 - `addJs($asset)`: add a javascript asset.
@@ -37,6 +67,15 @@ This [event](https://github.com/AsgardCms/Platform/blob/2.0/Modules/Core/Events/
 - `getEditorClass()`: returns the editor class
 - `getEditorJsPartial()`: get the js partial name
 - `getEditorCssPartial()`: get the css partial name
+
+These methods will suffice to most needs of custom wywisyg editors. However, if your editor requires more than just the textarea field, you can overwrite the laravel component completely and use your own. It is probably a good idea to copy the [existing components](https://github.com/AsgardCms/Platform/tree/2.0/Modules/Core/Resources/views/components) to have something to start with.
+
+What you've created your own components, you can set them by using this API on the `EditorIsRendering` event:
+
+- `getI18nComponentName()`: Get the component name for the translatable textarea
+- `setI18nComponentName($componentName)`: Set the component name for the translatable textarea
+- `getComponentName()`: Get the component name for the textarea
+- `setComponentName($componentName)`: Set the component name for the textarea
 
 
 You can change which event listener is used by changing the `asgard.core.core.wysiwyg-handler` configuration option.
