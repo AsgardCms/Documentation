@@ -69,13 +69,14 @@ This [event](https://github.com/AsgardCms/Platform/blob/2.0/Modules/Core/Events/
 
 These methods will suffice to most needs of custom wywisyg editors. However, if your editor requires more than just the textarea field, you can overwrite the laravel component completely and use your own. It is probably a good idea to copy the [existing components](https://github.com/AsgardCms/Platform/tree/2.0/Modules/Core/Resources/views/components) to have something to start with.
 
-What you've created your own components, you can set them by using this API on the `EditorIsRendering` event:
+When you've created your own components, you can set them by using this API on the `EditorIsRendering` event:
 
 - `getI18nComponentName()`: Get the component name for the translatable textarea
 - `setI18nComponentName($componentName)`: Set the component name for the translatable textarea
 - `getComponentName()`: Get the component name for the textarea
 - `setComponentName($componentName)`: Set the component name for the textarea
 
+#### Using your new editor
 
 You can change which event listener is used by changing the `asgard.core.core.wysiwyg-handler` configuration option.
 
