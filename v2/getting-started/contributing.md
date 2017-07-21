@@ -13,7 +13,11 @@ subtitle: Getting Started
 
 - Fork the [AsgardCMS/Platform](https://github.com/AsgardCms/Platform),
 - Clone your fork,
-- Make your changes and send in a pull-request.
+- Run `composer install`
+- Run `./travis.sh`
+- Make your changes
+- Run `./vendor/bin/phpunit`
+- Send in the pull request if all is green
 
 **Which branch should I make my PR form and send it to?**
 
@@ -30,7 +34,7 @@ You can use a great tool : **[PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-
 
 
 ``` .language-bash
-$ # in your Platform root directory 
+$ # in your Platform root directory
 $ php-cs-fixer fix --verbose
 ```
 
