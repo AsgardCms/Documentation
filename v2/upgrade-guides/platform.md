@@ -3,22 +3,23 @@ subtitle: Platform
 -------
 
 - [From v2.4.0 to v2.5.0](#upgrade-2.5.0)
+- [From v2.3.0 to v2.4.0](#upgrade-2.4.0)
+- [From v1 to v2](#upgrade-2.0)
+- [From 1.12.0 to 1.13.0](#upgrade-1.13.0)
+
+
+## <a name="upgrade-2.5" class="anchor" href="#upgrade-2.5">From v2.4.0 to **v2.5.0**</a>
 
 **New cache driver**
 
 A new cache driver was added specifically for translations. [You can view this configuration here](https://github.com/AsgardCms/Platform/blob/2.0/config/cache.php#L74-L77). You can also set the environment variable `TRANSLATIONS_CACHE_DRIVER` in your `.env` file to use redis for example or any other driver.
 
 
-- [From v2.3.0 to v2.4.0](#upgrade-2.4.0)
+## <a name="upgrade-2.4" class="anchor" href="#upgrade-2.4">From v2.3.0 to **v2.4.0**</a>
 
 **Local Filesystem**
 
 The local filesystem drivers was updated to match laravel. [You will need to apply those changes.](https://github.com/AsgardCms/Platform/blob/2.0/config/filesystems.php#L59-L60)
-
-- [From v1 to v2](#upgrade-2.0)
-- [From 1.12.0 to 1.13.0](#upgrade-1.13.0)
-
-
 
 ## <a name="upgrade-2.0" class="anchor" href="#upgrade-2.0">From v1 to **v2**</a>
 
