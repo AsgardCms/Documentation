@@ -27,7 +27,7 @@ The local filesystem drivers was updated to match laravel. [You will need to app
 
 Follow the [Laravel upgrade guide](https://laravel.com/docs/5.2/upgrade#upgrade-5.2.0) to upgrade your application and modules.
 
-**Re-problish configuration files**
+**Re-publish configuration files**
 
 Configuration files across modules has been changed, mostly the `permissions.php` files.
 
