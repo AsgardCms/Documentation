@@ -9,7 +9,7 @@ subtitle: Core module
 
 **[> Changelog](https://github.com/AsgardCms/Core/blob/2.0/changelog.yml)**
 
-**Re-problish configuration files**
+**Re-publish configuration files**
 
 Configuration files across modules has been changed, mostly the `permissions.php` files.
 
