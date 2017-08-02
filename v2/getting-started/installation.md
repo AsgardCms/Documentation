@@ -55,13 +55,14 @@ Create a database suiting your preferred method, Sequel Pro, MySQL Workbench, cl
 
 ### Install your preferred user system
 
-- Sentinel (installed by default) 
+- Sentinel (installed by default)
 
 More user implementations may be offered later on. Learn how you can add your custom [ACL implementations](v2/user-module/drivers.md).
 
 
 ### Run the install command
 
+Change (cd) into the generated directory.
 Now run `php artisan asgard:install` command to perform the installation process.
 
 This install command will perform the following actions:
