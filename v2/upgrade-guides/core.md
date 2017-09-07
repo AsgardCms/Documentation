@@ -23,7 +23,7 @@ If you edited the module configurations, you will need to manually copy over the
 
 **Each module needs to handle config file loading**
 
-Previously the Core module did the configuration loading for every module. This responsability has now been moved to every individual module. The reason is to have more flexibility on publishing modules configuration.
+Previously the Core module did the configuration loading for every module. This responsibility has now been moved to every individual module. The reason is to have more flexibility on publishing modules configuration.
 
 To register your configuration files, you can use a helper trait `CanPublishConfiguration`, with the `publishConfig($moduleName, $filename)` method. It takes the module name as first argument and the filename without extension as second.
 
@@ -66,7 +66,7 @@ If you were using the `MasterViewComposer` class its name has been changed:
 - From: `Modules\Core\Composers\MasterViewComposer`
 - To: `Modules\Core\Composers\SiteNameViewComposer`
 
-**Acessing the currently logged in user**
+**Accessing the currently logged in user**
 
 The currently logged in user is now loaded on every view by default.
 

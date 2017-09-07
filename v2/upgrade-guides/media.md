@@ -19,7 +19,7 @@ It isn't needed anymore to use the `@include` directives. Instead the menu modul
 
 Learn all about those new directives on the [updated documentation](https://asgardcms.com/docs/v2/media-module/linking-media-to-entities).
 
-These directes can now also be used on the *create views*!
+These directives can now also be used on the *create views*!
 
 **Media urls**
 
