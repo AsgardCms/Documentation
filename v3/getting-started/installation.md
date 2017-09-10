@@ -10,7 +10,7 @@ subtitle: Getting Started
 
 To be able to run AsgardCMS you have to meet the following requirements:
 
-- PHP 5.6 or higher
+- PHP 7.0 or higher
 - PDO PHP Extension
 - cURL PHP Extension
 - OpenSSL PHP Extension
