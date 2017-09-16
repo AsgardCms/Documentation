@@ -9,4 +9,6 @@ subtitle: Core module
 
 **[> Changelog](https://github.com/AsgardCms/Platform/blob/3.0/Modules/Core/changelog.yml)**
 
-No breaking changes.
+**Authorization middleware**
+
+The `Authorization` middleware now returns a 403 forbidden when a permission is missing, instead of 401.
