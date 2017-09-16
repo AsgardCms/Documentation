@@ -9,4 +9,8 @@ subtitle: Workshop module
 
 **[> Changelog](https://github.com/AsgardCms/Platform/blob/3.0/Modules/Workshop/changelog.yml)**
 
-No breaking changes.
+**Sidebar: Workshop menu item weight**
+
+The modules menu item weight has been changed to `30`. <br/>
+The themes menu item weight has been changed to `40`.
+

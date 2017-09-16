@@ -10,4 +10,6 @@ subtitle: Translation module
 
 **[> Changelog](https://github.com/AsgardCms/Platform/blob/3.0/Modules/Translation/changelog.yml)**
 
-No breaking changes.
+**Sidebar: Translation menu item weight**
+
+The translation menu item weight has been changed to `40`.

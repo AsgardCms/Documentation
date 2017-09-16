@@ -9,4 +9,6 @@ subtitle: Media module
 
 **[> Changelog](https://github.com/AsgardCms/Platform/blob/3.0/Modules/Media/changelog.yml)**
 
-No breaking changes.
+**Sidebar: Media menu item weight**
+
+The media menu item weight has been changed to `20`.

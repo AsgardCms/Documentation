@@ -12,3 +12,7 @@ subtitle: Page module
 **Single Page Application**
 
 If you have overwritten page module views, make sure to update them to the latest versions.
+
+**Sidebar: Page menu item weight**
+
+The page menu item weight has been changed to `10`.

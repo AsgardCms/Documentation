@@ -10,4 +10,6 @@ subtitle: Menu module
 
 **[> Changelog](https://github.com/AsgardCms/Platform/blob/3.0/Modules/Menu/changelog.yml)**
 
-No breaking changes.
+**Sidebar: Menu menu item weight**
+
+The menu menu item weight has been changed to `30`.

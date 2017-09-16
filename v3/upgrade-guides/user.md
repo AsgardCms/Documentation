@@ -16,3 +16,7 @@ If you used the dynamic relations configuration option in the user config file, 
 **Auth:: facade now works with AsgardCMS**
 
 Feel free to use any of the laravel Authentication helpers. Like the `Auth::` facade but also the `@auth` or `@guest`.
+
+**Sidebar: User menu item weight**
+
+The user menu item weight has been changed to `10`.

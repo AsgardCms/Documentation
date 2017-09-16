@@ -10,5 +10,8 @@ subtitle: Setting module
 
 **[> Changelog](https://github.com/AsgardCms/Platform/blob/3.0/Modules/Setting/changelog.yml)**
 
-No breaking changes.
+**Sidebar: Setting menu item weight**
+
+The setting menu item weight has been changed to `20`.
+
 
