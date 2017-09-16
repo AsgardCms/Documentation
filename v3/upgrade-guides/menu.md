@@ -2,24 +2,12 @@ title: Upgrade Guide
 subtitle: Menu module
 -------
 
-- [From v1 to v2](#upgrade-2.0)
-- [From 1.13.0 to 1.14.0](#upgrade-1.14.0)
+- [From v2 to v3](#upgrade-3.0)
 
 
-## <a name="upgrade-2.0" class="anchor" href="#upgrade-2.0">From v1 to **v2**</a>
 
-**[> Changelog](https://github.com/AsgardCms/Menu/blob/2.0/changelog.yml)**
+## <a name="upgrade-3.0" class="anchor" href="#upgrade-3.0">From v2 to **v3**</a>
+
+**[> Changelog](https://github.com/AsgardCms/Platform/blob/3.0/Modules/Menu/changelog.yml)**
 
 No breaking changes.
-
-
-## <a name="upgrade-1.14.0" class="anchor" href="#upgrade-1.14.0">From 1.13.0 to **1.14.0**</a>
-
-**Translations have been removed**
-
-All translations files were removed from the individual modules and moved to the [Translation](https://github.com/AsgardCms/Translation) module. Therefore you will need to require the Translation module in your project. This can be done by running the following command in your project:
-
-``` .language-bash
-composer require asgardcms/translation-module
-```
-

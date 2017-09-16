@@ -2,12 +2,12 @@ title: Upgrade Guide
 subtitle: Translation module
 -------
 
-- [From v1 to v2](#upgrade-2.0)
+- [From v2 to v3](#upgrade-3.0)
 
 
 
-## <a name="upgrade-2.0" class="anchor" href="#upgrade-2.0">From v1 to **v2**</a>
+## <a name="upgrade-3.0" class="anchor" href="#upgrade-3.0">From v2 to **v3**</a>
 
-**[> Changelog](https://github.com/AsgardCms/Translation/blob/2.0/changelog.yml)**
+**[> Changelog](https://github.com/AsgardCms/Platform/blob/3.0/Modules/Translation/changelog.yml)**
 
 No breaking changes.
