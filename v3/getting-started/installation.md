@@ -46,7 +46,7 @@ asgardcms new Blog
 
 
 ``` .language-bash
-composer create-project asgardcms/platform=3.0.x-dev your-project-name
+composer create-project asgardcms/platform your-project-name
 ```
 
 ### Create a database
