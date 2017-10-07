@@ -94,16 +94,16 @@ You will need to use the dcp command when interacting with the container.
 
 The most common commands you will need are:
 
-- `./dcp up` (Bring up the containers)
-- `./dcp down` (Stop the containers)
-- `./dcp rs` (Restart the containers)
-- `./dcp` (Check the status of the containers)
-- `./dcp composer` (Run composer in the container)
-- `./dcp artisan / ./dcp art / ./dcp a` (Run the artisan command)
-- `./dcp test` (Run phpunit in a new container)
-- `./dcp t` (Run phpunit in the app container)
-- `./dcp yarn` (Run yarn)
-- `./dcp npm` (Run npm)
+- `./dcp`: Check the status of the containers
+- `./dcp up`: Bring up the containers
+- `./dcp down`: Stop the containers
+- `./dcp rs`: Restart the containers
+- `./dcp composer`: Run composer in the container
+- `./dcp artisan or ./dcp art or ./dcp a`: Run the artisan command
+- `./dcp test`: Run phpunit in a new container
+- `./dcp t`: Run phpunit in the app container
+- `./dcp yarn`: Run yarn
+- `./dcp npm`: Run npm
 
 
 ## <a name="xdebug" class="anchor" href="#xdebug">Xdebug</a>
