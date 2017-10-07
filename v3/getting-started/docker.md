@@ -78,7 +78,7 @@ The most common commands you will need are:
 
 
 <div class="alert alert-success" role="alert">
-	<strong>Tip!</strong> You can alias `./dpc` to `dcp`
+	<strong>Tip!</strong> You can alias <code>./dpc</code> to <code>dpc</code>
 </div>
 
 ### Rebuilding the image
