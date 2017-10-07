@@ -51,17 +51,9 @@ It may take a while to build the images if this is the first time running the co
 
 Now run the `./dcp artisan asgard:install` command to perform the installation process.
 
-This install command will perform the following actions:
-
-- Setup database information
-- Running migrations
-- Running seeds
-- Publishing assets
-- Create a first admin account
-
 When prompted for database credentials, use the details you specified in the `docker-compose.yml` file.
 
-For the mysql host, use the mysql container name from `docker-compose.yml` (by default `mysql`).
+For the **mysql host**, use the mysql container name from `docker-compose.yml` (by default `mysql`).
 
 ### Enjoy
 
@@ -83,6 +75,11 @@ The most common commands you will need are:
 - `./dcp t`: Run phpunit in the app container
 - `./dcp yarn`: Run yarn
 - `./dcp npm`: Run npm
+
+
+<div class="alert alert-success" role="alert">
+	<strong>Tip!</strong> You can alias `./dpc` to `dcp`
+</div>
 
 ### Rebuilding the image
 
