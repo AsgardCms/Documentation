@@ -112,7 +112,7 @@ Xdebug is turned on by default and is configured for Docker For Mac
 
 To switch off or adjust for a different platform, edit `/docker/app/enabled-xdebug.ini`.
 
-After making xdebug changes, you will need to rebuild the images for the containers. Changed to the `/docker` directory and run `./build` to rebuild the containers. After, re-run the containers with `./dcp up` in the root directory.
+After making xdebug changes, you will need to rebuild the images for the containers. Run `./dcp build` to rebuild the images, followed by `./dcp rs` to restart the containers.
 
 ## <a name="blackfireio" class="anchor" href="#blackfireio">Blackfire.io</a>
 
