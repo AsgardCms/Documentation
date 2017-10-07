@@ -27,7 +27,7 @@ To be able to run AsgardCMS under docker you will need:
 
 ## <a name="install-asgardcms" class="anchor" href="#install-asgardcms">Install AsgardCMS</a>
 
-- [Install AsgardCMS](v3/getting-started/installation.md)
+- [Install AsgardCMS](/v3/getting-started/installation.md)
 
 ### Database configuration
 
