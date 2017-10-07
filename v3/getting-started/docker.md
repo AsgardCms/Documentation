@@ -7,6 +7,7 @@ subtitle: Getting Started
 - [Install AsgardCMS](#install-asgardcms)
 - [Working with the containers](#working-with)
 - [Xdebug](#xdebug)
+- [Blackfire.io](#blackfireio)
 - [Getting help](#getting-help)
 
 ## <a name="introduction" class="anchor" href="#introduction">Introduction</a>
@@ -110,6 +111,25 @@ Xdebug is turned on by default and is configured for Docker For Mac
 To switch off or adjust for a different platform, edit `/docker/app/enabled-xdebug.ini`.
 
 After making xdebug changes, you will need to rebuild the images for the containers. Changed to the `/docker` directory and run `./build` to rebuild the containers. After, re-run the containers with `./dcp up` in the root directory.
+
+## <a name="blackfireio" class="anchor" href="#blackfireio">Blackfire.io</a>
+
+AsgardCMS docker setup comes with a [Blackfire.io](https://blackfire.io) container which contains the Blackfire Agent. The app container is setup with the Blackfire probe.
+
+To set it up, you need to fill in the server keys in `docker-compose.yml` file:
+
+```.language-yaml
+blackfire:
+image: blackfire/blackfire
+environment:
+  BLACKFIRE_SERVER_ID:
+  BLACKFIRE_SERVER_TOKEN:
+networks:
+- asgard_net
+```
+
+
+
 
 ## <a name="getting-help" class="anchor" href="#getting-help">Getting help</a>
 
