@@ -57,7 +57,7 @@ Create a database suiting your preferred method, Sequel Pro, MySQL Workbench, cl
 
 - Sentinel (installed by default)
 
-More user implementations may be offered later on. Learn how you can add your custom [ACL implementations](v2/user-module/drivers.md).
+More user implementations may be offered later on. Learn how you can add your custom [ACL implementations](v3/user-module/drivers.md).
 
 
 ### Run the install command

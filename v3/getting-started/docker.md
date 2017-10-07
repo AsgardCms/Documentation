@@ -27,28 +27,7 @@ To be able to run AsgardCMS under docker you will need:
 
 ## <a name="install-asgardcms" class="anchor" href="#install-asgardcms">Install AsgardCMS</a>
 
-### Get AsgardCMS
-
-**Via AsgardCMS installer**
-
-``` .language-bash
-composer global require asgardcms/asgardcms-installer
-```
-
-Make sure to place the `$HOME/.composer/vendor/bin` directory (or the equivalent directory for your OS) in your `$PATH` so the asgardcms` executable can be located by your system.
-
-Once installed, the `asgardcms new` command will create a fresh AsgardCMS installation in the directory you specify. For instance, `asgardcms new blog` will create a directory named `blog` containing a fresh AsgardCMS installation with all of AsgardCMS's dependencies already installed:
-
-``` .language-bash
-asgardcms new Blog
-```
-
-**Via Composer create-project**
-
-
-``` .language-bash
-composer create-project asgardcms/platform your-project-name
-```
+- [Install AsgardCMS](v3/getting-started/installation.md)
 
 ### Database configuration
 
@@ -105,6 +84,13 @@ The most common commands you will need are:
 - `./dcp yarn`: Run yarn
 - `./dcp npm`: Run npm
 
+### Rebuilding the image
+
+Whenever you make a change to the Dockerfiles, you will have to rebuild the images. This can be done with:
+
+- `./dcp build`
+- `./dcp rs`
+
 
 ## <a name="xdebug" class="anchor" href="#xdebug">Xdebug</a>
 
@@ -129,8 +115,6 @@ environment:
 networks:
 - asgard_net
 ```
-
-
 
 
 ## <a name="getting-help" class="anchor" href="#getting-help">Getting help</a>
