@@ -57,7 +57,7 @@ For the **mysql host**, use the mysql container name from `docker-compose.yml` (
 
 ### Enjoy
 
-You can now login on `/auth/login` with your email and password asked during the install command. After you've logged in you'll be able to access the administration panel on the `/backend` URI.
+You can now login on `http://localhost/auth/login` with your email and password asked during the install command. After you've logged in you'll be able to access the administration panel on the `/backend` URI.
 
 ## <a name="working-with" class="anchor" href="#working-with">Working with the containers</a>
 
@@ -91,7 +91,7 @@ Whenever you make a change to the Dockerfiles, you will have to rebuild the imag
 
 ## <a name="xdebug" class="anchor" href="#xdebug">Xdebug</a>
 
-Xdebug is turned on by default and is configured for Docker For Mac
+Xdebug is turned on by default and is configured for Docker For Mac.
 
 To switch off or adjust for a different platform, edit `/docker/app/enabled-xdebug.ini`.
 
@@ -118,6 +118,6 @@ networks:
 
 If you have **feedback** to give, **ideas** you would like implemented, by all means share them on the [forum](http://forum.asgardcms.com) in the "Comments and Feedback" section.
 
-For **issues/bugs** your having, you can use the Github Issues to post those. All issues are grouped on the [AsgardCms/Platform](https://github.com/AsgardCms/Platform/issues) repository.
+For **issues/bugs** you're having, you can use the Github Issues to post those. All issues are grouped on the [AsgardCms/Platform](https://github.com/AsgardCms/Platform/issues) repository.
 
 If you just want to **talk**, join [our Slack channel (http://slack.asgardcms.com/)](http://slack.asgardcms.com/).
