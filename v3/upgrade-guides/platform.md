@@ -2,7 +2,18 @@ title: Upgrade Guide
 subtitle: Platform
 -------
 
+- [From v3.0.0 to v3.1.0](#upgrade-3.1)
 - [From v2 to v3](#upgrade-3.0)
+
+
+## <a name="upgrade-3.1" class="anchor" href="#upgrade-3.1">From v3.0.3 to **v3.1.0**</a>
+
+**Recompile assets**
+
+Due to changes in core assets, you will have to recompile assets. You can do this with the following commands:
+
+- `npm insall`
+- `npm run dev`
 
 
 ## <a name="upgrade-3" class="anchor" href="#upgrade-3">From v2 to **v3**</a>
