@@ -4,6 +4,7 @@ subtitle: Core Module
 
 - [Introduction](#introduction)
 - [Usage](#usage)
+- [Register a sidebar](#register-sidebar)
 - [Single Menu Item](#single-menu-item)
 - [Menu With Submenus](#menu-with-submenus)
 - [Overwriting Default Sidebars](#overwrite-default-sidebars)
@@ -16,57 +17,55 @@ The basic gist is that the core module listens for incoming menu items and loops
 
 ## <a class="anchor" name="usage" href="#usage">Usage</a>
 
-First thing you have to do is creating a sidebar extender. Under the `Sidebar` namespace in your module.
+First thing you have to do is creating a sidebar extender. Under the `Events/Handlers` namespace in your module.
 
 > Note: this is automatically generated when using the Module Scaffold command.
 
+## <a class="anchor" name="usage" href="#register-sidebar">Register a sidebar</a>
+
+**Note that is is automatically done for you when scaffolding a module**
+
+You can register your sidebars using the `BuildingSidebar` hook. 
+
+In your module service provider use the `CanGetSidebarClassForModule` helper trait. With this trait you'll be able to use a helper method `getSidebarClassForModule`.
+
+Next, in the register method of your module service provider hook into the `BuildingSidebar` hook like so:
+
+```.language-php
+$this->app['events']->listen(
+    BuildingSidebar::class,
+    $this->getSidebarClassForModule('page', RegisterPageSidebar::class)
+);
+```
+
+
 ## <a class="anchor" name="single-menu-item" href="#single-menu-item">Single menu item</a>
 
-This is how the page module handles it, in `Modules/Pages/Sidebar/SidebarExtender.php`:
+This is how the page module handles it, in `Modules/Pages/Events/Handlers/RegisterPageSidebar.php`:
 
 ``` .language-php
-<?php namespace Modules\Page\Sidebar;
+<?php
 
-use Maatwebsite\Sidebar\Badge;
+namespace Modules\Page\Events\Handlers;
+
 use Maatwebsite\Sidebar\Group;
 use Maatwebsite\Sidebar\Item;
 use Maatwebsite\Sidebar\Menu;
-use Modules\Core\Contracts\Authentication;
-use Modules\Page\Repositories\PageRepository;
+use Modules\Core\Sidebar\AbstractAdminSidebar;
 
-class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
+class RegisterPageSidebar extends AbstractAdminSidebar
 {
     /**
-     * @var Authentication
-     */
-    protected $auth;
-
-    /**
-     * @param Authentication $auth
-     *
-     * @internal param Guard $guard
-     */
-    public function __construct(Authentication $auth)
-    {
-        $this->auth = $auth;
-    }
-
-    /**
      * @param Menu $menu
-     *
      * @return Menu
      */
     public function extendWith(Menu $menu)
     {
         $menu->group(trans('core::sidebar.content'), function (Group $group) {
-            $group->item(trans('page::pages.title.pages'), function (Item $item) {
+            $group->item(trans('page::pages.pages'), function (Item $item) {
                 $item->icon('fa fa-file');
-                $item->weight(1);
+                $item->weight(10);
                 $item->route('admin.page.page.index');
-                $item->badge(function (Badge $badge, PageRepository $page) {
-                    $badge->setClass('bg-green');
-                    $badge->setValue($page->countAll());
-                });
                 $item->authorize(
                     $this->auth->hasAccess('page.pages.index')
                 );
@@ -104,49 +103,35 @@ You'll recognise the same methods as mentioned on the single item.
 For the User module it looks like the following:
 
 ``` .language-php
-<?php namespace Modules\User\Sidebar;
+<?php
+
+namespace Modules\User\Events\Handlers;
 
 use Maatwebsite\Sidebar\Group;
 use Maatwebsite\Sidebar\Item;
 use Maatwebsite\Sidebar\Menu;
-use Modules\Core\Contracts\Authentication;
+use Modules\Core\Sidebar\AbstractAdminSidebar;
 
-class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
+class RegisterUserSidebar extends AbstractAdminSidebar
 {
     /**
-     * @var Authentication
-     */
-    protected $auth;
-
-    /**
-     * @param Authentication $auth
-     *
-     * @internal param Guard $guard
-     */
-    public function __construct(Authentication $auth)
-    {
-        $this->auth = $auth;
-    }
-
-    /**
+     * Method used to define your sidebar menu groups and items
      * @param Menu $menu
-     *
      * @return Menu
      */
     public function extendWith(Menu $menu)
     {
         $menu->group(trans('workshop::workshop.title'), function (Group $group) {
-
             $group->item(trans('user::users.title.users'), function (Item $item) {
-                $item->weight(0);
-                $item->icon('fa fa-user');
+                $item->weight(10);
+                $item->icon('fa fa-users');
                 $item->authorize(
                     $this->auth->hasAccess('user.users.index') or $this->auth->hasAccess('user.roles.index')
                 );
 
                 $item->item(trans('user::users.title.users'), function (Item $item) {
                     $item->weight(0);
-                    $item->icon('fa fa-user');
+                    $item->icon('fa fa-users');
                     $item->route('admin.user.user.index');
                     $item->authorize(
                         $this->auth->hasAccess('user.users.index')
@@ -162,14 +147,29 @@ class SidebarExtender implements \Maatwebsite\Sidebar\SidebarExtender
                     );
                 });
             });
-
+        });
+        $menu->group(trans('user::users.my account'), function (Group $group) {
+            $group->weight(110);
+            $group->item(trans('user::users.profile'), function (Item $item) {
+                $item->weight(0);
+                $item->icon('fa fa-user');
+                $item->route('admin.account.profile.edit');
+            });
+            $group->item(trans('user::users.api-keys'), function (Item $item) {
+                $item->weight(1);
+                $item->icon('fa fa-key');
+                $item->route('admin.account.api.index');
+                $item->authorize(
+                    $this->auth->hasAccess('account.api-keys.index')
+                );
+            });
         });
 
         return $menu;
     }
 }
 ```
-You can find this class in `Modules/User/Sidebar/SidebarExtender.php`
+You can find this class in `Modules/User/Events/Handlers/RegisterUserSidebar.php`
 
 And that is all you have to do to add your menu item.
 
