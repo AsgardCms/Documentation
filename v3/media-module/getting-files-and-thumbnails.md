@@ -117,4 +117,17 @@ public function index()
 }
 ```
 
+### From app() Service Container
+
+
+``` .language-php
+
+// simply get imagy from Service Container
+$imagy = app('imagy');
+
+// get smallThumb
+$imagy->getThumbnail($this->entity->avatar->first()->path, 'smallThumb');
+```
+
+
 
