@@ -98,6 +98,9 @@ Of course, your paths will usually not be referenced to manually but rather comi
 ### Dependency injection
 
 ``` .language-php
+
+use Modules\Media\Image\Imagy;
+
 /**
  * @var Imagy
  */
