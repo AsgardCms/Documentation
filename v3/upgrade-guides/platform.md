@@ -15,7 +15,7 @@ subtitle: Platform
 
 Due to changes in core assets, you will have to recompile assets. You can do this with the following commands:
 
-- `npm insall`
+- `npm install`
 - `npm run dev`
 
 
@@ -25,7 +25,7 @@ Due to changes in core assets, you will have to recompile assets. You can do thi
 
 Due to changes in core assets, you will have to recompile assets. You can do this with the following commands:
 
-- `npm insall`
+- `npm install`
 - `npm run dev`
 
 
