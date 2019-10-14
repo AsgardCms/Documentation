@@ -45,6 +45,12 @@ Start the containers with this command.
 
 If this is your first time running this command, it may take a little while to download/build the images.
 
+### Acquire dependencies
+
+To install / update dependencies you may run a `composer` command (if this is the first time, this step is mandatory).
+
+Run `./dcp composer install` to install or `./dcp composer update` to update your dependencies.
+
 ### Run the install command
 
 Now run the `./dcp artisan asgard:install` command to perform the AsgardCMS installation process.
