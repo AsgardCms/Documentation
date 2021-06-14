@@ -7,6 +7,7 @@ subtitle: Themes
 - [Linking to theme assets](#linking-to-theme-assets)
 - [Display a theme page](#display-a-theme-page)
 - [Elixer publish helper](#elixir)
+- [Ovewriting core theme views)[#core_modules_overwrite]
 
 In this section we will go over on how to create and manage themes. You can view a demo frontend, [Flatly](https://github.com/AsgardCms/Flatly-theme) theme and [demo backend theme](https://github.com/AsgardCms/AdminLTE) for your inspiration.
 
@@ -120,3 +121,16 @@ mix
 ```
 
 Elixir will now compile `main.less`, and publish the compiled css to the `public/` folder.
+
+## <a name="core_modules_overwrite" class="anchor" href="#core_modules_overwrite">Overwrite code modules views</a>
+
+The system allows to overwrite any of the modules that are core to the system inside the theme itself. To allow this you must enable some configuration settings.
+
+Inside the config/asgard/core/core.php: set _enable-theme-overrides_ to *true*
+
+Then check if the core module allows to overwrite the views.
+To see this, check inside the module for the _useViewNamespaces_ variable inside it's _Config/config.php_ file. If found you can overwrite the views for the frontend & backend themes.
+
+The, add the view into the theme inside the _modules/<module_name>/_ folder.
+
+An example to clarify this: To overwrite the Modules/User/Resources/view/public/login.blade.php you modify the configuration as indicated before and then, copy the file into Themes/MyTheme/views/modules/user/public/login.blade.php and make you modifications.
